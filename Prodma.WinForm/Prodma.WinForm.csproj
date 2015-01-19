@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3AB40850-9A0D-4C92-975D-718DE562279E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Prodma.WinForm</RootNamespace>
+    <AssemblyName>Prodma.WinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v12.1.Design, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v12.1.UI, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1.Design, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1.Design, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v12.1.Design, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v12.1.Design, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v12.1.Design, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v12.1.Design, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Build.Conversion.v3.5" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Prodma">
+      <HintPath>bin\Release\Prodma.exe</HintPath>
+    </Reference>
+    <Reference Include="Prodma.Raporlar">
+      <HintPath>..\Prodma.DataAccessB2C\bin\Debug\Prodma.Raporlar.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\ListDetayCalisma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\ListDetayCalisma.designer.cs">
+      <DependentUpon>ListDetayCalisma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\ListSablonStok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\SecimGridSablon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\YaziciSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\YaziciSec.designer.cs">
+      <DependentUpon>YaziciSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\TextBoxBuyut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\TextBoxBuyut.Designer.cs">
+      <DependentUpon>TextBoxBuyut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\usrGridIslem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\usrGridIslem.designer.cs">
+      <DependentUpon>usrGridIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource1.Designer.cs">
+      <DependentUpon>Resource1.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="WinFormsHelper.cs" />
+    <Compile Include="Ortak_Formlar\FisSablonSon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\FormGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\FormGoster.designer.cs">
+      <DependentUpon>FormGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Islemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Islemler.designer.cs">
+      <DependentUpon>Islemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\DynamicUpdateSablon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\DynamicUpdateWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\DynamicUpdateWarning.designer.cs">
+      <DependentUpon>DynamicUpdateWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\GridIslemAcilisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\GridIslemAcilisForm.Designer.cs">
+      <DependentUpon>GridIslemAcilisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\ListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\ListForm.Designer.cs">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\ListSablon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\ListSablonIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\LogDetayGozlem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\ListSablonlar\LogDetayGozlem.designer.cs">
+      <DependentUpon>LogDetayGozlem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\MyGridControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\navBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\navBar.designer.cs">
+      <DependentUpon>navBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Sablon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Sablon.designer.cs">
+      <DependentUpon>Sablon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Sik_Kullanilmayanlar\KodIstemi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Sik_Kullanilmayanlar\KodIstemi.Designer.cs">
+      <DependentUpon>KodIstemi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Sik_Kullanilmayanlar\MesajForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Sik_Kullanilmayanlar\MesajForm.Designer.cs">
+      <DependentUpon>MesajForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Sik_Kullanilmayanlar\MesajKutusu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Sik_Kullanilmayanlar\MesajKutusu.designer.cs">
+      <DependentUpon>MesajKutusu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Sik_Kullanilmayanlar\MySplash.cs" />
+    <Compile Include="Ortak_Formlar\Sik_Kullanilmayanlar\ProgressControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Sik_Kullanilmayanlar\ProgressControl.Designer.cs">
+      <DependentUpon>ProgressControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Sik_Kullanilmayanlar\SiparisListeleriPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Sik_Kullanilmayanlar\SiparisListeleriPopUp.Designer.cs">
+      <DependentUpon>SiparisListeleriPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Sik_Kullanilmayanlar\SplashScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Sik_Kullanilmayanlar\SplashScreenForm.Designer.cs">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Sik_Kullanilmayanlar\StokIliskiliListeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\Sik_Kullanilmayanlar\StokIliskiliListeler.designer.cs">
+      <DependentUpon>StokIliskiliListeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\TanitimSablon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\TopluGridPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\TopluGridPanel.designer.cs">
+      <DependentUpon>TopluGridPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\UserControls\PictureButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\UserControls\TanitimIslemleri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\UserControls\TanitimIslemleri.Designer.cs">
+      <DependentUpon>TanitimIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\usrControlSablon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\usrControlSablon.designer.cs">
+      <DependentUpon>usrControlSablon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\usrGridBilgilendirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\usrGridBilgilendirme.Designer.cs">
+      <DependentUpon>usrGridBilgilendirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ortak_Formlar\usrGridSatirBilgi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ortak_Formlar\usrGridSatirBilgi.designer.cs">
+      <DependentUpon>usrGridSatirBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YardimciIslemlerKontrols.cs" />
+    <EmbeddedResource Include="Ortak_Formlar\FisSablonSon.resx">
+      <DependentUpon>FisSablonSon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\FormGoster.resx">
+      <DependentUpon>FormGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\Islemler.resx">
+      <DependentUpon>Islemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\ListSablonlar\DynamicUpdateSablon.resx">
+      <DependentUpon>DynamicUpdateSablon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\ListSablonlar\DynamicUpdateWarning.resx">
+      <DependentUpon>DynamicUpdateWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\ListSablonlar\GridIslemAcilisForm.resx">
+      <DependentUpon>GridIslemAcilisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\ListSablonlar\ListDetayCalisma.resx">
+      <DependentUpon>ListDetayCalisma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\ListSablonlar\ListForm.resx">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\ListSablonlar\ListSablon.resx">
+      <DependentUpon>ListSablon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\ListSablonlar\ListSablonIslem.resx">
+      <DependentUpon>ListSablonIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\ListSablonlar\ListSablonStok.resx">
+      <DependentUpon>ListSablonStok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\ListSablonlar\LogDetayGozlem.resx">
+      <DependentUpon>LogDetayGozlem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\ListSablonlar\SecimGridSablon.resx">
+      <DependentUpon>SecimGridSablon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\ListSablonlar\YaziciSec.resx">
+      <DependentUpon>YaziciSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\navBar.resx">
+      <DependentUpon>navBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\Sablon.resx">
+      <DependentUpon>Sablon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\Sik_Kullanilmayanlar\KodIstemi.resx">
+      <DependentUpon>KodIstemi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\Sik_Kullanilmayanlar\MesajForm.resx">
+      <DependentUpon>MesajForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\Sik_Kullanilmayanlar\MesajKutusu.resx">
+      <DependentUpon>MesajKutusu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\Sik_Kullanilmayanlar\ProgressControl.resx">
+      <DependentUpon>ProgressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\Sik_Kullanilmayanlar\SiparisListeleriPopUp.resx">
+      <DependentUpon>SiparisListeleriPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\Sik_Kullanilmayanlar\SplashScreenForm.resx">
+      <DependentUpon>SplashScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\Sik_Kullanilmayanlar\StokIliskiliListeler.resx">
+      <DependentUpon>StokIliskiliListeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\TanitimSablon.resx">
+      <DependentUpon>TanitimSablon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\TextBoxBuyut.resx">
+      <DependentUpon>TextBoxBuyut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\TopluGridPanel.resx">
+      <DependentUpon>TopluGridPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\UserControls\TanitimIslemleri.resx">
+      <DependentUpon>TanitimIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\usrControlSablon.resx">
+      <DependentUpon>usrControlSablon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\usrGridBilgilendirme.resx">
+      <DependentUpon>usrGridBilgilendirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\usrGridIslem.resx">
+      <DependentUpon>usrGridIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ortak_Formlar\usrGridSatirBilgi.resx">
+      <DependentUpon>usrGridSatirBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource1.enUS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource1.trTR.resx" />
+    <None Include="app.config" />
+    <None Include="Ortak_Formlar\ListSablonlar\DynamicUpdateSablon.resx.bak" />
+    <None Include="Ortak_Formlar\ListSablonlar\ListSablon.resx.bak" />
+    <None Include="Ortak_Formlar\ListSablonlar\ListSablonIslem.resx.bak" />
+    <None Include="Ortak_Formlar\ListSablonlar\SecimGridSablon.resx.bak" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Prodma.DataAccessB2C\Prodma.DataAccessB2C.csproj">
+      <Project>{9DEA3863-7D3E-4F5F-A90C-0D6129A5FFBB}</Project>
+      <Name>Prodma.DataAccessB2C</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ListImages\accordionitem.png" />
+    <Content Include="Resources\ListImages\active.png" />
+    <Content Include="Resources\ListImages\agencylist.png" />
+    <Content Include="Resources\ListImages\all.png" />
+    <Content Include="Resources\ListImages\archivelist.png" />
+    <Content Include="Resources\ListImages\archiveok.png" />
+    <Content Include="Resources\ListImages\arealist.png" />
+    <Content Include="Resources\ListImages\bannerlist.png" />
+    <Content Include="Resources\ListImages\blankorder.png" />
+    <Content Include="Resources\ListImages\categorylist.png" />
+    <Content Include="Resources\ListImages\contentlist.png" />
+    <Content Include="Resources\ListImages\delete.png" />
+    <Content Include="Resources\ListImages\edit.png" />
+    <Content Include="Resources\ListImages\exit.png" />
+    <Content Include="Resources\ListImages\find.png" />
+    <Content Include="Resources\ListImages\galleryitem.png" />
+    <Content Include="Resources\ListImages\gallerylist.png" />
+    <Content Include="Resources\ListImages\informationlist.png" />
+    <Content Include="Resources\ListImages\languagelist.png" />
+    <Content Include="Resources\ListImages\legislationcategorylist.png" />
+    <Content Include="Resources\ListImages\legislationlist.png" />
+    <Content Include="Resources\ListImages\legislationofficelist.png" />
+    <Content Include="Resources\ListImages\marqueelist.png" />
+    <Content Include="Resources\ListImages\menuitem.png" />
+    <Content Include="Resources\ListImages\menulist.png" />
+    <Content Include="Resources\ListImages\menulocationlist.png" />
+    <Content Include="Resources\ListImages\new.png" />
+    <Content Include="Resources\ListImages\officelist.png" />
+    <Content Include="Resources\ListImages\ok.png" />
+    <Content Include="Resources\ListImages\orderdown.png" />
+    <Content Include="Resources\ListImages\orderok.png" />
+    <Content Include="Resources\ListImages\orderup.png" />
+    <Content Include="Resources\ListImages\panellist.png" />
+    <Content Include="Resources\ListImages\passive.png" />
+    <Content Include="Resources\ListImages\projectlist.png" />
+    <Content Include="Resources\ListImages\rolelist.png" />
+    <Content Include="Resources\ListImages\sectionlist.png" />
+    <Content Include="Resources\ListImages\surveylist.png" />
+    <Content Include="Resources\ListImages\tenderlist.png" />
+    <Content Include="Resources\ListImages\tendermateriallist.png" />
+    <Content Include="Resources\ListImages\tendermaterialtypelist.png" />
+    <Content Include="Resources\ListImages\tendermaterialunitlist.png" />
+    <Content Include="Resources\ListImages\tendersubjectlist.png" />
+    <Content Include="Resources\ListImages\titlelist.png" />
+    <Content Include="Resources\ListImages\unitlist.png" />
+    <Content Include="Resources\ListImages\userlist.png" />
+    <Content Include="Resources\yukleniyor.gif" />
+    <None Include="Resources\zoom.png" />
+    <None Include="Resources\yukleniyor.bmp" />
+    <None Include="Resources\warning.ico" />
+    <None Include="Resources\printer.ico" />
+    <None Include="Resources\ListImages\excel.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

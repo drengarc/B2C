@@ -1,0 +1,19 @@
+﻿using System.Collections.Generic;
+using Prodma.DataAccessB2C;
+using System;
+
+namespace B2C.Models
+{
+    public class simit_pageVm : IViewModel
+    {
+        public int id { get; set; }
+        public string name { get; set; }
+        public string content { get; set; }
+        public string slug { get; set; }
+        public string tags { get; set; }
+        public string description { get; set; }
+        public string title { get; set; }
+        public DateTimeOffset last_modified { get; set; }
+        public bool is_active { get; set; }
+    }
+}

@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{794E0C60-8B22-4CE4-8995-7EF584C351E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Prodma.Sistem</RootNamespace>
+    <AssemblyName>Prodma.Sistem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v12.1.Reporting.Extensions, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Prodma">
+      <HintPath>..\Prodma.DataAccessB2C\bin\Debug\Prodma.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\Alanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\Alanlar.Designer.cs">
+      <DependentUpon>Alanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\Mesaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\Mesaj.designer.cs">
+      <DependentUpon>Mesaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\KullaniciYetkiIslemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\KullaniciYetkiIslemler.designer.cs">
+      <DependentUpon>KullaniciYetkiIslemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\KullaniciYetkiAlanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\KullaniciYetkiAlanlar.designer.cs">
+      <DependentUpon>KullaniciYetkiAlanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\Log_Gozlem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\Log_Gozlem.designer.cs">
+      <DependentUpon>Log_Gozlem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\Rol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\Rol.designer.cs">
+      <DependentUpon>Rol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\KullaniciIslemKopyalama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\KullaniciIslemKopyalama.designer.cs">
+      <DependentUpon>KullaniciIslemKopyalama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\TabloEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\TabloEkle.designer.cs">
+      <DependentUpon>TabloEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\userControls\Firma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\userControls\Firma.designer.cs">
+      <DependentUpon>Firma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\userControls\usrFirmaEkBilgi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\userControls\usrFirmaEkBilgi.designer.cs">
+      <DependentUpon>usrFirmaEkBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiIslemTanitim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiIslemTanitim.designer.cs">
+      <DependentUpon>YetkiIslemTanitim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\KullaniciMenuKopyalama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\KullaniciMenuKopyalama.designer.cs">
+      <DependentUpon>KullaniciMenuKopyalama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\KullaniciDetayKopyalama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\KullaniciDetayKopyalama.designer.cs">
+      <DependentUpon>KullaniciDetayKopyalama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiOzelFiltreler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiOzelFiltreler.designer.cs">
+      <DependentUpon>YetkiOzelFiltreler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiKullaniciDinamik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiKullaniciDinamik.designer.cs">
+      <DependentUpon>YetkiKullaniciDinamik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\SifreDegistirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\SifreDegistirme.designer.cs">
+      <DependentUpon>SifreDegistirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiListeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiListeler.designer.cs">
+      <DependentUpon>YetkiListeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\KullaniciKopyalama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\KullaniciKopyalama.designer.cs">
+      <DependentUpon>KullaniciKopyalama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiAlanlarGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiAlanlarGrid.designer.cs">
+      <DependentUpon>YetkiAlanlarGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\Kullanici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\Kullanici.designer.cs">
+      <DependentUpon>Kullanici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\Menuler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\Menuler.designer.cs">
+      <DependentUpon>Menuler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\userControls\usrKullaniciEkBilgi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\userControls\usrKullaniciEkBilgi.designer.cs">
+      <DependentUpon>usrKullaniciEkBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\Log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\Log.Designer.cs">
+      <DependentUpon>Log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceButton.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceButton.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiAlanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiAlanlar.designer.cs">
+      <DependentUpon>YetkiAlanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiAlanlarBilgiUsr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiAlanlarBilgiUsr.designer.cs">
+      <DependentUpon>YetkiAlanlarBilgiUsr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiIslemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiIslemler.designer.cs">
+      <DependentUpon>YetkiIslemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiMenuler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistem\Forms\YetkiMenuler.designer.cs">
+      <DependentUpon>YetkiMenuler.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Resources\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\Alanlar.resx">
+      <DependentUpon>Alanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\Mesaj.resx">
+      <DependentUpon>Mesaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\KullaniciYetkiIslemler.resx">
+      <DependentUpon>KullaniciYetkiIslemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\KullaniciYetkiAlanlar.resx">
+      <DependentUpon>KullaniciYetkiAlanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\Log_Gozlem.resx">
+      <DependentUpon>Log_Gozlem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\Rol.resx">
+      <DependentUpon>Rol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\KullaniciIslemKopyalama.resx">
+      <DependentUpon>KullaniciIslemKopyalama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\TabloEkle.resx">
+      <DependentUpon>TabloEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\userControls\Firma.resx">
+      <DependentUpon>Firma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\userControls\usrFirmaEkBilgi.resx">
+      <DependentUpon>usrFirmaEkBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\YetkiIslemTanitim.resx">
+      <DependentUpon>YetkiIslemTanitim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\KullaniciMenuKopyalama.resx">
+      <DependentUpon>KullaniciMenuKopyalama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\KullaniciDetayKopyalama.resx">
+      <DependentUpon>KullaniciDetayKopyalama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\YetkiOzelFiltreler.resx">
+      <DependentUpon>YetkiOzelFiltreler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\YetkiKullaniciDinamik.resx">
+      <DependentUpon>YetkiKullaniciDinamik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\SifreDegistirme.resx">
+      <DependentUpon>SifreDegistirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\YetkiListeler.resx">
+      <DependentUpon>YetkiListeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\KullaniciKopyalama.resx">
+      <DependentUpon>KullaniciKopyalama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\YetkiAlanlarGrid.resx">
+      <DependentUpon>YetkiAlanlarGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\Kullanici.resx">
+      <DependentUpon>Kullanici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\Menuler.resx">
+      <DependentUpon>Menuler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\userControls\usrKullaniciEkBilgi.resx">
+      <DependentUpon>usrKullaniciEkBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ResourceButton.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceButton.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\Log.resx">
+      <DependentUpon>Log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\YetkiAlanlar.resx">
+      <DependentUpon>YetkiAlanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\YetkiAlanlarBilgiUsr.resx">
+      <DependentUpon>YetkiAlanlarBilgiUsr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\YetkiIslemler.resx">
+      <DependentUpon>YetkiIslemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistem\Forms\YetkiMenuler.resx">
+      <DependentUpon>YetkiMenuler.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.Config">
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="bin\Debug\log4net.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="log4net.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Prodma.DataAccessB2C\Prodma.DataAccessB2C.csproj">
+      <Project>{9DEA3863-7D3E-4F5F-A90C-0D6129A5FFBB}</Project>
+      <Name>Prodma.DataAccessB2C</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prodma.WinForm\Prodma.WinForm.csproj">
+      <Project>{3AB40850-9A0D-4C92-975D-718DE562279E}</Project>
+      <Name>Prodma.WinForm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bize_ulasin.jpg" />
+    <None Include="Resources\e_posta.jpg" />
+    <None Include="Resources\ExpInternet-Explorer-Icon.jpg" />
+    <None Include="Resources\hesapmakinesi.jpg" />
+    <None Include="Resources\bize_ulasin1.jpg" />
+    <None Include="Resources\e_posta1.jpg" />
+    <None Include="Resources\ExpInternet-Explorer-Icon1.jpg" />
+    <None Include="Resources\hesapmakinesi1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dega fabfrika.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dama.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagestek.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Ortak_Sınıflar\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

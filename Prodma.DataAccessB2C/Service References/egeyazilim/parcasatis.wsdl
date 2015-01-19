@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="fn_arac_modeller">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_arac_modellerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_arac_modellerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_arac_ortak_model">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_arac_ortak_modelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_arac_ortak_modelResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_tedarikciler">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_tedarikcilerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_tedarikcilerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_markalar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_markalarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_markalarResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_robot">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_robotResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_robotResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_esdegerler">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_tedarikci_kodu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_tedarikci" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_esdegerlerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_esdegerlerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_oem_kodlar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="list" type="tns:ArrayOfStok_oem_parameter" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfStok_oem_parameter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="stok_oem_parameter" nillable="true" type="tns:stok_oem_parameter" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="stok_oem_parameter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="tedarikci" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tedarikci_kodu" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="fn_oem_kodlarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_oem_kodlarResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_oem_kodlar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_tedarikci_kodu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_tedarikci" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_oem_kodlarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_stok_oem_kodlarResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_oem_kodlu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_tedarikci_kodu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tedarikci" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_oem_kodluResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_oem_kodluResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_araclar_count">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_araclar_countResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_araclar_countResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_araclar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="list" type="tns:ArrayOfStok_arac_id" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfStok_arac_id">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="stok_arac_id" nillable="true" type="tns:stok_arac_id" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="stok_arac_id">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="arac_id" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="fn_araclarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_araclarResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_motor_hacmi_distinct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_motor_hacmi_distinctResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_motor_hacmi_distinctResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_resim_url">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="list" type="tns:ArrayOfStok_resimler" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfStok_resimler">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="stok_resimler" nillable="true" type="tns:stok_resimler" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="stok_resimler">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="tedarikci_kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tedarikci" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="fn_stok_resim_urlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_stok_resim_urlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_yakit_tipi_distinct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_yakit_tipi_distinctResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_yakit_tipi_distinctResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_yil_distinct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_yil_distinctResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_yil_distinctResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_arac_kodlu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_stok_kodu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_tedarikci" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_arac_kodluResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_stok_arac_kodluResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_arac">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="list" type="tns:ArrayOfStok_arac_parameter" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfStok_arac_parameter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="stok_arac_parameter" nillable="true" type="tns:stok_arac_parameter" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="stok_arac_parameter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="tedarikci_id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tedarikci_kodu" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="fn_stok_aracResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_stok_aracResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_arac_count">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="list" type="tns:ArrayOfStok_arac_parameter" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_arac_countResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_stok_arac_countResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_stok_kodu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stokResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_stokResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_resimler">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_stok_kodu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_tedarikci" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_resimlerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_stok_resimlerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_resimler_list">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="list" type="tns:ArrayOfStok_resimler" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_resimler_listResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_stok_resimler_listResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_rakip_kodlar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_tedarikci_kodu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_tedarikci" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_rakip_kodlarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_rakip_kodlarResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="fn_arac_modellerSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_arac_modeller" />
+  </wsdl:message>
+  <wsdl:message name="fn_arac_modellerSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_arac_modellerResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_arac_ortak_modelSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_arac_ortak_model" />
+  </wsdl:message>
+  <wsdl:message name="fn_arac_ortak_modelSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_arac_ortak_modelResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_tedarikcilerSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_tedarikciler" />
+  </wsdl:message>
+  <wsdl:message name="fn_tedarikcilerSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_tedarikcilerResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_markalarSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_markalar" />
+  </wsdl:message>
+  <wsdl:message name="fn_markalarSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_markalarResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_robotSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_robot" />
+  </wsdl:message>
+  <wsdl:message name="fn_robotSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_robotResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_esdegerlerSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_esdegerler" />
+  </wsdl:message>
+  <wsdl:message name="fn_esdegerlerSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_esdegerlerResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_oem_kodlarSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_oem_kodlar" />
+  </wsdl:message>
+  <wsdl:message name="fn_oem_kodlarSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_oem_kodlarResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_oem_kodlarSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_stok_oem_kodlar" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_oem_kodlarSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_stok_oem_kodlarResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_oem_kodluSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_oem_kodlu" />
+  </wsdl:message>
+  <wsdl:message name="fn_oem_kodluSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_oem_kodluResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_araclar_countSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_araclar_count" />
+  </wsdl:message>
+  <wsdl:message name="fn_araclar_countSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_araclar_countResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_araclarSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_araclar" />
+  </wsdl:message>
+  <wsdl:message name="fn_araclarSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_araclarResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_motor_hacmi_distinctSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_motor_hacmi_distinct" />
+  </wsdl:message>
+  <wsdl:message name="fn_motor_hacmi_distinctSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_motor_hacmi_distinctResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_resim_urlSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_stok_resim_url" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_resim_urlSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_stok_resim_urlResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_yakit_tipi_distinctSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_yakit_tipi_distinct" />
+  </wsdl:message>
+  <wsdl:message name="fn_yakit_tipi_distinctSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_yakit_tipi_distinctResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_yil_distinctSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_yil_distinct" />
+  </wsdl:message>
+  <wsdl:message name="fn_yil_distinctSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_yil_distinctResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_arac_kodluSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_stok_arac_kodlu" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_arac_kodluSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_stok_arac_kodluResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_aracSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_stok_arac" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_aracSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_stok_aracResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_arac_countSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_stok_arac_count" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_arac_countSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_stok_arac_countResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_stokSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_stok" />
+  </wsdl:message>
+  <wsdl:message name="fn_stokSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_stokResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_resimlerSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_stok_resimler" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_resimlerSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_stok_resimlerResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_resimler_listSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_stok_resimler_list" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_resimler_listSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_stok_resimler_listResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_rakip_kodlarSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_rakip_kodlar" />
+  </wsdl:message>
+  <wsdl:message name="fn_rakip_kodlarSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_rakip_kodlarResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ParcaSatisSoap">
+    <wsdl:operation name="fn_arac_modeller">
+      <wsdl:input message="tns:fn_arac_modellerSoapIn" />
+      <wsdl:output message="tns:fn_arac_modellerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_arac_ortak_model">
+      <wsdl:input message="tns:fn_arac_ortak_modelSoapIn" />
+      <wsdl:output message="tns:fn_arac_ortak_modelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_tedarikciler">
+      <wsdl:input message="tns:fn_tedarikcilerSoapIn" />
+      <wsdl:output message="tns:fn_tedarikcilerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_markalar">
+      <wsdl:input message="tns:fn_markalarSoapIn" />
+      <wsdl:output message="tns:fn_markalarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_robot">
+      <wsdl:input message="tns:fn_robotSoapIn" />
+      <wsdl:output message="tns:fn_robotSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_esdegerler">
+      <wsdl:input message="tns:fn_esdegerlerSoapIn" />
+      <wsdl:output message="tns:fn_esdegerlerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_oem_kodlar">
+      <wsdl:input message="tns:fn_oem_kodlarSoapIn" />
+      <wsdl:output message="tns:fn_oem_kodlarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_oem_kodlar">
+      <wsdl:input message="tns:fn_stok_oem_kodlarSoapIn" />
+      <wsdl:output message="tns:fn_stok_oem_kodlarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_oem_kodlu">
+      <wsdl:input message="tns:fn_oem_kodluSoapIn" />
+      <wsdl:output message="tns:fn_oem_kodluSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_araclar_count">
+      <wsdl:input message="tns:fn_araclar_countSoapIn" />
+      <wsdl:output message="tns:fn_araclar_countSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_araclar">
+      <wsdl:input message="tns:fn_araclarSoapIn" />
+      <wsdl:output message="tns:fn_araclarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_motor_hacmi_distinct">
+      <wsdl:input message="tns:fn_motor_hacmi_distinctSoapIn" />
+      <wsdl:output message="tns:fn_motor_hacmi_distinctSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_resim_url">
+      <wsdl:input message="tns:fn_stok_resim_urlSoapIn" />
+      <wsdl:output message="tns:fn_stok_resim_urlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_yakit_tipi_distinct">
+      <wsdl:input message="tns:fn_yakit_tipi_distinctSoapIn" />
+      <wsdl:output message="tns:fn_yakit_tipi_distinctSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_yil_distinct">
+      <wsdl:input message="tns:fn_yil_distinctSoapIn" />
+      <wsdl:output message="tns:fn_yil_distinctSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_arac_kodlu">
+      <wsdl:input message="tns:fn_stok_arac_kodluSoapIn" />
+      <wsdl:output message="tns:fn_stok_arac_kodluSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_arac">
+      <wsdl:input message="tns:fn_stok_aracSoapIn" />
+      <wsdl:output message="tns:fn_stok_aracSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_arac_count">
+      <wsdl:input message="tns:fn_stok_arac_countSoapIn" />
+      <wsdl:output message="tns:fn_stok_arac_countSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok">
+      <wsdl:input message="tns:fn_stokSoapIn" />
+      <wsdl:output message="tns:fn_stokSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_resimler">
+      <wsdl:input message="tns:fn_stok_resimlerSoapIn" />
+      <wsdl:output message="tns:fn_stok_resimlerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_resimler_list">
+      <wsdl:input message="tns:fn_stok_resimler_listSoapIn" />
+      <wsdl:output message="tns:fn_stok_resimler_listSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_rakip_kodlar">
+      <wsdl:input message="tns:fn_rakip_kodlarSoapIn" />
+      <wsdl:output message="tns:fn_rakip_kodlarSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ParcaSatisSoap" type="tns:ParcaSatisSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="fn_arac_modeller">
+      <soap:operation soapAction="http://tempuri.org/fn_arac_modeller" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_arac_ortak_model">
+      <soap:operation soapAction="http://tempuri.org/fn_arac_ortak_model" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_tedarikciler">
+      <soap:operation soapAction="http://tempuri.org/fn_tedarikciler" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_markalar">
+      <soap:operation soapAction="http://tempuri.org/fn_markalar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_robot">
+      <soap:operation soapAction="http://tempuri.org/fn_robot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_esdegerler">
+      <soap:operation soapAction="http://tempuri.org/fn_esdegerler" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_oem_kodlar">
+      <soap:operation soapAction="http://tempuri.org/fn_oem_kodlar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_oem_kodlar">
+      <soap:operation soapAction="http://tempuri.org/fn_stok_oem_kodlar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_oem_kodlu">
+      <soap:operation soapAction="http://tempuri.org/fn_oem_kodlu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_araclar_count">
+      <soap:operation soapAction="http://tempuri.org/fn_araclar_count" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_araclar">
+      <soap:operation soapAction="http://tempuri.org/fn_araclar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_motor_hacmi_distinct">
+      <soap:operation soapAction="http://tempuri.org/fn_motor_hacmi_distinct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_resim_url">
+      <soap:operation soapAction="http://tempuri.org/fn_stok_resim_url" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_yakit_tipi_distinct">
+      <soap:operation soapAction="http://tempuri.org/fn_yakit_tipi_distinct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_yil_distinct">
+      <soap:operation soapAction="http://tempuri.org/fn_yil_distinct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_arac_kodlu">
+      <soap:operation soapAction="http://tempuri.org/fn_stok_arac_kodlu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_arac">
+      <soap:operation soapAction="http://tempuri.org/fn_stok_arac" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_arac_count">
+      <soap:operation soapAction="http://tempuri.org/fn_stok_arac_count" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok">
+      <soap:operation soapAction="http://tempuri.org/fn_stok" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_resimler">
+      <soap:operation soapAction="http://tempuri.org/fn_stok_resimler" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_resimler_list">
+      <soap:operation soapAction="http://tempuri.org/fn_stok_resimler_list" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_rakip_kodlar">
+      <soap:operation soapAction="http://tempuri.org/fn_rakip_kodlar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ParcaSatisSoap12" type="tns:ParcaSatisSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="fn_arac_modeller">
+      <soap12:operation soapAction="http://tempuri.org/fn_arac_modeller" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_arac_ortak_model">
+      <soap12:operation soapAction="http://tempuri.org/fn_arac_ortak_model" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_tedarikciler">
+      <soap12:operation soapAction="http://tempuri.org/fn_tedarikciler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_markalar">
+      <soap12:operation soapAction="http://tempuri.org/fn_markalar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_robot">
+      <soap12:operation soapAction="http://tempuri.org/fn_robot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_esdegerler">
+      <soap12:operation soapAction="http://tempuri.org/fn_esdegerler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_oem_kodlar">
+      <soap12:operation soapAction="http://tempuri.org/fn_oem_kodlar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_oem_kodlar">
+      <soap12:operation soapAction="http://tempuri.org/fn_stok_oem_kodlar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_oem_kodlu">
+      <soap12:operation soapAction="http://tempuri.org/fn_oem_kodlu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_araclar_count">
+      <soap12:operation soapAction="http://tempuri.org/fn_araclar_count" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_araclar">
+      <soap12:operation soapAction="http://tempuri.org/fn_araclar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_motor_hacmi_distinct">
+      <soap12:operation soapAction="http://tempuri.org/fn_motor_hacmi_distinct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_resim_url">
+      <soap12:operation soapAction="http://tempuri.org/fn_stok_resim_url" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_yakit_tipi_distinct">
+      <soap12:operation soapAction="http://tempuri.org/fn_yakit_tipi_distinct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_yil_distinct">
+      <soap12:operation soapAction="http://tempuri.org/fn_yil_distinct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_arac_kodlu">
+      <soap12:operation soapAction="http://tempuri.org/fn_stok_arac_kodlu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_arac">
+      <soap12:operation soapAction="http://tempuri.org/fn_stok_arac" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_arac_count">
+      <soap12:operation soapAction="http://tempuri.org/fn_stok_arac_count" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok">
+      <soap12:operation soapAction="http://tempuri.org/fn_stok" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_resimler">
+      <soap12:operation soapAction="http://tempuri.org/fn_stok_resimler" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_resimler_list">
+      <soap12:operation soapAction="http://tempuri.org/fn_stok_resimler_list" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_rakip_kodlar">
+      <soap12:operation soapAction="http://tempuri.org/fn_rakip_kodlar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ParcaSatis">
+    <wsdl:port name="ParcaSatisSoap" binding="tns:ParcaSatisSoap">
+      <soap:address location="http://sorgu.egeyazilim.net/katalog/parcasatis.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ParcaSatisSoap12" binding="tns:ParcaSatisSoap12">
+      <soap12:address location="http://sorgu.egeyazilim.net/katalog/parcasatis.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

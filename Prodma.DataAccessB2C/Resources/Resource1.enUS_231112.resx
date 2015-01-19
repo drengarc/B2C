@@ -1,0 +1,3387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACIKLAMA" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ACIKLAMA_1" xml:space="preserve">
+    <value>Description 1</value>
+  </data>
+  <data name="ACIKLAMA_2" xml:space="preserve">
+    <value>Description 2</value>
+  </data>
+  <data name="AD" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ADR1" xml:space="preserve">
+    <value>Address 1</value>
+  </data>
+  <data name="ADR2" xml:space="preserve">
+    <value>Address 2</value>
+  </data>
+  <data name="ADR3" xml:space="preserve">
+    <value>Address 3</value>
+  </data>
+  <data name="ADRES_1" xml:space="preserve">
+    <value>Address 1</value>
+  </data>
+  <data name="ADRES_2" xml:space="preserve">
+    <value>Address 2</value>
+  </data>
+  <data name="ADRES_3" xml:space="preserve">
+    <value>Address 3</value>
+  </data>
+  <data name="AGENT_SIFRE" xml:space="preserve">
+    <value>Agent Şifre</value>
+  </data>
+  <data name="AKTIF_PASIF_ID" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="AKTIF_SUTUN_ACIKLAMA" xml:space="preserve">
+    <value>Aktif Sütun Açıklama</value>
+  </data>
+  <data name="ALACAK_TUTAR" xml:space="preserve">
+    <value>Alacak Tutar</value>
+  </data>
+  <data name="ALACAK_TUTAR_DOVIZ" xml:space="preserve">
+    <value>Alacak Döviz Tutar</value>
+  </data>
+  <data name="ALAN_AD" xml:space="preserve">
+    <value>Alan Ad</value>
+  </data>
+  <data name="ALAN_DECIMAL" xml:space="preserve">
+    <value>Alan Decimal</value>
+  </data>
+  <data name="ALAN_GOSTERILEN" xml:space="preserve">
+    <value>Alan Gösterilen</value>
+  </data>
+  <data name="ALAN_LISTE_AD" xml:space="preserve">
+    <value>Alan Liste Ad</value>
+  </data>
+  <data name="ALAN_LISTE_GENISLIK" xml:space="preserve">
+    <value>Alan Liste Genişlik</value>
+  </data>
+  <data name="ALAN_NULL_ICERIR" xml:space="preserve">
+    <value>Alan Null İçerir</value>
+  </data>
+  <data name="ALAN_PRECISION" xml:space="preserve">
+    <value>Alan Precision</value>
+  </data>
+  <data name="ALAN_SIRA" xml:space="preserve">
+    <value>Alan Sıra</value>
+  </data>
+  <data name="ALAN_TIP" xml:space="preserve">
+    <value>Alan Tip</value>
+  </data>
+  <data name="ALAN_UZUNLUK" xml:space="preserve">
+    <value>Alan Uzunluk</value>
+  </data>
+  <data name="ALANLAR" xml:space="preserve">
+    <value>Alanlar</value>
+  </data>
+  <data name="ALANLAR_TIP" xml:space="preserve">
+    <value>Alanlar Tip</value>
+  </data>
+  <data name="ALICI_LIMIT" xml:space="preserve">
+    <value>Alıcı Limit</value>
+  </data>
+  <data name="ALICI_VALOR" xml:space="preserve">
+    <value>Alıcı Valör</value>
+  </data>
+  <data name="ALINAN_NOT" xml:space="preserve">
+    <value>Received Note</value>
+  </data>
+  <data name="ALIS" xml:space="preserve">
+    <value>Alış</value>
+  </data>
+  <data name="ALIS_DOVIZ_KUR_TIP" xml:space="preserve">
+    <value>Alış Döviz Kur Tip</value>
+  </data>
+  <data name="ALIS_FIYAT_AYRIM_KONTROL_E_H" xml:space="preserve">
+    <value>Alış Fiyat Ayrım Kontrol E_H</value>
+  </data>
+  <data name="ALIS_VALOR_GUN" xml:space="preserve">
+    <value>Alış Valör Gün</value>
+  </data>
+  <data name="ALT_ACIKLAMA" xml:space="preserve">
+    <value>Alt Açıklama</value>
+  </data>
+  <data name="ALTERNATIF_STOK_KOD" xml:space="preserve">
+    <value>Alternatif Stok Kod</value>
+  </data>
+  <data name="AMBALAJ_MIKTAR" xml:space="preserve">
+    <value>Packaging qty.</value>
+  </data>
+  <data name="AMBALAJ_MIKTARI" xml:space="preserve">
+    <value>Packaging qty.</value>
+  </data>
+  <data name="AMBAR" xml:space="preserve">
+    <value>Ambar</value>
+  </data>
+  <data name="AMBAR_FIS_HAREKET_KONTROL" xml:space="preserve">
+    <value>Ambar Fiş Hareket Kontrol</value>
+  </data>
+  <data name="AMBAR_FIS_KULLANICI" xml:space="preserve">
+    <value>Ambar Fiş Kullanıcı</value>
+  </data>
+  <data name="AMBAR_GIRIS_CIKIS" xml:space="preserve">
+    <value>Ambar Giriş Çıkış</value>
+  </data>
+  <data name="AMBAR_GIRIS_CIKIS_ID" xml:space="preserve">
+    <value>Ambar Giriş Çıkış </value>
+  </data>
+  <data name="AMBAR_GRUP" xml:space="preserve">
+    <value>Ambar Grup</value>
+  </data>
+  <data name="AMBAR_GRUP_ID" xml:space="preserve">
+    <value>Ambar Grup Id</value>
+  </data>
+  <data name="AMBAR_ID" xml:space="preserve">
+    <value>Ambar Id</value>
+  </data>
+  <data name="AMBAR_TIP" xml:space="preserve">
+    <value>Ambar Tip</value>
+  </data>
+  <data name="AMBAR_TIP_ID" xml:space="preserve">
+    <value>Ambar Tip Id</value>
+  </data>
+  <data name="ARA_ACIKLAMA" xml:space="preserve">
+    <value>Ara Açıklama</value>
+  </data>
+  <data name="ARA_SEVK" xml:space="preserve">
+    <value>Ara Sevk</value>
+  </data>
+  <data name="ARA_TOPLAM" xml:space="preserve">
+    <value>Sub Total</value>
+  </data>
+  <data name="ASGARI_STOK_MIKTAR" xml:space="preserve">
+    <value>Min. stock qty.</value>
+  </data>
+  <data name="ASN_CEKILDI_FLAG" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ASSEMBLY_NAME" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AZAMI_STOK_MIKTAR" xml:space="preserve">
+    <value>Max. inventory qty.</value>
+  </data>
+  <data name="BACK_ORDER_TARIH" xml:space="preserve">
+    <value>Back Order Date</value>
+  </data>
+  <data name="BAKIYE" xml:space="preserve">
+    <value>Bakiye</value>
+  </data>
+  <data name="BANKA" xml:space="preserve">
+    <value>Banka</value>
+  </data>
+  <data name="BANKA_AD_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BANKA_AD_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BANKA_AD_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BANKA_FAIZ" xml:space="preserve">
+    <value>Banka Faiz</value>
+  </data>
+  <data name="BANKA_ID" xml:space="preserve">
+    <value>Banka</value>
+  </data>
+  <data name="BANKA_KOD" xml:space="preserve">
+    <value>Banka Kodu</value>
+  </data>
+  <data name="BANKA_KOD_CHK" xml:space="preserve">
+    <value>BANKA_KOD_CHK</value>
+  </data>
+  <data name="BANKA_KOD_SA" xml:space="preserve">
+    <value>BANKA_KOD_SA</value>
+  </data>
+  <data name="BANKA_KOD_UA" xml:space="preserve">
+    <value>BANKA_KOD_UA</value>
+  </data>
+  <data name="BANKA_TIP" xml:space="preserve">
+    <value>Banka Tip</value>
+  </data>
+  <data name="BANKA_TIP_ID" xml:space="preserve">
+    <value>Banka Tip Id</value>
+  </data>
+  <data name="BARKOD_DOKUM" xml:space="preserve">
+    <value>Barkod Dokum</value>
+  </data>
+  <data name="BARKOD_ID" xml:space="preserve">
+    <value>Barkod Id</value>
+  </data>
+  <data name="BARKOD_KULLANICI_E_H" xml:space="preserve">
+    <value>Barkod Kullanıcı E_H</value>
+  </data>
+  <data name="BARKOD_KULLANIM_E_H" xml:space="preserve">
+    <value>Barkod Kullanımı E_H</value>
+  </data>
+  <data name="BARKOD_YAZICI_AG_YOLU" xml:space="preserve">
+    <value>Barkod Yazıcı Ağ Yolu</value>
+  </data>
+  <data name="BASLANGIC_YIL" xml:space="preserve">
+    <value>Başlangıç Yıl</value>
+  </data>
+  <data name="BASLIK_ALIS" xml:space="preserve">
+    <value>Başlık Alış</value>
+  </data>
+  <data name="BASLIK_SATIS" xml:space="preserve">
+    <value>Başlık Satış</value>
+  </data>
+  <data name="BAYI_SIPARIS_ONAY_E_H" xml:space="preserve">
+    <value>Bayi Sipariş Onay E_H</value>
+  </data>
+  <data name="BEDELSIZ" xml:space="preserve">
+    <value>Bedelsizz</value>
+  </data>
+  <data name="BIRIM" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+  <data name="BIRIM_DIS_ID" xml:space="preserve">
+    <value>External Unit</value>
+  </data>
+  <data name="BIRIM_IC_ID" xml:space="preserve">
+    <value>Internal Unit</value>
+  </data>
+  <data name="BITIS_YIL" xml:space="preserve">
+    <value>Bitiş Yıl</value>
+  </data>
+  <data name="BORC_TUTAR" xml:space="preserve">
+    <value>Borç Tutar</value>
+  </data>
+  <data name="BORC_TUTAR_DOVIZ" xml:space="preserve">
+    <value>Borç Tutar Döviz</value>
+  </data>
+  <data name="BORC_UST_LIMIT" xml:space="preserve">
+    <value>Borç Üst Limit</value>
+  </data>
+  <data name="BORCLU" xml:space="preserve">
+    <value>Borçlu</value>
+  </data>
+  <data name="BORDRO_NO_1" xml:space="preserve">
+    <value>Bordro No 1</value>
+  </data>
+  <data name="BORDRO_NO_2" xml:space="preserve">
+    <value>Bordro No 2</value>
+  </data>
+  <data name="BRUT_AGIRLIK" xml:space="preserve">
+    <value>Gross Weight</value>
+  </data>
+  <data name="BRUT_TUTAR" xml:space="preserve">
+    <value>Gross Amount</value>
+  </data>
+  <data name="BRUT_TUTAR_DOVIZ" xml:space="preserve">
+    <value>Brüt Tutar Döviz</value>
+  </data>
+  <data name="BSM_ORAN" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BUTCE_ID" xml:space="preserve">
+    <value>Bütçe</value>
+  </data>
+  <data name="BUTCE_KIRILMA" xml:space="preserve">
+    <value>Bütçe Kırılma</value>
+  </data>
+  <data name="CALISAN_HESAP_E_H" xml:space="preserve">
+    <value>Çalışan Hesap E_H</value>
+  </data>
+  <data name="CARI" xml:space="preserve">
+    <value>Cari</value>
+  </data>
+  <data name="CARI_AD_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_AD_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_AD_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_ADI" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="CARI_ADRES" xml:space="preserve">
+    <value>Address Code</value>
+  </data>
+  <data name="CARI_ADRES_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_ADRES_ID" xml:space="preserve">
+    <value>Address Code</value>
+  </data>
+  <data name="CARI_ADRES_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_ADRES_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_AGENT" xml:space="preserve">
+    <value>Cari Agent</value>
+  </data>
+  <data name="CARI_AGENT_ID" xml:space="preserve">
+    <value>Cari Agent Id</value>
+  </data>
+  <data name="CARI_ALTERNATIF_VERGI" xml:space="preserve">
+    <value>Cari Alternatif Vergi</value>
+  </data>
+  <data name="CARI_ALTERNATIF_VERGI_ID" xml:space="preserve">
+    <value>Cari Altarnatif Vergi Id</value>
+  </data>
+  <data name="CARI_AMBALAJ_MIKTAR" xml:space="preserve">
+    <value>Cari Ambalaj Miktar </value>
+  </data>
+  <data name="CARI_AYRIM" xml:space="preserve">
+    <value>Sale Type</value>
+  </data>
+  <data name="CARI_AYRIM_ACIKLAMA" xml:space="preserve">
+    <value>Cari Ayrım Açıklama</value>
+  </data>
+  <data name="CARI_AYRIM_FATURA_ID" xml:space="preserve">
+    <value>Cari Ayrım Fatura</value>
+  </data>
+  <data name="CARI_AYRIM_FIYAT_ID" xml:space="preserve">
+    <value>Cari Ayrım Fiyat</value>
+  </data>
+  <data name="CARI_AYRIM_ID" xml:space="preserve">
+    <value>Sale Type</value>
+  </data>
+  <data name="CARI_AYRIM_TIP" xml:space="preserve">
+    <value>Cari Ayrım Tip</value>
+  </data>
+  <data name="CARI_AYRIM_TIP_ID" xml:space="preserve">
+    <value>Cari Ayrım Tip</value>
+  </data>
+  <data name="CARI_AYRIM_VALOR" xml:space="preserve">
+    <value>Cari Ayrım Valör</value>
+  </data>
+  <data name="CARI_BAKIYE_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_BAKIYE_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_BAKIYE_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_BOLGE" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="CARI_BOLGE_ID" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="CARI_CARI_SEKTOR" xml:space="preserve">
+    <value>Cari </value>
+  </data>
+  <data name="CARI_DEPO" xml:space="preserve">
+    <value>Cari Depo</value>
+  </data>
+  <data name="CARI_HESAP_KIRILMA" xml:space="preserve">
+    <value>Cari Hesap Kırılma</value>
+  </data>
+  <data name="CARI_HESAP_NO" xml:space="preserve">
+    <value>Cari Hesap No</value>
+  </data>
+  <data name="CARI_IBAN_NO" xml:space="preserve">
+    <value>Cari İban No</value>
+  </data>
+  <data name="CARI_ID" xml:space="preserve">
+    <value>Customer                                                                 </value>
+  </data>
+  <data name="CARI_IHRACAT_FATURA_BANKA" xml:space="preserve">
+    <value>Cari İhracat Fatura Banka</value>
+  </data>
+  <data name="CARI_IHRACAT_SIPARIS_BILGILERI" xml:space="preserve">
+    <value>Cari İhracat Sipariş Bilgileri</value>
+  </data>
+  <data name="CARI_IRS_ADRES_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_IRS_ADRES_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_IRS_ADRES_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_ISKONTO_E_H" xml:space="preserve">
+    <value>Cari İskonto E_H</value>
+  </data>
+  <data name="CARI_ITHALAT" xml:space="preserve">
+    <value>Cari İthalat</value>
+  </data>
+  <data name="CARI_ITHALAT_ID" xml:space="preserve">
+    <value>Cari İthalat Id</value>
+  </data>
+  <data name="CARI_KOD_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_KOD_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_KOD_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_KREDI_LIMIT" xml:space="preserve">
+    <value>Cari Kredi Limit</value>
+  </data>
+  <data name="CARI_KREDI_LIMIT_TIP" xml:space="preserve">
+    <value>Cari Kredi Limit Tip</value>
+  </data>
+  <data name="CARI_KREDI_LIMIT_TIP_ID" xml:space="preserve">
+    <value>Cari Kredi Limit Tip Id</value>
+  </data>
+  <data name="CARI_MENSEI" xml:space="preserve">
+    <value>Origin</value>
+  </data>
+  <data name="CARI_MENSEI_ID" xml:space="preserve">
+    <value>Origin</value>
+  </data>
+  <data name="CARI_NAKLIYE_SIRKET" xml:space="preserve">
+    <value>Cari Nakliye Şirket</value>
+  </data>
+  <data name="CARI_NAKLIYE_SIRKET_ID" xml:space="preserve">
+    <value>Cari Nakliye Şirket Id</value>
+  </data>
+  <data name="CARI_NOT" xml:space="preserve">
+    <value>Cari Nok</value>
+  </data>
+  <data name="CARI_OV_TAR_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_OV_TAR_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_OV_TAR_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_OZEL_SIPARIS" xml:space="preserve">
+    <value>Cari Özel Spariş</value>
+  </data>
+  <data name="CARI_PLASIYER" xml:space="preserve">
+    <value>Cari Plasiyer</value>
+  </data>
+  <data name="CARI_PLASIYER_ID" xml:space="preserve">
+    <value>Sales Per.</value>
+  </data>
+  <data name="CARI_RAKIP" xml:space="preserve">
+    <value>Cari Rakip</value>
+  </data>
+  <data name="CARI_RAKIP_FIYAT" xml:space="preserve">
+    <value>Cari Rakip Fiyat</value>
+  </data>
+  <data name="CARI_RAKIP_ID" xml:space="preserve">
+    <value>Cari Rakip ID</value>
+  </data>
+  <data name="CARI_SATINALMACI" xml:space="preserve">
+    <value>Cari Satın Almacı </value>
+  </data>
+  <data name="CARI_SATINALMACI_ID" xml:space="preserve">
+    <value>Cari Satın Almacı Id</value>
+  </data>
+  <data name="CARI_SATIS_ELEMANI_ID" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="CARI_SATIS_ELEMANI" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="CARI_SEKTOR" xml:space="preserve">
+    <value>Cari Sektör</value>
+  </data>
+  <data name="CARI_SEKTOR_ID" xml:space="preserve">
+    <value>Cari Sektör Id</value>
+  </data>
+  <data name="CARI_SIGORTA_SIRKET" xml:space="preserve">
+    <value>Cari Sigorta Şirket</value>
+  </data>
+  <data name="CARI_SIGORTA_SIRKET_ID" xml:space="preserve">
+    <value>Cari Sigorta Şirket Id</value>
+  </data>
+  <data name="CARI_SIP_NO_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_SIP_NO_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_SIP_NO_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_STOK_ADI" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_STOK_KODU" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_TAHSILAT_PROBLEM" xml:space="preserve">
+    <value>Problem Type</value>
+  </data>
+  <data name="CARI_TAHSILAT_PROBLEM_ID" xml:space="preserve">
+    <value>Problem Type</value>
+  </data>
+  <data name="CARI_TAHSILATCI" xml:space="preserve">
+    <value>Cari Tahsilatcı</value>
+  </data>
+  <data name="CARI_TELEFON_ILETISIM" xml:space="preserve">
+    <value>Cari Telefon İletişim</value>
+  </data>
+  <data name="CARI_TESLIM_EDEN" xml:space="preserve">
+    <value>Cari Teslim Eden</value>
+  </data>
+  <data name="CARI_TESLIM_SEKLI" xml:space="preserve">
+    <value>Cari Teslim Şekli</value>
+  </data>
+  <data name="CARI_TESLIM_SEKLI_ID" xml:space="preserve">
+    <value>Cari Teslim Şekli Id</value>
+  </data>
+  <data name="CARI_TESLIM_YERI" xml:space="preserve">
+    <value>Cari Teslim Yeri</value>
+  </data>
+  <data name="CARI_TESLIM_YERI_ID" xml:space="preserve">
+    <value>Cari Teslim Yeri Id</value>
+  </data>
+  <data name="CARI_TIP" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="CARI_TIP_ID" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="CARI_VD_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_VD_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_VD_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_VN_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_VN_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_VN_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CARI_YETKILI_KISI" xml:space="preserve">
+    <value>Cari Yetkili Kişi</value>
+  </data>
+  <data name="CEK_FIS_SATIR" xml:space="preserve">
+    <value>Çek Fiş Satır</value>
+  </data>
+  <data name="CEK_FIS_SATIR_ID" xml:space="preserve">
+    <value>Çek Fiş Satır Id</value>
+  </data>
+  <data name="CEK_FIS_SIFIRLI" xml:space="preserve">
+    <value>Çek Fiş Sıfırlı</value>
+  </data>
+  <data name="CEK_FIS_SIFIRLI_ID" xml:space="preserve">
+    <value>Çek Fiş Sıfırlı Id</value>
+  </data>
+  <data name="CEK_KOD" xml:space="preserve">
+    <value>Çek Kodu</value>
+  </data>
+  <data name="CEK_SENET" xml:space="preserve">
+    <value>Çek Senet</value>
+  </data>
+  <data name="CEK_SENET_ID" xml:space="preserve">
+    <value>Çek Senet Id</value>
+  </data>
+  <data name="CEK_TANITIM" xml:space="preserve">
+    <value>Çek Tanıtım</value>
+  </data>
+  <data name="CEK_TANITIM_ID" xml:space="preserve">
+    <value>Çek Tanıtım Id</value>
+  </data>
+  <data name="CEP_TEL" xml:space="preserve">
+    <value>Cep Tel</value>
+  </data>
+  <data name="CEP_TELEFON" xml:space="preserve">
+    <value>Cep Telefonu</value>
+  </data>
+  <data name="CEVRIM_MIKTAR" xml:space="preserve">
+    <value>Conversion Qty.</value>
+  </data>
+  <data name="CIKIS_AMBAR_ID" xml:space="preserve">
+    <value>Cıkış Ambar Id</value>
+  </data>
+  <data name="CIRO_TIP" xml:space="preserve">
+    <value>Ciro Tip</value>
+  </data>
+  <data name="DAGILIM_YUZDESI" xml:space="preserve">
+    <value>Dağılım Yüzdesi</value>
+  </data>
+  <data name="DAHILI" xml:space="preserve">
+    <value>Dahili</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="definition" xml:space="preserve">
+    <value>Definition</value>
+  </data>
+  <data name="DEPARTMAN" xml:space="preserve">
+    <value>Departman</value>
+  </data>
+  <data name="DEPARTMAN_ID" xml:space="preserve">
+    <value>Departman Id</value>
+  </data>
+  <data name="DEPO_NO" xml:space="preserve">
+    <value>Depo No</value>
+  </data>
+  <data name="DESI" xml:space="preserve">
+    <value>Desi</value>
+  </data>
+  <data name="DESI_MIKTAR" xml:space="preserve">
+    <value>Desi Quantity</value>
+  </data>
+  <data name="DEVIR_E_H" xml:space="preserve">
+    <value>Devir E_H</value>
+  </data>
+  <data name="DIGER_KAPALI_AY" xml:space="preserve">
+    <value>Diğer Kapalı Ay</value>
+  </data>
+  <data name="DIGER_KAPALI_YIL" xml:space="preserve">
+    <value>Diğer Kapalı Yıl</value>
+  </data>
+  <data name="DIL" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="DIL_ID" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="DIS_SIPARIS_NO" xml:space="preserve">
+    <value>Dış Sipariş No</value>
+  </data>
+  <data name="diagram_id" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DOVIZ" xml:space="preserve">
+    <value>Döviz</value>
+  </data>
+  <data name="DOVIZ_CINS_ID" xml:space="preserve">
+    <value>Döviz Cins Id</value>
+  </data>
+  <data name="DOVIZ_FIYAT" xml:space="preserve">
+    <value>Döviz Fiyat</value>
+  </data>
+  <data name="DOVIZ_ID" xml:space="preserve">
+    <value>Exch</value>
+  </data>
+  <data name="DOVIZ_ISKONTO_TUTAR" xml:space="preserve">
+    <value>Döviz İskonto Tutar</value>
+  </data>
+  <data name="DOVIZ_KDV_TUTAR" xml:space="preserve">
+    <value>Döviz Kdv Tutar</value>
+  </data>
+  <data name="DOVIZ_KUR" xml:space="preserve">
+    <value>Döviz Kur</value>
+  </data>
+  <data name="DOVIZ_TUTAR" xml:space="preserve">
+    <value>Döviz Tutar</value>
+  </data>
+  <data name="DURUM_TIP_ID" xml:space="preserve">
+    <value>Durum Tip </value>
+  </data>
+  <data name="DUZENLEME_TARIH" xml:space="preserve">
+    <value>Düzenleme Tarihi</value>
+  </data>
+  <data name="EFEKTIF_ALIS" xml:space="preserve">
+    <value>Efektif Alış</value>
+  </data>
+  <data name="EFEKTIF_SATIS" xml:space="preserve">
+    <value>Efektif Satış</value>
+  </data>
+  <data name="EK_ISK_YUZ" xml:space="preserve">
+    <value>Ek Iskonto Yüzdesi</value>
+  </data>
+  <data name="EK_ISKONTO" xml:space="preserve">
+    <value>Ek İskonto</value>
+  </data>
+  <data name="EMNIYET_GUN" xml:space="preserve">
+    <value>Emniyet Gün</value>
+  </data>
+  <data name="ETIKET_GRUP" xml:space="preserve">
+    <value>Tag Group</value>
+  </data>
+  <data name="EVRAK_NO" xml:space="preserve">
+    <value>Evrak No</value>
+  </data>
+  <data name="Exception" xml:space="preserve">
+    <value>Exception</value>
+  </data>
+  <data name="FAALIYET_ALAN" xml:space="preserve">
+    <value>Faaliyet Alan</value>
+  </data>
+  <data name="FAIZ_ORAN" xml:space="preserve">
+    <value>Faiz Oran</value>
+  </data>
+  <data name="FAT_ACIK_1" xml:space="preserve">
+    <value>Fatura Açıklama1</value>
+  </data>
+  <data name="FAT_ACIK_1_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_ACIK_1_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_ACIK_1_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_ACIK_2" xml:space="preserve">
+    <value>Fatura Açıklama2</value>
+  </data>
+  <data name="FAT_ACIK_2_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_ACIK_2_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_ACIK_2_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_ACIK_3" xml:space="preserve">
+    <value> Fatura Açıklama3</value>
+  </data>
+  <data name="FAT_ACIK_3_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_ACIK_3_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_ACIK_3_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_FONT" xml:space="preserve">
+    <value>Fatura Font</value>
+  </data>
+  <data name="FAT_HAR_TIP_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_HAR_TIP_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_HAR_TIP_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_IRS_GUN_E_H" xml:space="preserve">
+    <value>Fatura İrsaliye Gün E_H</value>
+  </data>
+  <data name="FAT_KDV_TIP_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_KDV_TIP_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_KDV_TIP_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_ODEME_TIP_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_ODEME_TIP_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_ODEME_TIP_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_TAR_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_TAR_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_TAR_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_VADE_TAR_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_VADE_TAR_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FAT_VADE_TAR_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FATURA.FATURA_NO" xml:space="preserve">
+    <value>Fatura.Fatura No</value>
+  </data>
+  <data name="FATURA.TARIH" xml:space="preserve">
+    <value>Fatura Tarih</value>
+  </data>
+  <data name="FATURA_ADRES_1" xml:space="preserve">
+    <value>Fatura Adres1</value>
+  </data>
+  <data name="FATURA_ADRES_2" xml:space="preserve">
+    <value>Fatura Adres2</value>
+  </data>
+  <data name="FATURA_ADRES_3" xml:space="preserve">
+    <value>Fatura Adres3</value>
+  </data>
+  <data name="FATURA_CARI_HESAP_VERGI_NO_KONTROL_E_H" xml:space="preserve">
+    <value>Fatura Cari Hesap Vergi No Kontrol E_H</value>
+  </data>
+  <data name="FATURA_DOKUM_ACIKLAMA" xml:space="preserve">
+    <value>Fatura Döküm Acıklama</value>
+  </data>
+  <data name="FATURA_DOKUM_E_H" xml:space="preserve">
+    <value>Fatura Döküm E_H</value>
+  </data>
+  <data name="FATURA_DOKUM_STOK_BIRLESTIR_E_H" xml:space="preserve">
+    <value>Fatura Döküm Stok Birleştir E_H</value>
+  </data>
+  <data name="FATURA_FIS_SATIR" xml:space="preserve">
+    <value>Fatura Fiş Satır</value>
+  </data>
+  <data name="FATURA_FIS_SIFIRLI" xml:space="preserve">
+    <value>Fatura Fiş Sıfırlı</value>
+  </data>
+  <data name="FATURA_FIS_SIFIRLI_ID" xml:space="preserve">
+    <value>Fatura Fiş Sıfırlı Id</value>
+  </data>
+  <data name="FATURA_IRSALIYE_AYAR" xml:space="preserve">
+    <value>Fatura İrsaliye Ayar</value>
+  </data>
+  <data name="FATURA_KAPATMA" xml:space="preserve">
+    <value>Fatura Kapatma</value>
+  </data>
+  <data name="FATURA_KDV_YUZDE_KONTROL_E_H" xml:space="preserve">
+    <value>Fatura Kdv Yüzde Kontrol E_H</value>
+  </data>
+  <data name="FATURA_KOCAN_DEGISIM_TARIH" xml:space="preserve">
+    <value>Fatura Koçan Değişim Tarih</value>
+  </data>
+  <data name="FATURA_KOCAN_SERI_NUMARASI" xml:space="preserve">
+    <value>Fatura Kocan Seri Numarası</value>
+  </data>
+  <data name="FATURA_NO" xml:space="preserve">
+    <value>Invoice Nr.</value>
+  </data>
+  <data name="FATURA_NUMARASI_BIRLESTIRME" xml:space="preserve">
+    <value>Fatura Numarası Birleştirme </value>
+  </data>
+  <data name="FATURA_SILINENLER" xml:space="preserve">
+    <value>Fatura Silinenler</value>
+  </data>
+  <data name="FATURA_TARIH" xml:space="preserve">
+    <value>Invoice Date</value>
+  </data>
+  <data name="FATURA_TARIHI" xml:space="preserve">
+    <value>Invoice Nr.</value>
+  </data>
+  <data name="FAX" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="FIRE_ORAN" xml:space="preserve">
+    <value>Fire Oran</value>
+  </data>
+  <data name="FIRMA" xml:space="preserve">
+    <value>Firma</value>
+  </data>
+  <data name="FIRMA_DISI_E_H" xml:space="preserve">
+    <value>Firma Dışı E_H</value>
+  </data>
+  <data name="FIRMA_DISI_MAX_ISK_YUZ" xml:space="preserve">
+    <value>Firma Dışı Maksimum İskonto Yüzde</value>
+  </data>
+  <data name="FIRMA_ID" xml:space="preserve">
+    <value>Firma</value>
+  </data>
+  <data name="FIRMA_PARAMETRE" xml:space="preserve">
+    <value>Firma Parametre</value>
+  </data>
+  <data name="FIRMA_SAHIBI" xml:space="preserve">
+    <value>Firma Sahibi</value>
+  </data>
+  <data name="FIRMA_SAHIBI_CEP" xml:space="preserve">
+    <value>Firma Sahibi Cep</value>
+  </data>
+  <data name="FIRMA_YETKILISI" xml:space="preserve">
+    <value>Firma Yetkilisi</value>
+  </data>
+  <data name="FIS_BILGILERI_CHK" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FIS_BILGILERI_SA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FIS_BILGILERI_UA" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FIS_MIKTAR" xml:space="preserve">
+    <value>Fiş Miktar</value>
+  </data>
+  <data name="FIS_NO" xml:space="preserve">
+    <value>Fiş No</value>
+  </data>
+  <data name="FIYAT" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="FIYAT_ALIS" xml:space="preserve">
+    <value>Fiyat Alış</value>
+  </data>
+  <data name="FIYAT_ALIS_ID" xml:space="preserve">
+    <value>Fiyat Alış Id</value>
+  </data>
+  <data name="FIYAT_ALIS_MIKTARLI" xml:space="preserve">
+    <value>Fiyat Alış Miktarlı</value>
+  </data>
+  <data name="FIYAT_DOVIZ" xml:space="preserve">
+    <value>Price Exch.</value>
+  </data>
+  <data name="FIYAT_KAMPANYA" xml:space="preserve">
+    <value>Fiyat Kampanya</value>
+  </data>
+  <data name="FIYAT_KAMPANYA_ID" xml:space="preserve">
+    <value>Fiyat Kampanya Id</value>
+  </data>
+  <data name="FIYAT_KAMPANYA_MIKTARLI" xml:space="preserve">
+    <value>Fiyat Kampanya Miktarlı</value>
+  </data>
+  <data name="FIYAT_KONTROL_TIP_ID_PLAN" xml:space="preserve">
+    <value>Fiyat Kontrol Tip Plan</value>
+  </data>
+  <data name="FIYAT_KONTROL_TIP_ID_SIPARIS" xml:space="preserve">
+    <value>Fiyat Kontrol Tip Sipariş</value>
+  </data>
+  <data name="FIYAT_MALIYET" xml:space="preserve">
+    <value>Fiyat Maliyet</value>
+  </data>
+  <data name="FIYAT_OPSIYON_TARIH" xml:space="preserve">
+    <value>Fiyat Opsiyon Tarih</value>
+  </data>
+  <data name="FIYAT_SATIS" xml:space="preserve">
+    <value>Fiyat Satış</value>
+  </data>
+  <data name="FIYAT_SATIS_ID" xml:space="preserve">
+    <value>Fiyat Satış Id</value>
+  </data>
+  <data name="FIYAT_SATIS_ISKONTO" xml:space="preserve">
+    <value>Fiyat Satış İskonto</value>
+  </data>
+  <data name="FIYAT_SATIS_MIKTARLI" xml:space="preserve">
+    <value>Fiyat Satış Miktarlı</value>
+  </data>
+  <data name="FIYAT_SATIS_TIP" xml:space="preserve">
+    <value>Fiyat Satış Tip</value>
+  </data>
+  <data name="FIYAT_SATIS_TIP_ID" xml:space="preserve">
+    <value>Fiyat Satış Tip </value>
+  </data>
+  <data name="FOB" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FON_ORAN" xml:space="preserve">
+    <value>Fon Oran</value>
+  </data>
+  <data name="FOTO" xml:space="preserve">
+    <value>Foto</value>
+  </data>
+  <data name="GECERLILIK_TARIH" xml:space="preserve">
+    <value>Geçerlilik Tarih</value>
+  </data>
+  <data name="GELIR_ACIKLAMA" xml:space="preserve">
+    <value>Gelir Açıklama</value>
+  </data>
+  <data name="GELIR_GIDER_ACIKLAMA" xml:space="preserve">
+    <value>Gelir Gider Açıklama</value>
+  </data>
+  <data name="GELIR_GIDER_MUHASEBE_HESAP_PLANI_ID" xml:space="preserve">
+    <value>Gelir Gider Muhasebe Hesap Planı</value>
+  </data>
+  <data name="GEMI_CIKIS_TARIH" xml:space="preserve">
+    <value>Gemi Çıkış Tarihi</value>
+  </data>
+  <data name="GENEL_ENVANTER_E_H" xml:space="preserve">
+    <value>Genel Envanter E_H</value>
+  </data>
+  <data name="GENEL_KDV_YUZDE_ID" xml:space="preserve">
+    <value>Genel Kdv Yüzde</value>
+  </data>
+  <data name="GERI_FIS_GIRIS_E_H" xml:space="preserve">
+    <value>Geri Fiş Giriş E_H</value>
+  </data>
+  <data name="GIDER_ACIKLAMA" xml:space="preserve">
+    <value>Gider Açıklama</value>
+  </data>
+  <data name="GIRIS_AMBAR_ID" xml:space="preserve">
+    <value>Giriş Ambar</value>
+  </data>
+  <data name="GORMESIN_E_H" xml:space="preserve">
+    <value>Görmesin E_H</value>
+  </data>
+  <data name="GRUP" xml:space="preserve">
+    <value>Grup</value>
+  </data>
+  <data name="GRUP_ID" xml:space="preserve">
+    <value>Grup </value>
+  </data>
+  <data name="GRUP_OPERASYON_KULLANIM_E_H" xml:space="preserve">
+    <value>Grup Operasyon Kullanımı E_H</value>
+  </data>
+  <data name="GSM" xml:space="preserve">
+    <value>Gsm</value>
+  </data>
+  <data name="GUMRUK_GIR_NO" xml:space="preserve">
+    <value>Gumruk Giriş No</value>
+  </data>
+  <data name="GUMRUK_GIR_TAR" xml:space="preserve">
+    <value>Gumruk Giriş Tarihi</value>
+  </data>
+  <data name="GUMRUK_KDV_FATURA_NO" xml:space="preserve">
+    <value>Gumruk KDV Fatura No</value>
+  </data>
+  <data name="GUMRUK_KDV_FATURA_TUTAR" xml:space="preserve">
+    <value>Gümrük KDV Fatura Tutar</value>
+  </data>
+  <data name="GUMRUK_MUDURLUGU" xml:space="preserve">
+    <value>Gümrük Müdürlüğü</value>
+  </data>
+  <data name="GUMRUK_SURE" xml:space="preserve">
+    <value>Gümrük Süre</value>
+  </data>
+  <data name="GUNCELLE_E_H" xml:space="preserve">
+    <value>Güncelle E_H</value>
+  </data>
+  <data name="GUZERGAH_NO" xml:space="preserve">
+    <value>Güzergah No</value>
+  </data>
+  <data name="HACIM" xml:space="preserve">
+    <value>Volume</value>
+  </data>
+  <data name="HEDEF" xml:space="preserve">
+    <value>Hedef</value>
+  </data>
+  <data name="HESAP_NO" xml:space="preserve">
+    <value>Hesap No</value>
+  </data>
+  <data name="I_D_ISIM" xml:space="preserve">
+    <value />
+  </data>
+  <data name="I_D_NOT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="I_D_SEVK_SAAT" xml:space="preserve">
+    <value />
+  </data>
+  <data name="I_D_SEVK_TIP" xml:space="preserve">
+    <value />
+  </data>
+  <data name="IBAN_NO" xml:space="preserve">
+    <value>İban No</value>
+  </data>
+  <data name="IC_DIS" xml:space="preserve">
+    <value>İç Dış</value>
+  </data>
+  <data name="IC_DIS_ID" xml:space="preserve">
+    <value>IC_DIS_ID</value>
+  </data>
+  <data name="IC_SIPARIS_NO" xml:space="preserve">
+    <value>İç Sipariş No</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="IHR_ACENTA" xml:space="preserve">
+    <value>Ihracat Acenta</value>
+  </data>
+  <data name="IHR_ACIKLAMA_1" xml:space="preserve">
+    <value> Ihracat Acıklama1</value>
+  </data>
+  <data name="IHR_ACIKLAMA_2" xml:space="preserve">
+    <value> Ihracat Acıklama2</value>
+  </data>
+  <data name="IHR_AKTARMA_LIMAN" xml:space="preserve">
+    <value>Ihracat Aktarma Liman</value>
+  </data>
+  <data name="IHR_GEMI_ADI" xml:space="preserve">
+    <value>Ihracat Gemi Adı</value>
+  </data>
+  <data name="IHR_KONTEYNER" xml:space="preserve">
+    <value>Ihracat Konteyner</value>
+  </data>
+  <data name="IHR_MUHUR_NO" xml:space="preserve">
+    <value>ıhracat Muhur No</value>
+  </data>
+  <data name="IHR_NOT" xml:space="preserve">
+    <value>Ihracat Not</value>
+  </data>
+  <data name="IHR_VARIS_LIMAN" xml:space="preserve">
+    <value>Ihracat Varış Liman</value>
+  </data>
+  <data name="IHR_YUKLEME_LIMAN" xml:space="preserve">
+    <value>Ihracat Yükleme Liman</value>
+  </data>
+  <data name="IHRACAT_TARIH" xml:space="preserve">
+    <value> İhracat Tarih</value>
+  </data>
+  <data name="IL" xml:space="preserve">
+    <value>Il</value>
+  </data>
+  <data name="IL_ID" xml:space="preserve">
+    <value>Il</value>
+  </data>
+  <data name="ILCE" xml:space="preserve">
+    <value>Ilçe</value>
+  </data>
+  <data name="ILCE_ID" xml:space="preserve">
+    <value>Ilçe</value>
+  </data>
+  <data name="ILERI_FIS_GIRIS_E_H" xml:space="preserve">
+    <value>Ileri Fiş Giriş E_H</value>
+  </data>
+  <data name="ILGILI" xml:space="preserve">
+    <value>Att</value>
+  </data>
+  <data name="ILK_ISLEM_TARIH" xml:space="preserve">
+    <value>İlk İşlem Tarih</value>
+  </data>
+  <data name="ILK_TARIH" xml:space="preserve">
+    <value>İlk Tarih</value>
+  </data>
+  <data name="IMALATCI_KODU" xml:space="preserve">
+    <value>İmalatçı Kodu</value>
+  </data>
+  <data name="INGILIZCE_AD" xml:space="preserve">
+    <value>İngilizce Ad</value>
+  </data>
+  <data name="INSERT_KUL_ID" xml:space="preserve">
+    <value>INSERT_KUL_ID</value>
+  </data>
+  <data name="INSERT_TAR" xml:space="preserve">
+    <value>INSERT_TAR</value>
+  </data>
+  <data name="IRS_ACIK_1_CHK" xml:space="preserve">
+    <value>IRS_ACIK_1_CHK</value>
+  </data>
+  <data name="IRS_ACIK_1_SA" xml:space="preserve">
+    <value>IRS_ACIK_1_SA</value>
+  </data>
+  <data name="IRS_ACIK_1_UA" xml:space="preserve">
+    <value>IRS_ACIK_1_UA</value>
+  </data>
+  <data name="IRS_ACIK_2_CHK" xml:space="preserve">
+    <value>IRS_ACIK_2_CHK</value>
+  </data>
+  <data name="IRS_ACIK_2_SA" xml:space="preserve">
+    <value>IRS_ACIK_2_SA</value>
+  </data>
+  <data name="IRS_ACIK_2_UA" xml:space="preserve">
+    <value>IRS_ACIK_2_UA</value>
+  </data>
+  <data name="IRS_ACIKLAMA_1_CHK" xml:space="preserve">
+    <value>IRS_ACIKLAMA_1_CHK</value>
+  </data>
+  <data name="IRS_ACIKLAMA_1_SA" xml:space="preserve">
+    <value>IRS_ACIKLAMA_1_SA</value>
+  </data>
+  <data name="IRS_ACIKLAMA_1_UA" xml:space="preserve">
+    <value>IRS_ACIKLAMA_1_UA</value>
+  </data>
+  <data name="IRS_ACIKLAMA_2_CHK" xml:space="preserve">
+    <value>IRS_ACIKLAMA_2_CHK</value>
+  </data>
+  <data name="IRS_ACIKLAMA_2_SA" xml:space="preserve">
+    <value>IRS_ACIKLAMA_2_SA</value>
+  </data>
+  <data name="IRS_ACIKLAMA_2_UA" xml:space="preserve">
+    <value>IRS_ACIKLAMA_2_UA</value>
+  </data>
+  <data name="IRS_ARAC_CINS_CHK" xml:space="preserve">
+    <value>IRS_ARAC_CINS_CHK</value>
+  </data>
+  <data name="IRS_ARAC_CINS_SA" xml:space="preserve">
+    <value>IRS_ARAC_CINS_SA</value>
+  </data>
+  <data name="IRS_ARAC_CINS_UA" xml:space="preserve">
+    <value>IRS_ARAC_CINS_UA</value>
+  </data>
+  <data name="IRS_DUZ_CHK" xml:space="preserve">
+    <value>IRS_DUZ_CHK</value>
+  </data>
+  <data name="IRS_DUZ_SA" xml:space="preserve">
+    <value>IRS_DUZ_SA</value>
+  </data>
+  <data name="IRS_DUZ_UA" xml:space="preserve">
+    <value>IRS_DUZ_UA</value>
+  </data>
+  <data name="IRS_E_SAAT_CHK" xml:space="preserve">
+    <value>IRS_E_SAAT_CHK</value>
+  </data>
+  <data name="IRS_E_SAAT_SA" xml:space="preserve">
+    <value>IRS_E_SAAT_SA</value>
+  </data>
+  <data name="IRS_E_SAAT_UA" xml:space="preserve">
+    <value>IRS_E_SAAT_UA</value>
+  </data>
+  <data name="IRS_FIS_DEP_CHK" xml:space="preserve">
+    <value>IRS_FIS_DEP_CHK</value>
+  </data>
+  <data name="IRS_FIS_DEP_SA" xml:space="preserve">
+    <value>IRS_FIS_DEP_SA</value>
+  </data>
+  <data name="IRS_FIS_DEP_UA" xml:space="preserve">
+    <value>IRS_FIS_DEP_UA</value>
+  </data>
+  <data name="IRS_NO" xml:space="preserve">
+    <value>IRS_NO</value>
+  </data>
+  <data name="IRS_NO_2_CHK" xml:space="preserve">
+    <value>IRS_NO_2_CHK</value>
+  </data>
+  <data name="IRS_NO_2_SA" xml:space="preserve">
+    <value>IRS_NO_2_SA</value>
+  </data>
+  <data name="IRS_NO_2_UA" xml:space="preserve">
+    <value>IRS_NO_2_UA</value>
+  </data>
+  <data name="IRS_NO_CHK" xml:space="preserve">
+    <value>IRS_NO_CHK</value>
+  </data>
+  <data name="IRS_NO_SA" xml:space="preserve">
+    <value>IRS_NO_SA</value>
+  </data>
+  <data name="IRS_NO_UA" xml:space="preserve">
+    <value>IRS_NO_UA</value>
+  </data>
+  <data name="IRS_PLAKA_CHK" xml:space="preserve">
+    <value>IRS_PLAKA_CHK</value>
+  </data>
+  <data name="IRS_PLAKA_SA" xml:space="preserve">
+    <value>IRS_PLAKA_SA</value>
+  </data>
+  <data name="IRS_PLAKA_UA" xml:space="preserve">
+    <value>IRS_PLAKA_UA</value>
+  </data>
+  <data name="IRS_SAAT_CHK" xml:space="preserve">
+    <value>IRS_SAAT_CHK</value>
+  </data>
+  <data name="IRS_SAAT_SA" xml:space="preserve">
+    <value>IRS_SAAT_SA</value>
+  </data>
+  <data name="IRS_SAAT_UA" xml:space="preserve">
+    <value>IRS_SAAT_UA</value>
+  </data>
+  <data name="IRS_SEVK_1_CHK" xml:space="preserve">
+    <value>IRS_SEVK_1_CHK</value>
+  </data>
+  <data name="IRS_SEVK_1_SA" xml:space="preserve">
+    <value>IRS_SEVK_1_SA</value>
+  </data>
+  <data name="IRS_SEVK_1_UA" xml:space="preserve">
+    <value>IRS_SEVK_1_UA</value>
+  </data>
+  <data name="IRS_SEVK_CHK" xml:space="preserve">
+    <value>IRS_SEVK_CHK</value>
+  </data>
+  <data name="IRS_SEVK_SA" xml:space="preserve">
+    <value>IRS_SEVK_SA</value>
+  </data>
+  <data name="IRS_SEVK_UA" xml:space="preserve">
+    <value>IRS_SEVK_UA</value>
+  </data>
+  <data name="IRS_TAFIR_CHK" xml:space="preserve">
+    <value>IRS_TAFIR_CHK</value>
+  </data>
+  <data name="IRS_TAFIR_SA" xml:space="preserve">
+    <value>IRS_TAFIR_SA</value>
+  </data>
+  <data name="IRS_TAFIR_UA" xml:space="preserve">
+    <value>IRS_TAFIR_UA</value>
+  </data>
+  <data name="IRS_TAR_CHK" xml:space="preserve">
+    <value>IRS_TAR_CHK</value>
+  </data>
+  <data name="IRS_TAR_SA" xml:space="preserve">
+    <value>IRS_TAR_SA</value>
+  </data>
+  <data name="IRS_TAR_UA" xml:space="preserve">
+    <value>IRS_TAR_UA</value>
+  </data>
+  <data name="IRS_TES_ALAN_CHK" xml:space="preserve">
+    <value>IRS_TES_ALAN_CHK</value>
+  </data>
+  <data name="IRS_TES_ALAN_SA" xml:space="preserve">
+    <value>IRS_TES_ALAN_SA</value>
+  </data>
+  <data name="IRS_TES_ALAN_UA" xml:space="preserve">
+    <value>IRS_TES_ALAN_UA</value>
+  </data>
+  <data name="IRS_TES_EDEN_BOLUM_CHK" xml:space="preserve">
+    <value>IRS_TES_EDEN_BOLUM_CHK</value>
+  </data>
+  <data name="IRS_TES_EDEN_BOLUM_SA" xml:space="preserve">
+    <value>IRS_TES_EDEN_BOLUM_SA</value>
+  </data>
+  <data name="IRS_TES_EDEN_BOLUM_UA" xml:space="preserve">
+    <value>IRS_TES_EDEN_BOLUM_UA</value>
+  </data>
+  <data name="IRS_TES_EDEN_CHK" xml:space="preserve">
+    <value>IRS_TES_EDEN_CHK</value>
+  </data>
+  <data name="IRS_TES_EDEN_SA" xml:space="preserve">
+    <value>IRS_TES_EDEN_SA</value>
+  </data>
+  <data name="IRS_TES_EDEN_UA" xml:space="preserve">
+    <value>IRS_TES_EDEN_UA</value>
+  </data>
+  <data name="IRS_TES_SAAT_CHK" xml:space="preserve">
+    <value>IRS_TES_SAAT_CHK</value>
+  </data>
+  <data name="IRS_TES_SAAT_SA" xml:space="preserve">
+    <value>IRS_TES_SAAT_SA</value>
+  </data>
+  <data name="IRS_TES_SAAT_UA" xml:space="preserve">
+    <value>IRS_TES_SAAT_UA</value>
+  </data>
+  <data name="IRS_TES_TAR_CHK" xml:space="preserve">
+    <value>IRS_TES_TAR_CHK</value>
+  </data>
+  <data name="IRS_TES_TAR_SA" xml:space="preserve">
+    <value>IRS_TES_TAR_SA</value>
+  </data>
+  <data name="IRS_TES_TAR_UA" xml:space="preserve">
+    <value>IRS_TES_TAR_UA</value>
+  </data>
+  <data name="IRSALIYE_ADRES_1" xml:space="preserve">
+    <value>IRSALIYE_ADRES_1</value>
+  </data>
+  <data name="IRSALIYE_ADRES_2" xml:space="preserve">
+    <value>IRSALIYE_ADRES_2</value>
+  </data>
+  <data name="IRSALIYE_ADRES_3" xml:space="preserve">
+    <value>IRSALIYE_ADRES_3</value>
+  </data>
+  <data name="IRSALIYE_DOKUM_STOK_BIRLESTIR_E_H" xml:space="preserve">
+    <value>IRSALIYE_DOKUM_STOK_BIRLESTIR_E_H</value>
+  </data>
+  <data name="IRSALIYE_FATURA_GUN_KONTROL_SAYISI" xml:space="preserve">
+    <value>IRSALIYE_FATURA_GUN_KONTROL_SAYISI</value>
+  </data>
+  <data name="IRSALIYE_KOCAN_DEGISIM_TARIH" xml:space="preserve">
+    <value>IRSALIYE_KOCAN_DEGISIM_TARIH</value>
+  </data>
+  <data name="IRSALIYE_KOCAN_SERI_NUMARASI" xml:space="preserve">
+    <value>IRSALIYE_KOCAN_SERI_NUMARASI</value>
+  </data>
+  <data name="IRSALIYE_MESAJ" xml:space="preserve">
+    <value>IRSALIYE_MESAJ</value>
+  </data>
+  <data name="IRSALIYE_NO" xml:space="preserve">
+    <value>IRSALIYE_NO</value>
+  </data>
+  <data name="IRSALIYE_TARIH" xml:space="preserve">
+    <value>IRSALIYE_TARIH</value>
+  </data>
+  <data name="IRSALIYELI_FATURA_E_H" xml:space="preserve">
+    <value>IRSALIYELI_FATURA_E_H</value>
+  </data>
+  <data name="ISCI_ID" xml:space="preserve">
+    <value>ISCI_ID</value>
+  </data>
+  <data name="ISEMRI_E_H" xml:space="preserve">
+    <value>ISEMRI_E_H</value>
+  </data>
+  <data name="ISKONTO_TUTAR" xml:space="preserve">
+    <value>Discount</value>
+  </data>
+  <data name="ISKONTO_TUTAR_DOVIZ" xml:space="preserve">
+    <value>ISKONTO_TUTAR_DOVIZ</value>
+  </data>
+  <data name="ISKONTO_YUZDE" xml:space="preserve">
+    <value>Discount</value>
+  </data>
+  <data name="ISKONTO_YUZDE_2" xml:space="preserve">
+    <value>Discount 2</value>
+  </data>
+  <data name="ISLEM_CINS" xml:space="preserve">
+    <value>ISLEM_CINS</value>
+  </data>
+  <data name="ISLEM_CINS_ID" xml:space="preserve">
+    <value>ISLEM_CINS_ID</value>
+  </data>
+  <data name="ISLEM_SIRA" xml:space="preserve">
+    <value>ISLEM_SIRA</value>
+  </data>
+  <data name="ISLEM_TIPI" xml:space="preserve">
+    <value>ISLEM_TIPI</value>
+  </data>
+  <data name="ISLEM_TIPI_ID" xml:space="preserve">
+    <value>ISLEM_TIPI_ID</value>
+  </data>
+  <data name="ISLEM_TIPI_ISLEVI" xml:space="preserve">
+    <value>ISLEM_TIPI_ISLEVI</value>
+  </data>
+  <data name="ISLEM_TIPI_ISLEVI_ID" xml:space="preserve">
+    <value>ISLEM_TIPI_ISLEVI_ID</value>
+  </data>
+  <data name="ISLEM_TIPI_KULLANICI" xml:space="preserve">
+    <value>ISLEM_TIPI_KULLANICI</value>
+  </data>
+  <data name="ITHALAT_CINS" xml:space="preserve">
+    <value>ITHALAT_CINS</value>
+  </data>
+  <data name="ITHALAT_CINS_ID" xml:space="preserve">
+    <value>ITHALAT_CINS_ID</value>
+  </data>
+  <data name="ITHALAT_MALIYET_ORAN" xml:space="preserve">
+    <value>ITHALAT_MALIYET_ORAN</value>
+  </data>
+  <data name="ITHALAT_TIP" xml:space="preserve">
+    <value>ITHALAT_TIP</value>
+  </data>
+  <data name="ITHALAT_TIP_ID" xml:space="preserve">
+    <value>ITHALAT_TIP_ID</value>
+  </data>
+  <data name="KALITE_KONTROL_AMBAR_E_H" xml:space="preserve">
+    <value>KALITE_KONTROL_AMBAR_E_H</value>
+  </data>
+  <data name="KAMPANYA_E_H" xml:space="preserve">
+    <value>KAMPANYA_E_H</value>
+  </data>
+  <data name="KASA_E_H" xml:space="preserve">
+    <value>KASA_E_H</value>
+  </data>
+  <data name="KDV_TUTAR" xml:space="preserve">
+    <value>KDV_TUTAR</value>
+  </data>
+  <data name="KDV_TUTAR_DOVIZ" xml:space="preserve">
+    <value>KDV_TUTAR_DOVIZ</value>
+  </data>
+  <data name="KDV_YUZDE" xml:space="preserve">
+    <value>KDV_YUZDE</value>
+  </data>
+  <data name="KDV_YUZDE_ID" xml:space="preserve">
+    <value>KDV_YUZDE_ID</value>
+  </data>
+  <data name="KISA_AD" xml:space="preserve">
+    <value>KISA_AD</value>
+  </data>
+  <data name="KKD_ORAN" xml:space="preserve">
+    <value>KKD_ORAN</value>
+  </data>
+  <data name="KOD" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="KOD_1" xml:space="preserve">
+    <value>Code 1</value>
+  </data>
+  <data name="KOD_2" xml:space="preserve">
+    <value>Code 1</value>
+  </data>
+  <data name="KOD_3" xml:space="preserve">
+    <value>Code 3</value>
+  </data>
+  <data name="KOM_ORAN" xml:space="preserve">
+    <value>KOM_ORAN</value>
+  </data>
+  <data name="KOMISYON_ORAN" xml:space="preserve">
+    <value>KOMISYON_ORAN</value>
+  </data>
+  <data name="KONSIMENTO_TARIH" xml:space="preserve">
+    <value>KONSIMENTO_TARIH</value>
+  </data>
+  <data name="KONTEYNER_ADET" xml:space="preserve">
+    <value>KONTEYNER_ADET</value>
+  </data>
+  <data name="KONU" xml:space="preserve">
+    <value>KONU</value>
+  </data>
+  <data name="KREDI" xml:space="preserve">
+    <value>KREDI</value>
+  </data>
+  <data name="KREDI_CINS" xml:space="preserve">
+    <value>KREDI_CINS</value>
+  </data>
+  <data name="KREDI_CINS_ID" xml:space="preserve">
+    <value>KREDI_CINS_ID</value>
+  </data>
+  <data name="KREDI_E_H" xml:space="preserve">
+    <value>KREDI_E_H</value>
+  </data>
+  <data name="KREDI_ID" xml:space="preserve">
+    <value>KREDI_ID</value>
+  </data>
+  <data name="KREDI_LIMIT" xml:space="preserve">
+    <value>KREDI_LIMIT</value>
+  </data>
+  <data name="KREDI_LIMIT_ID" xml:space="preserve">
+    <value>KREDI_LIMIT_ID</value>
+  </data>
+  <data name="KREDI_ODEME" xml:space="preserve">
+    <value>KREDI_ODEME</value>
+  </data>
+  <data name="KREDI_ODEME_TIP" xml:space="preserve">
+    <value>KREDI_ODEME_TIP</value>
+  </data>
+  <data name="KREDI_ODEME_TIP_ID" xml:space="preserve">
+    <value>KREDI_ODEME_TIP_ID</value>
+  </data>
+  <data name="KREDI_TIP" xml:space="preserve">
+    <value>KREDI_TIP</value>
+  </data>
+  <data name="KREDI_TIP_ID" xml:space="preserve">
+    <value>KREDI_TIP_ID</value>
+  </data>
+  <data name="KULLANICI" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="KULLANICI_AD" xml:space="preserve">
+    <value>KULLANICI_AD</value>
+  </data>
+  <data name="KULLANICI_EK_ISKONTO" xml:space="preserve">
+    <value>KULLANICI_EK_ISKONTO</value>
+  </data>
+  <data name="KULLANICI_ID" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="KULLANIM_SURE" xml:space="preserve">
+    <value>Duration of use</value>
+  </data>
+  <data name="KULLANIM_TUTAR" xml:space="preserve">
+    <value>KULLANIM_TUTAR</value>
+  </data>
+  <data name="KUR" xml:space="preserve">
+    <value>KUR</value>
+  </data>
+  <data name="KURULU_GUC_E_H" xml:space="preserve">
+    <value>KURULU_GUC_E_H</value>
+  </data>
+  <data name="KURUS_AD" xml:space="preserve">
+    <value>KURUS_AD</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="LIMIT" xml:space="preserve">
+    <value>LIMIT</value>
+  </data>
+  <data name="LISTE_ADI" xml:space="preserve">
+    <value>LISTE_ADI</value>
+  </data>
+  <data name="LISTE_ING_ADI" xml:space="preserve">
+    <value>LISTE_ING_ADI</value>
+  </data>
+  <data name="LK_AKTIF_PASIF_ID" xml:space="preserve">
+    <value>LK_AKTIF_PASIF_ID</value>
+  </data>
+  <data name="LK_ALIS_SATIS" xml:space="preserve">
+    <value>LK_ALIS_SATIS</value>
+  </data>
+  <data name="LK_ALIS_SATIS_ID" xml:space="preserve">
+    <value>LK_ALIS_SATIS_ID</value>
+  </data>
+  <data name="LK_AMBAR_KONTROL_E_H" xml:space="preserve">
+    <value>LK_AMBAR_KONTROL_E_H</value>
+  </data>
+  <data name="LK_AY_ISIMLERI" xml:space="preserve">
+    <value>LK_AY_ISIMLERI</value>
+  </data>
+  <data name="LK_AY_ISIMLERI_ID" xml:space="preserve">
+    <value>LK_AY_ISIMLERI_ID</value>
+  </data>
+  <data name="LK_DOKULSUN_E_H" xml:space="preserve">
+    <value>LK_DOKULSUN_E_H</value>
+  </data>
+  <data name="LK_DURUM" xml:space="preserve">
+    <value>LK_DURUM</value>
+  </data>
+  <data name="LK_DURUM_ID" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="LK_FAIZ_TIP" xml:space="preserve">
+    <value>LK_FAIZ_TIP</value>
+  </data>
+  <data name="LK_FAIZ_TIP_ID" xml:space="preserve">
+    <value>LK_FAIZ_TIP_ID</value>
+  </data>
+  <data name="LK_FATURA_DOKULSUN_E_H" xml:space="preserve">
+    <value>LK_FATURA_DOKULSUN_E_H</value>
+  </data>
+  <data name="LK_FIRMA_MUSTERI" xml:space="preserve">
+    <value>LK_FIRMA_MUSTERI</value>
+  </data>
+  <data name="LK_FIRMA_MUSTERI_ID" xml:space="preserve">
+    <value>LK_FIRMA_MUSTERI_ID</value>
+  </data>
+  <data name="LK_GIRIS_CIKIS" xml:space="preserve">
+    <value>LK_GIRIS_CIKIS</value>
+  </data>
+  <data name="LK_GIRIS_CIKIS_ID" xml:space="preserve">
+    <value>LK_GIRIS_CIKIS_ID</value>
+  </data>
+  <data name="LK_HAYIR_EVET" xml:space="preserve">
+    <value>LK_HAYIR_EVET</value>
+  </data>
+  <data name="LK_IRSALIYE_GIRIS_E_H" xml:space="preserve">
+    <value>LK_IRSALIYE_GIRIS_E_H</value>
+  </data>
+  <data name="LK_KALITE_KONTROL_E_H" xml:space="preserve">
+    <value>Quality Control</value>
+  </data>
+  <data name="LK_KALITE_TANITIM_E_H" xml:space="preserve">
+    <value>Quality Promotion</value>
+  </data>
+  <data name="LK_KDV_MUAF_E_H" xml:space="preserve">
+    <value>LK_KDV_MUAF_E_H</value>
+  </data>
+  <data name="LK_ODENDI_E_H" xml:space="preserve">
+    <value>LK_ODENDI_E_H</value>
+  </data>
+  <data name="LK_ONAY_E_H" xml:space="preserve">
+    <value>Check Type</value>
+  </data>
+  <data name="LK_SIPARIS_GIRIS_E_H" xml:space="preserve">
+    <value>LK_SIPARIS_GIRIS_E_H</value>
+  </data>
+  <data name="LK_STOK_FIS_DOKULSUN_E_H" xml:space="preserve">
+    <value>LK_STOK_FIS_DOKULSUN_E_H</value>
+  </data>
+  <data name="LK_STOK_TIP" xml:space="preserve">
+    <value>Inventory Type</value>
+  </data>
+  <data name="LK_STOK_TIP_ID" xml:space="preserve">
+    <value>Inventory Type</value>
+  </data>
+  <data name="LK_TEKLIF_GIRIS_E_H" xml:space="preserve">
+    <value>LK_TEKLIF_GIRIS_E_H</value>
+  </data>
+  <data name="LK_TESVIK_E_H" xml:space="preserve">
+    <value>Incentive Type</value>
+  </data>
+  <data name="LK_TICARI_MAL_E_H" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="LK_YAZDIRILIDI_E_H" xml:space="preserve">
+    <value>LK_YAZDIRILIDI_E_H</value>
+  </data>
+  <data name="LK_YEREL_PARA_BIRIM_E_H" xml:space="preserve">
+    <value>LK_YEREL_PARA_BIRIM_E_H</value>
+  </data>
+  <data name="LK_YERLI_ITHAL" xml:space="preserve">
+    <value>Country Of Origin</value>
+  </data>
+  <data name="LK_YERLI_ITHAL_ID" xml:space="preserve">
+    <value>Country Of Origin</value>
+  </data>
+  <data name="Log" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="Logger" xml:space="preserve">
+    <value>Logger</value>
+  </data>
+  <data name="M_ALAN_ALT_BILGI" xml:space="preserve">
+    <value>M_ALAN_ALT_BILGI</value>
+  </data>
+  <data name="M_ALAN_CLASS_NAME" xml:space="preserve">
+    <value>M_ALAN_CLASS_NAME</value>
+  </data>
+  <data name="M_ALAN_GOSTERILEN" xml:space="preserve">
+    <value>M_ALAN_GOSTERILEN</value>
+  </data>
+  <data name="M_ALAN_GOSTERILEN_ID" xml:space="preserve">
+    <value>M_ALAN_GOSTERILEN_ID</value>
+  </data>
+  <data name="M_ALAN_TIP" xml:space="preserve">
+    <value>M_ALAN_TIP</value>
+  </data>
+  <data name="M_ALAN_TIP_2" xml:space="preserve">
+    <value>M_ALAN_TIP_2</value>
+  </data>
+  <data name="M_ALAN_TIP_ID" xml:space="preserve">
+    <value>M_ALAN_TIP_ID</value>
+  </data>
+  <data name="M_ALANLAR" xml:space="preserve">
+    <value>M_ALANLAR</value>
+  </data>
+  <data name="M_ALANLAR_ALT_ID" xml:space="preserve">
+    <value>M_ALANLAR_ALT_ID</value>
+  </data>
+  <data name="M_ALANLAR_ID" xml:space="preserve">
+    <value>M_ALANLAR_ID</value>
+  </data>
+  <data name="M_ALANLAR_UST_ID" xml:space="preserve">
+    <value>M_ALANLAR_UST_ID</value>
+  </data>
+  <data name="M_DURUM_TIP" xml:space="preserve">
+    <value>M_DURUM_TIP</value>
+  </data>
+  <data name="M_MENU" xml:space="preserve">
+    <value>M_MENU</value>
+  </data>
+  <data name="M_MENU_BOLGE" xml:space="preserve">
+    <value>M_MENU_BOLGE</value>
+  </data>
+  <data name="M_MENU_ID" xml:space="preserve">
+    <value>M_MENU_ID</value>
+  </data>
+  <data name="M_MENU_KULLANICI" xml:space="preserve">
+    <value>M_MENU_KULLANICI</value>
+  </data>
+  <data name="M_MENU_SIRA" xml:space="preserve">
+    <value>M_MENU_SIRA</value>
+  </data>
+  <data name="M_MENU_TIP" xml:space="preserve">
+    <value>M_MENU_TIP</value>
+  </data>
+  <data name="M_MENU_TIP_ID" xml:space="preserve">
+    <value>M_MENU_TIP_ID</value>
+  </data>
+  <data name="M_PROJE" xml:space="preserve">
+    <value>M_PROJE</value>
+  </data>
+  <data name="M_PROJE_BOLGE" xml:space="preserve">
+    <value>M_PROJE_BOLGE</value>
+  </data>
+  <data name="M_PROJE_ID" xml:space="preserve">
+    <value>M_PROJE_ID</value>
+  </data>
+  <data name="M_TABLO_TIP" xml:space="preserve">
+    <value>M_TABLO_TIP</value>
+  </data>
+  <data name="M_TABLO_TIP_ID" xml:space="preserve">
+    <value>M_TABLO_TIP_ID</value>
+  </data>
+  <data name="MAHSUP_E_H" xml:space="preserve">
+    <value>MAHSUP_E_H</value>
+  </data>
+  <data name="MAHSUP_FIS_SATIR" xml:space="preserve">
+    <value>MAHSUP_FIS_SATIR</value>
+  </data>
+  <data name="MAHSUP_FIS_SATIR_ID" xml:space="preserve">
+    <value>MAHSUP_FIS_SATIR_ID</value>
+  </data>
+  <data name="MAHSUP_FIS_SIFIRLI" xml:space="preserve">
+    <value>MAHSUP_FIS_SIFIRLI</value>
+  </data>
+  <data name="MAIL" xml:space="preserve">
+    <value>MAIL</value>
+  </data>
+  <data name="MANUEL_SATIS_SIPARIS_GIRIS_E_H" xml:space="preserve">
+    <value>MANUEL_SATIS_SIPARIS_GIRIS_E_H</value>
+  </data>
+  <data name="MASRAF_YERI_CALISAN_HESAP_E_H" xml:space="preserve">
+    <value>MASRAF_YERI_CALISAN_HESAP_E_H</value>
+  </data>
+  <data name="MASRAF_YERI_FIS_DAGITIM_E_H" xml:space="preserve">
+    <value>MASRAF_YERI_FIS_DAGITIM_E_H</value>
+  </data>
+  <data name="MASRAF_YERI_KIRILMA" xml:space="preserve">
+    <value>MASRAF_YERI_KIRILMA</value>
+  </data>
+  <data name="MATRAH" xml:space="preserve">
+    <value>MATRAH</value>
+  </data>
+  <data name="MENU_SIRA" xml:space="preserve">
+    <value>MENU_SIRA</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="MIKTAR" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="MIKTAR_DIS" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="MIKTAR_IC" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="MIKTARSAL_PARASAL" xml:space="preserve">
+    <value>MIKTARSAL_PARASAL</value>
+  </data>
+  <data name="MIKTARSAL_PARASAL_ID" xml:space="preserve">
+    <value>MIKTARSAL_PARASAL_ID</value>
+  </data>
+  <data name="MINUMUM_ALIM_MIKTAR" xml:space="preserve">
+    <value>Min.purchase qty.</value>
+  </data>
+  <data name="MODEL" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="MODEL_ID" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="MODEL_STOK" xml:space="preserve">
+    <value>MODEL_STOK</value>
+  </data>
+  <data name="MSDS_NO" xml:space="preserve">
+    <value>Msds Code</value>
+  </data>
+  <data name="MSDS_TARIH" xml:space="preserve">
+    <value>Msds Date</value>
+  </data>
+  <data name="MUH_TASIMA_E_H" xml:space="preserve">
+    <value>MUH_TASIMA_E_H</value>
+  </data>
+  <data name="MUHASEBE_BILANCO" xml:space="preserve">
+    <value>MUHASEBE_BILANCO</value>
+  </data>
+  <data name="MUHASEBE_BILANCO_ID" xml:space="preserve">
+    <value>MUHASEBE_BILANCO_ID</value>
+  </data>
+  <data name="MUHASEBE_CESITLI_HESAPLAR" xml:space="preserve">
+    <value>MUHASEBE_CESITLI_HESAPLAR</value>
+  </data>
+  <data name="MUHASEBE_CESITLI_HESAPLAR_TIP" xml:space="preserve">
+    <value>MUHASEBE_CESITLI_HESAPLAR_TIP</value>
+  </data>
+  <data name="MUHASEBE_CESITLI_HESAPLAR_TIP_ID" xml:space="preserve">
+    <value>MUHASEBE_CESITLI_HESAPLAR_TIP_ID</value>
+  </data>
+  <data name="MUHASEBE_CIKIS_ISKONTO_TAKIP_E_H" xml:space="preserve">
+    <value>MUHASEBE_CIKIS_ISKONTO_TAKIP_E_H</value>
+  </data>
+  <data name="MUHASEBE_ENTEGRASYON" xml:space="preserve">
+    <value>MUHASEBE_ENTEGRASYON</value>
+  </data>
+  <data name="MUHASEBE_ENTEGRASYON_CEK_FISTEN_E_H" xml:space="preserve">
+    <value>MUHASEBE_ENTEGRASYON_CEK_FISTEN_E_H</value>
+  </data>
+  <data name="MUHASEBE_ENTEGRASYON_CIKIS_FISTEN_E_H" xml:space="preserve">
+    <value>MUHASEBE_ENTEGRASYON_CIKIS_FISTEN_E_H</value>
+  </data>
+  <data name="MUHASEBE_ENTEGRASYON_FIS_SATIR_SAYI" xml:space="preserve">
+    <value>MUHASEBE_ENTEGRASYON_FIS_SATIR_SAYI</value>
+  </data>
+  <data name="MUHASEBE_ENTEGRASYON_GIRIS_FISTEN_E_H" xml:space="preserve">
+    <value>MUHASEBE_ENTEGRASYON_GIRIS_FISTEN_E_H</value>
+  </data>
+  <data name="MUHASEBE_ENTEGRASYON_MAHSUP_FISTEN_E_H" xml:space="preserve">
+    <value>MUHASEBE_ENTEGRASYON_MAHSUP_FISTEN_E_H</value>
+  </data>
+  <data name="MUHASEBE_ENTEGRASYON_UYARI_E_H" xml:space="preserve">
+    <value>MUHASEBE_ENTEGRASYON_UYARI_E_H</value>
+  </data>
+  <data name="MUHASEBE_FIS_SATIR" xml:space="preserve">
+    <value>MUHASEBE_FIS_SATIR</value>
+  </data>
+  <data name="MUHASEBE_FIS_SIFIRLI" xml:space="preserve">
+    <value>MUHASEBE_FIS_SIFIRLI</value>
+  </data>
+  <data name="MUHASEBE_FIS_SIFIRLI_ID" xml:space="preserve">
+    <value>MUHASEBE_FIS_SIFIRLI_ID</value>
+  </data>
+  <data name="MUHASEBE_GELIR_TABLOSU" xml:space="preserve">
+    <value>MUHASEBE_GELIR_TABLOSU</value>
+  </data>
+  <data name="MUHASEBE_GELIR_TABLOSU_ID" xml:space="preserve">
+    <value>MUHASEBE_GELIR_TABLOSU_ID</value>
+  </data>
+  <data name="MUHASEBE_GIRIS_ISKONTO_TAKIP_E_H" xml:space="preserve">
+    <value>MUHASEBE_GIRIS_ISKONTO_TAKIP_E_H</value>
+  </data>
+  <data name="MUHASEBE_HESAP_PLANI" xml:space="preserve">
+    <value>MUHASEBE_HESAP_PLANI</value>
+  </data>
+  <data name="MUHASEBE_HESAP_PLANI_ADRES" xml:space="preserve">
+    <value>MUHASEBE_HESAP_PLANI_ADRES</value>
+  </data>
+  <data name="MUHASEBE_HESAP_PLANI_ID" xml:space="preserve">
+    <value>MUHASEBE_HESAP_PLANI_ID</value>
+  </data>
+  <data name="MUHASEBE_HESAP_PLANI_ID_ALACAK" xml:space="preserve">
+    <value>MUHASEBE_HESAP_PLANI_ID_ALACAK</value>
+  </data>
+  <data name="MUHASEBE_HESAP_PLANI_ID_BORC" xml:space="preserve">
+    <value>MUHASEBE_HESAP_PLANI_ID_BORC</value>
+  </data>
+  <data name="MUHASEBE_HESAP_PLANI_ID_TEVKIFAT" xml:space="preserve">
+    <value>MUHASEBE_HESAP_PLANI_ID_TEVKIFAT</value>
+  </data>
+  <data name="MUHASEBE_ISLEM_TIP" xml:space="preserve">
+    <value>MUHASEBE_ISLEM_TIP</value>
+  </data>
+  <data name="MUHASEBE_ISLEM_TIP_ID" xml:space="preserve">
+    <value>MUHASEBE_ISLEM_TIP_ID</value>
+  </data>
+  <data name="MUHASEBE_KAPALI_AY" xml:space="preserve">
+    <value>MUHASEBE_KAPALI_AY</value>
+  </data>
+  <data name="MUHASEBE_KAPALI_YIL" xml:space="preserve">
+    <value>MUHASEBE_KAPALI_YIL</value>
+  </data>
+  <data name="MUHASEBE_KIRILMA" xml:space="preserve">
+    <value>MUHASEBE_KIRILMA</value>
+  </data>
+  <data name="MUHASEBE_LK_BILANCO_ARTI_EKSI" xml:space="preserve">
+    <value>MUHASEBE_LK_BILANCO_ARTI_EKSI</value>
+  </data>
+  <data name="MUHASEBE_LK_BILANCO_ARTI_EKSI_ID" xml:space="preserve">
+    <value>MUHASEBE_LK_BILANCO_ARTI_EKSI_ID</value>
+  </data>
+  <data name="MUHASEBE_LK_BILANCO_TIP" xml:space="preserve">
+    <value>MUHASEBE_LK_BILANCO_TIP</value>
+  </data>
+  <data name="MUHASEBE_LK_BILANCO_TIP_ID" xml:space="preserve">
+    <value>MUHASEBE_LK_BILANCO_TIP_ID</value>
+  </data>
+  <data name="MUHASEBE_LK_BORC_ALACAK_TIP" xml:space="preserve">
+    <value>MUHASEBE_LK_BORC_ALACAK_TIP</value>
+  </data>
+  <data name="MUHASEBE_LK_BORC_ALACAK_TIP_ID" xml:space="preserve">
+    <value>MUHASEBE_LK_BORC_ALACAK_TIP_ID</value>
+  </data>
+  <data name="MUHASEBE_LK_ENTEGRASYON_DOSYA_TIP" xml:space="preserve">
+    <value>MUHASEBE_LK_ENTEGRASYON_DOSYA_TIP</value>
+  </data>
+  <data name="MUHASEBE_LK_ENTEGRASYON_DOSYA_TIP_ID" xml:space="preserve">
+    <value>MUHASEBE_LK_ENTEGRASYON_DOSYA_TIP_ID</value>
+  </data>
+  <data name="MUHASEBE_LK_ENTEGRASYON_KOD_TIP" xml:space="preserve">
+    <value>MUHASEBE_LK_ENTEGRASYON_KOD_TIP</value>
+  </data>
+  <data name="MUHASEBE_LK_ENTEGRASYON_KOD_TIP_ID" xml:space="preserve">
+    <value>MUHASEBE_LK_ENTEGRASYON_KOD_TIP_ID</value>
+  </data>
+  <data name="MUHASEBE_LK_FIS_CINS" xml:space="preserve">
+    <value>MUHASEBE_LK_FIS_CINS</value>
+  </data>
+  <data name="MUHASEBE_LK_FIS_CINS_ID" xml:space="preserve">
+    <value>MUHASEBE_LK_FIS_CINS_ID</value>
+  </data>
+  <data name="MUHASEBE_LK_FIS_TIP" xml:space="preserve">
+    <value>MUHASEBE_LK_FIS_TIP</value>
+  </data>
+  <data name="MUHASEBE_LK_FIS_TIP_ID" xml:space="preserve">
+    <value>MUHASEBE_LK_FIS_TIP_ID</value>
+  </data>
+  <data name="MUHASEBE_LK_ISLEM_TIP" xml:space="preserve">
+    <value>MUHASEBE_LK_ISLEM_TIP</value>
+  </data>
+  <data name="MUHASEBE_LK_ISLEM_TIP_ID" xml:space="preserve">
+    <value>MUHASEBE_LK_ISLEM_TIP_ID</value>
+  </data>
+  <data name="MUHASEBE_LK_MASRAF_YERI_MALIYET_TIP" xml:space="preserve">
+    <value>MUHASEBE_LK_MASRAF_YERI_MALIYET_TIP</value>
+  </data>
+  <data name="MUHASEBE_LK_MASRAF_YERI_MALIYET_TIP_ID" xml:space="preserve">
+    <value>MUHASEBE_LK_MASRAF_YERI_MALIYET_TIP_ID</value>
+  </data>
+  <data name="MUHASEBE_LK_MASRAF_YERI_TIP" xml:space="preserve">
+    <value>MUHASEBE_LK_MASRAF_YERI_TIP</value>
+  </data>
+  <data name="MUHASEBE_LK_MASRAF_YERI_TIP_ID" xml:space="preserve">
+    <value>MUHASEBE_LK_MASRAF_YERI_TIP_ID</value>
+  </data>
+  <data name="MUHASEBE_MASRAF_YERI" xml:space="preserve">
+    <value>MUHASEBE_MASRAF_YERI</value>
+  </data>
+  <data name="MUHASEBE_MASRAF_YERI_ID" xml:space="preserve">
+    <value>MUHASEBE_MASRAF_YERI_ID</value>
+  </data>
+  <data name="MUHASEBE_MASRAF_YERI_KEBIR_HESAP" xml:space="preserve">
+    <value>MUHASEBE_MASRAF_YERI_KEBIR_HESAP</value>
+  </data>
+  <data name="MUSTERI_SIPARIS_NO" xml:space="preserve">
+    <value>MUSTERI_SIPARIS_NO</value>
+  </data>
+  <data name="NAKIT_CEK" xml:space="preserve">
+    <value>NAKIT_CEK</value>
+  </data>
+  <data name="NAKIT_CEK_ID" xml:space="preserve">
+    <value>NAKIT_CEK_ID</value>
+  </data>
+  <data name="NAKLI_YEKUN" xml:space="preserve">
+    <value>NAKLI_YEKUN</value>
+  </data>
+  <data name="NAKLIYE_SIRKETI" xml:space="preserve">
+    <value>NAKLIYE_SIRKETI</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>name</value>
+  </data>
+  <data name="NAVLUN_FAT_NO" xml:space="preserve">
+    <value>NAVLUN_FAT_NO</value>
+  </data>
+  <data name="NET_AGIRLIK" xml:space="preserve">
+    <value>Net Weight</value>
+  </data>
+  <data name="NET_TUTAR" xml:space="preserve">
+    <value>Net Amount</value>
+  </data>
+  <data name="NET_TUTAR_DOVIZ" xml:space="preserve">
+    <value>NET_TUTAR_DOVIZ</value>
+  </data>
+  <data name="NO" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NOT" xml:space="preserve">
+    <value>NOT</value>
+  </data>
+  <data name="NOT_1" xml:space="preserve">
+    <value>NOT_1</value>
+  </data>
+  <data name="NOT_2" xml:space="preserve">
+    <value>NOT_2</value>
+  </data>
+  <data name="ODEME_ACIKLAMA" xml:space="preserve">
+    <value>ODEME_ACIKLAMA</value>
+  </data>
+  <data name="ODENDI_TIP" xml:space="preserve">
+    <value>ODENDI_TIP</value>
+  </data>
+  <data name="OKU_E_H" xml:space="preserve">
+    <value>OKU_E_H</value>
+  </data>
+  <data name="OPSIYON_TARIH" xml:space="preserve">
+    <value>OPSIYON_TARIH</value>
+  </data>
+  <data name="ORAN" xml:space="preserve">
+    <value>ORAN</value>
+  </data>
+  <data name="ORJINAL_AD" xml:space="preserve">
+    <value>Orginal Name</value>
+  </data>
+  <data name="ORJINAL_KOD" xml:space="preserve">
+    <value>Orginal Code</value>
+  </data>
+  <data name="OTO_PARTI_NO_E_H" xml:space="preserve">
+    <value>OTO_PARTI_NO_E_H</value>
+  </data>
+  <data name="OZEL_TUTAR" xml:space="preserve">
+    <value>OZEL_TUTAR</value>
+  </data>
+  <data name="OZEL_TUTAR_DOVIZ" xml:space="preserve">
+    <value>OZEL_TUTAR_DOVIZ</value>
+  </data>
+  <data name="OZEL_YUZDE" xml:space="preserve">
+    <value>OZEL_YUZDE</value>
+  </data>
+  <data name="PARENT_ID" xml:space="preserve">
+    <value>PARENT_ID</value>
+  </data>
+  <data name="PARTI_NO_1" xml:space="preserve">
+    <value>PARTI_NO_1</value>
+  </data>
+  <data name="PARTI_NO_2" xml:space="preserve">
+    <value>PARTI_NO_2</value>
+  </data>
+  <data name="PARTI_SEGMENT_1" xml:space="preserve">
+    <value>PARTI_SEGMENT_1</value>
+  </data>
+  <data name="PARTI_SEGMENT_2" xml:space="preserve">
+    <value>PARTI_SEGMENT_2</value>
+  </data>
+  <data name="PARTI_STOK_SON_KUL_TARIH" xml:space="preserve">
+    <value>PARTI_STOK_SON_KUL_TARIH</value>
+  </data>
+  <data name="PASIF_AKTIF_ID" xml:space="preserve">
+    <value>PASIF_AKTIF_ID</value>
+  </data>
+  <data name="PASIF_SUTUN_ACIKLAMA" xml:space="preserve">
+    <value>PASIF_SUTUN_ACIKLAMA</value>
+  </data>
+  <data name="PESIN_VADELI" xml:space="preserve">
+    <value>PESIN_VADELI</value>
+  </data>
+  <data name="PLAKA" xml:space="preserve">
+    <value>PLAKA</value>
+  </data>
+  <data name="PLASIYER_E_H" xml:space="preserve">
+    <value>PLASIYER_E_H</value>
+  </data>
+  <data name="PORTAL_USER" xml:space="preserve">
+    <value>PORTAL_USER</value>
+  </data>
+  <data name="PORTAL_USER_PASSWORD" xml:space="preserve">
+    <value>PORTAL_USER_PASSWORD</value>
+  </data>
+  <data name="PRIM_ORAN" xml:space="preserve">
+    <value>PRIM_ORAN</value>
+  </data>
+  <data name="principal_id" xml:space="preserve">
+    <value>principal_id</value>
+  </data>
+  <data name="RAF_NO" xml:space="preserve">
+    <value>Rack Code</value>
+  </data>
+  <data name="RAKIP_DOVIZ_FIYAT" xml:space="preserve">
+    <value>RAKIP_DOVIZ_FIYAT</value>
+  </data>
+  <data name="RAKIP_DOVIZ_ID" xml:space="preserve">
+    <value>RAKIP_DOVIZ_ID</value>
+  </data>
+  <data name="RAKIP_FIYAT" xml:space="preserve">
+    <value>RAKIP_FIYAT</value>
+  </data>
+  <data name="RAKIP_STOK_KOD" xml:space="preserve">
+    <value>RAKIP_STOK_KOD</value>
+  </data>
+  <data name="ROL" xml:space="preserve">
+    <value>ROL</value>
+  </data>
+  <data name="ROL_ID" xml:space="preserve">
+    <value>ROL_ID</value>
+  </data>
+  <data name="SAAT_CHK" xml:space="preserve">
+    <value>SAAT_CHK</value>
+  </data>
+  <data name="SAAT_SA" xml:space="preserve">
+    <value>SAAT_SA</value>
+  </data>
+  <data name="SAAT_UA" xml:space="preserve">
+    <value>SAAT_UA</value>
+  </data>
+  <data name="SABIT_FIYAT_E_H" xml:space="preserve">
+    <value>SABIT_FIYAT_E_H</value>
+  </data>
+  <data name="SARF_AMBAR_ID" xml:space="preserve">
+    <value>SARF_AMBAR_ID</value>
+  </data>
+  <data name="SATIR_NO" xml:space="preserve">
+    <value>SATIR_NO</value>
+  </data>
+  <data name="SATIS" xml:space="preserve">
+    <value>SATIS</value>
+  </data>
+  <data name="SATIS_DOVIZ_KUR_TIP" xml:space="preserve">
+    <value>SATIS_DOVIZ_KUR_TIP</value>
+  </data>
+  <data name="SATIS_FIYAT_AYRIM_KONTROL_E_H" xml:space="preserve">
+    <value>SATIS_FIYAT_AYRIM_KONTROL_E_H</value>
+  </data>
+  <data name="SATIS_SIPARIS_BAKIYE_KONTROL_E_H" xml:space="preserve">
+    <value>SATIS_SIPARIS_BAKIYE_KONTROL_E_H</value>
+  </data>
+  <data name="SATIS_VALOR_GUN" xml:space="preserve">
+    <value>SATIS_VALOR_GUN</value>
+  </data>
+  <data name="SAYFA_SAYISI" xml:space="preserve">
+    <value>SAYFA_SAYISI</value>
+  </data>
+  <data name="SAYFA_TOPLAM" xml:space="preserve">
+    <value>SAYFA_TOPLAM</value>
+  </data>
+  <data name="SAYIM_FIS_SATIR" xml:space="preserve">
+    <value>SAYIM_FIS_SATIR</value>
+  </data>
+  <data name="SAYIM_FIS_SIFIRLI" xml:space="preserve">
+    <value>SAYIM_FIS_SIFIRLI</value>
+  </data>
+  <data name="SAYIM_FIS_SIFIRLI_ID" xml:space="preserve">
+    <value>SAYIM_FIS_SIFIRLI_ID</value>
+  </data>
+  <data name="SAYMAN_MAKBUZ_NO" xml:space="preserve">
+    <value>SAYMAN_MAKBUZ_NO</value>
+  </data>
+  <data name="SAYMAN_MAKBUZ_TAR" xml:space="preserve">
+    <value>SAYMAN_MAKBUZ_TAR</value>
+  </data>
+  <data name="SEFER_NO" xml:space="preserve">
+    <value>SEFER_NO</value>
+  </data>
+  <data name="SEFER_TIP" xml:space="preserve">
+    <value>SEFER_TIP</value>
+  </data>
+  <data name="SERBEST_ALIS" xml:space="preserve">
+    <value>SERBEST_ALIS</value>
+  </data>
+  <data name="SERBEST_SATIS" xml:space="preserve">
+    <value>SERBEST_SATIS</value>
+  </data>
+  <data name="SEVK_EDILEN_FABRIKA_ID" xml:space="preserve">
+    <value>SEVK_EDILEN_FABRIKA_ID</value>
+  </data>
+  <data name="SEVK_SAAT" xml:space="preserve">
+    <value>SEVK_SAAT</value>
+  </data>
+  <data name="SEVK_TAR" xml:space="preserve">
+    <value>SEVK_TAR</value>
+  </data>
+  <data name="SIFIRLI_ID" xml:space="preserve">
+    <value>SIFIRLI_ID</value>
+  </data>
+  <data name="SIFRE" xml:space="preserve">
+    <value>SIFRE</value>
+  </data>
+  <data name="SIL_E_H" xml:space="preserve">
+    <value>SIL_E_H</value>
+  </data>
+  <data name="SILEN_KULLANICI_ID" xml:space="preserve">
+    <value>SILEN_KULLANICI_ID</value>
+  </data>
+  <data name="SILINME_TARIH" xml:space="preserve">
+    <value>SILINME_TARIH</value>
+  </data>
+  <data name="SIP_NO_CHK" xml:space="preserve">
+    <value>SIP_NO_CHK</value>
+  </data>
+  <data name="SIP_NO_SA" xml:space="preserve">
+    <value>SIP_NO_SA</value>
+  </data>
+  <data name="SIP_NO_UA" xml:space="preserve">
+    <value>SIP_NO_UA</value>
+  </data>
+  <data name="SIPARIS_E_H" xml:space="preserve">
+    <value>SIPARIS_E_H</value>
+  </data>
+  <data name="SIPARIS_FIS_SATIR" xml:space="preserve">
+    <value>SIPARIS_FIS_SATIR</value>
+  </data>
+  <data name="SIPARIS_FIS_SATIR_ID" xml:space="preserve">
+    <value>SIPARIS_FIS_SATIR_ID</value>
+  </data>
+  <data name="SIPARIS_FIS_SIFIRLI" xml:space="preserve">
+    <value>SIPARIS_FIS_SIFIRLI</value>
+  </data>
+  <data name="SIPARIS_FIS_SIFIRLI_ACIKLAMA" xml:space="preserve">
+    <value>SIPARIS_FIS_SIFIRLI_ACIKLAMA</value>
+  </data>
+  <data name="SIPARIS_FIS_SIFIRLI_ID" xml:space="preserve">
+    <value>SIPARIS_FIS_SIFIRLI_ID</value>
+  </data>
+  <data name="SIPARIS_KOCAN_NO" xml:space="preserve">
+    <value>SIPARIS_KOCAN_NO</value>
+  </data>
+  <data name="SIPARIS_MESAJ" xml:space="preserve">
+    <value>SIPARIS_MESAJ</value>
+  </data>
+  <data name="SIPARIS_NO" xml:space="preserve">
+    <value>Order No</value>
+  </data>
+  <data name="SIPARIS_SIFIR.CARI.AD" xml:space="preserve">
+    <value>SIPARIS_SIFIR.CARI.AD</value>
+  </data>
+  <data name="SIPARIS_TARIH" xml:space="preserve">
+    <value>Order Date</value>
+  </data>
+  <data name="SIPARIS_TUR" xml:space="preserve">
+    <value>SIPARIS_TUR</value>
+  </data>
+  <data name="SIPARIS_TUR_ID" xml:space="preserve">
+    <value>SIPARIS_TUR_ID</value>
+  </data>
+  <data name="SIRA" xml:space="preserve">
+    <value>Nr.</value>
+  </data>
+  <data name="SIRA_NO" xml:space="preserve">
+    <value>Nr.</value>
+  </data>
+  <data name="SON_IRSALIYE_NO" xml:space="preserve">
+    <value>SON_IRSALIYE_NO</value>
+  </data>
+  <data name="SON_ISLEM_TARIH" xml:space="preserve">
+    <value>SON_ISLEM_TARIH</value>
+  </data>
+  <data name="SON_TARIH" xml:space="preserve">
+    <value>SON_TARIH</value>
+  </data>
+  <data name="SORGU" xml:space="preserve">
+    <value>SORGU</value>
+  </data>
+  <data name="SOYAD" xml:space="preserve">
+    <value>SOYAD</value>
+  </data>
+  <data name="SOZLESME_NO" xml:space="preserve">
+    <value>SOZLESME_NO</value>
+  </data>
+  <data name="SQL" xml:space="preserve">
+    <value>SQL</value>
+  </data>
+  <data name="STOK" xml:space="preserve">
+    <value>STOK</value>
+  </data>
+  <data name="STOK.AD" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="STOK_AD_CHK" xml:space="preserve">
+    <value>STOK_AD_CHK</value>
+  </data>
+  <data name="STOK_AD_SA" xml:space="preserve">
+    <value>STOK_AD_SA</value>
+  </data>
+  <data name="STOK_AD_SB" xml:space="preserve">
+    <value>STOK_AD_SB</value>
+  </data>
+  <data name="STOK_ADI" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="STOK_ALTERNATIF" xml:space="preserve">
+    <value>STOK_ALTERNATIF</value>
+  </data>
+  <data name="STOK_ALTERNATIF_KOD_ALT_CHK" xml:space="preserve">
+    <value>STOK_ALTERNATIF_KOD_ALT_CHK</value>
+  </data>
+  <data name="STOK_ALTERNATOF_KOD_CHK" xml:space="preserve">
+    <value>STOK_ALTERNATOF_KOD_CHK</value>
+  </data>
+  <data name="STOK_ALTERNATOF_KOD_SA" xml:space="preserve">
+    <value>STOK_ALTERNATOF_KOD_SA</value>
+  </data>
+  <data name="STOK_ALTERNATOF_KOD_SB" xml:space="preserve">
+    <value>STOK_ALTERNATOF_KOD_SB</value>
+  </data>
+  <data name="STOK_AMB_MIK_CHK" xml:space="preserve">
+    <value>STOK_AMB_MIK_CHK</value>
+  </data>
+  <data name="STOK_AMB_MIK_SA" xml:space="preserve">
+    <value>STOK_AMB_MIK_SA</value>
+  </data>
+  <data name="STOK_AMB_MIK_SB" xml:space="preserve">
+    <value>STOK_AMB_MIK_SB</value>
+  </data>
+  <data name="STOK_AMB_TIP_CHK" xml:space="preserve">
+    <value>STOK_AMB_TIP_CHK</value>
+  </data>
+  <data name="STOK_AMB_TIP_SA" xml:space="preserve">
+    <value>STOK_AMB_TIP_SA</value>
+  </data>
+  <data name="STOK_AMB_TIP_SB" xml:space="preserve">
+    <value>STOK_AMB_TIP_SB</value>
+  </data>
+  <data name="STOK_AMBALAJ" xml:space="preserve">
+    <value>Packaging type</value>
+  </data>
+  <data name="STOK_AMBALAJ_ID" xml:space="preserve">
+    <value>Packaging type</value>
+  </data>
+  <data name="STOK_AYRI_MALIYET" xml:space="preserve">
+    <value>Type of production</value>
+  </data>
+  <data name="STOK_AYRI_MALIYET_ID" xml:space="preserve">
+    <value>Type of production</value>
+  </data>
+  <data name="STOK_BIRIM_CHK" xml:space="preserve">
+    <value>STOK_BIRIM_CHK</value>
+  </data>
+  <data name="STOK_BIRIM_SA" xml:space="preserve">
+    <value>STOK_BIRIM_SA</value>
+  </data>
+  <data name="STOK_BIRIM_SB" xml:space="preserve">
+    <value>STOK_BIRIM_SB</value>
+  </data>
+  <data name="STOK_FIS_EKBILGI" xml:space="preserve">
+    <value>STOK_FIS_EKBILGI</value>
+  </data>
+  <data name="STOK_FIS_EKBILGI_1" xml:space="preserve">
+    <value>STOK_FIS_EKBILGI_1</value>
+  </data>
+  <data name="STOK_FIS_NUMARASI_BIRLESTIRME" xml:space="preserve">
+    <value>STOK_FIS_NUMARASI_BIRLESTIRME</value>
+  </data>
+  <data name="STOK_FIS_SATIR" xml:space="preserve">
+    <value>STOK_FIS_SATIR</value>
+  </data>
+  <data name="STOK_FIS_SATIR_DOKUM_ACIKLAMA" xml:space="preserve">
+    <value>STOK_FIS_SATIR_DOKUM_ACIKLAMA</value>
+  </data>
+  <data name="STOK_FIS_SATIR_ID" xml:space="preserve">
+    <value>STOK_FIS_SATIR_ID</value>
+  </data>
+  <data name="STOK_FIS_SIFIRLI" xml:space="preserve">
+    <value>STOK_FIS_SIFIRLI</value>
+  </data>
+  <data name="STOK_FIS_SIFIRLI_DOKUM_ACIKLAMA" xml:space="preserve">
+    <value>STOK_FIS_SIFIRLI_DOKUM_ACIKLAMA</value>
+  </data>
+  <data name="STOK_FIS_SIFIRLI_ID" xml:space="preserve">
+    <value>STOK_FIS_SIFIRLI_ID</value>
+  </data>
+  <data name="STOK_FIS_SIPARIS" xml:space="preserve">
+    <value>STOK_FIS_SIPARIS</value>
+  </data>
+  <data name="STOK_FIYAT_CHK" xml:space="preserve">
+    <value>STOK_FIYAT_CHK</value>
+  </data>
+  <data name="STOK_FIYAT_SA" xml:space="preserve">
+    <value>STOK_FIYAT_SA</value>
+  </data>
+  <data name="STOK_FIYAT_SB" xml:space="preserve">
+    <value>STOK_FIYAT_SB</value>
+  </data>
+  <data name="STOK_GRUP" xml:space="preserve">
+    <value>STOK_GRUP</value>
+  </data>
+  <data name="STOK_HIZMET" xml:space="preserve">
+    <value>STOK_HIZMET</value>
+  </data>
+  <data name="STOK_ID" xml:space="preserve">
+    <value>Product                                                  </value>
+  </data>
+  <data name="STOK_ISK_CHK" xml:space="preserve">
+    <value>STOK_ISK_CHK</value>
+  </data>
+  <data name="STOK_ISK_SA" xml:space="preserve">
+    <value>STOK_ISK_SA</value>
+  </data>
+  <data name="STOK_ISK_SB" xml:space="preserve">
+    <value>STOK_ISK_SB</value>
+  </data>
+  <data name="STOK_KDV_CHK" xml:space="preserve">
+    <value>STOK_KDV_CHK</value>
+  </data>
+  <data name="STOK_KDV_SA" xml:space="preserve">
+    <value>STOK_KDV_SA</value>
+  </data>
+  <data name="STOK_KDV_SB" xml:space="preserve">
+    <value>STOK_KDV_SB</value>
+  </data>
+  <data name="STOK_KIRILMA" xml:space="preserve">
+    <value>STOK_KIRILMA</value>
+  </data>
+  <data name="STOK_KOD" xml:space="preserve">
+    <value>Our Ref.</value>
+  </data>
+  <data name="STOK_KOD_CHK" xml:space="preserve">
+    <value>STOK_KOD_CHK</value>
+  </data>
+  <data name="STOK_KOD_SA" xml:space="preserve">
+    <value>STOK_KOD_SA</value>
+  </data>
+  <data name="STOK_KOD_SB" xml:space="preserve">
+    <value>STOK_KOD_SB</value>
+  </data>
+  <data name="STOK_MALIYET_TIP_ID" xml:space="preserve">
+    <value>STOK_MALIYET_TIP_ID</value>
+  </data>
+  <data name="STOK_MIK_CHK" xml:space="preserve">
+    <value>STOK_MIK_CHK</value>
+  </data>
+  <data name="STOK_MIK_SA" xml:space="preserve">
+    <value>STOK_MIK_SA</value>
+  </data>
+  <data name="STOK_MIK_SB" xml:space="preserve">
+    <value>STOK_MIK_SB</value>
+  </data>
+  <data name="STOK_MIKTAR_KONTROL_TIP_ID" xml:space="preserve">
+    <value>STOK_MIKTAR_KONTROL_TIP_ID</value>
+  </data>
+  <data name="STOK_PARTI_RAF_ID" xml:space="preserve">
+    <value>STOK_PARTI_RAF_ID</value>
+  </data>
+  <data name="STOK_RAF" xml:space="preserve">
+    <value>STOK_RAF</value>
+  </data>
+  <data name="STOK_RESIM" xml:space="preserve">
+    <value>STOK_RESIM</value>
+  </data>
+  <data name="STOK_SABIT_RAF_E_H" xml:space="preserve">
+    <value>STOK_SABIT_RAF_E_H</value>
+  </data>
+  <data name="STOK_SATIR_BASLANGIC" xml:space="preserve">
+    <value>STOK_SATIR_BASLANGIC</value>
+  </data>
+  <data name="STOK_SATIR_BITIS" xml:space="preserve">
+    <value>STOK_SATIR_BITIS</value>
+  </data>
+  <data name="STOK_TEMIN" xml:space="preserve">
+    <value>STOK_TEMIN</value>
+  </data>
+  <data name="STOK_TUT_CHK" xml:space="preserve">
+    <value>STOK_TUT_CHK</value>
+  </data>
+  <data name="STOK_TUT_SA" xml:space="preserve">
+    <value>STOK_TUT_SA</value>
+  </data>
+  <data name="STOK_TUT_SB" xml:space="preserve">
+    <value>STOK_TUT_SB</value>
+  </data>
+  <data name="STOK_URETIM_HATA" xml:space="preserve">
+    <value>STOK_URETIM_HATA</value>
+  </data>
+  <data name="STOK_URETIM_HATA_ID" xml:space="preserve">
+    <value>STOK_URETIM_HATA_ID</value>
+  </data>
+  <data name="SUBE" xml:space="preserve">
+    <value>SUBE</value>
+  </data>
+  <data name="SUBE_KOD" xml:space="preserve">
+    <value>SUBE_KOD</value>
+  </data>
+  <data name="SUBE_NO" xml:space="preserve">
+    <value>SUBE_NO</value>
+  </data>
+  <data name="sysdiagrams" xml:space="preserve">
+    <value>sysdiagrams</value>
+  </data>
+  <data name="T_A_ARAC_CINSI" xml:space="preserve">
+    <value>T_A_ARAC_CINSI</value>
+  </data>
+  <data name="T_A_FIRMA" xml:space="preserve">
+    <value>T_A_FIRMA</value>
+  </data>
+  <data name="T_A_ISIM" xml:space="preserve">
+    <value>T_A_ISIM</value>
+  </data>
+  <data name="T_A_NOT" xml:space="preserve">
+    <value>T_A_NOT</value>
+  </data>
+  <data name="T_A_PLAKA" xml:space="preserve">
+    <value>T_A_PLAKA</value>
+  </data>
+  <data name="T_E_BOLUM" xml:space="preserve">
+    <value>T_E_BOLUM</value>
+  </data>
+  <data name="T_E_SAAT" xml:space="preserve">
+    <value>T_E_SAAT</value>
+  </data>
+  <data name="T_E_SEVK_AGIRLIGI" xml:space="preserve">
+    <value>T_E_SEVK_AGIRLIGI</value>
+  </data>
+  <data name="T_E_TAR" xml:space="preserve">
+    <value>T_E_TAR</value>
+  </data>
+  <data name="CARI_TESLIM_EDEN_ID" xml:space="preserve">
+    <value>CARI_TESLIM_EDEN_ID</value>
+  </data>
+  <data name="TAHMINI_ALIS" xml:space="preserve">
+    <value>TAHMINI_ALIS</value>
+  </data>
+  <data name="TAHMINI_KUR" xml:space="preserve">
+    <value>TAHMINI_KUR</value>
+  </data>
+  <data name="TAHMINI_SATIS" xml:space="preserve">
+    <value>TAHMINI_SATIS</value>
+  </data>
+  <data name="TAHSILATCI_E_H" xml:space="preserve">
+    <value>TAHSILATCI_E_H</value>
+  </data>
+  <data name="TARIH" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="TC_KIMLIK_NO" xml:space="preserve">
+    <value>TC_KIMLIK_NO</value>
+  </data>
+  <data name="TEKLIF_ALT_UST_ACIKLAMA" xml:space="preserve">
+    <value>TEKLIF_ALT_UST_ACIKLAMA</value>
+  </data>
+  <data name="TEKLIF_ALT_UST_TIP" xml:space="preserve">
+    <value>TEKLIF_ALT_UST_TIP</value>
+  </data>
+  <data name="TEKLIF_ALT_UST_TIP_ID" xml:space="preserve">
+    <value>TEKLIF_ALT_UST_TIP_ID</value>
+  </data>
+  <data name="TEKLIF_DEGERLENDIRME" xml:space="preserve">
+    <value>TEKLIF_DEGERLENDIRME</value>
+  </data>
+  <data name="TEKLIF_DEGERLENDIRME_ACIKLAMA" xml:space="preserve">
+    <value>TEKLIF_DEGERLENDIRME_ACIKLAMA</value>
+  </data>
+  <data name="TEKLIF_DEGERLENDIRME_ID" xml:space="preserve">
+    <value>Evaluation</value>
+  </data>
+  <data name="TEKLIF_FIS_SATIR" xml:space="preserve">
+    <value>TEKLIF_FIS_SATIR</value>
+  </data>
+  <data name="TEKLIF_FIS_SATIR_ID" xml:space="preserve">
+    <value>TEKLIF_FIS_SATIR_ID</value>
+  </data>
+  <data name="TEKLIF_FIS_SIFIRLI" xml:space="preserve">
+    <value>TEKLIF_FIS_SIFIRLI</value>
+  </data>
+  <data name="TEKLIF_FIS_SIFIRLI_ID" xml:space="preserve">
+    <value>TEKLIF_FIS_SIFIRLI_ID</value>
+  </data>
+  <data name="TEKLIF_MESAJ" xml:space="preserve">
+    <value>TEKLIF_MESAJ</value>
+  </data>
+  <data name="TEKLIF_TESLIM_SURE_TIP" xml:space="preserve">
+    <value>Delivery Type</value>
+  </data>
+  <data name="TEKLIF_TESLIM_SURE_TIP_ID" xml:space="preserve">
+    <value>Delivery Time Period</value>
+  </data>
+  <data name="TEKLIF_TIP" xml:space="preserve">
+    <value>TEKLIF_TIP</value>
+  </data>
+  <data name="TEKLIF_TIP_ID" xml:space="preserve">
+    <value>Delivery Type</value>
+  </data>
+  <data name="TEKNIK_AD" xml:space="preserve">
+    <value>Technical Name</value>
+  </data>
+  <data name="TEKNIK_KOD" xml:space="preserve">
+    <value>Technical Code</value>
+  </data>
+  <data name="TEL" xml:space="preserve">
+    <value>TEL</value>
+  </data>
+  <data name="TELEFON" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="TEMIN_SURE" xml:space="preserve">
+    <value>Available time</value>
+  </data>
+  <data name="TEMINAT_E_H" xml:space="preserve">
+    <value>TEMINAT_E_H</value>
+  </data>
+  <data name="TESLIM_AMBAR_ID" xml:space="preserve">
+    <value>TESLIM_AMBAR_ID</value>
+  </data>
+  <data name="TESLIM_SURE" xml:space="preserve">
+    <value>Delivery time</value>
+  </data>
+  <data name="TESLIM_TARIH" xml:space="preserve">
+    <value>Del. Date</value>
+  </data>
+  <data name="TESLIM_YERI" xml:space="preserve">
+    <value>TESLIM_YERI</value>
+  </data>
+  <data name="TESVIK_GRUP_ID" xml:space="preserve">
+    <value>Encouragement Type</value>
+  </data>
+  <data name="TESVIK_ID" xml:space="preserve">
+    <value>TESVIK_ID</value>
+  </data>
+  <data name="TESVIK_TIP" xml:space="preserve">
+    <value>TESVIK_TIP</value>
+  </data>
+  <data name="Thread" xml:space="preserve">
+    <value>Thread</value>
+  </data>
+  <data name="TICARI_MAL_MALIYET_MUHASEBE_HESAP_PLANI_ID" xml:space="preserve">
+    <value>TICARI_MAL_MALIYET_MUHASEBE_HESAP_PLANI_ID</value>
+  </data>
+  <data name="TICARI_MAL_MUHASEBE_HESAP_PLANI_ID" xml:space="preserve">
+    <value>TICARI_MAL_MUHASEBE_HESAP_PLANI_ID</value>
+  </data>
+  <data name="TIP" xml:space="preserve">
+    <value>TIP</value>
+  </data>
+  <data name="TOP_TUT_CHK" xml:space="preserve">
+    <value>TOP_TUT_CHK</value>
+  </data>
+  <data name="TOP_TUT_SA" xml:space="preserve">
+    <value>TOP_TUT_SA</value>
+  </data>
+  <data name="TOP_TUT_UA" xml:space="preserve">
+    <value>TOP_TUT_UA</value>
+  </data>
+  <data name="TOPLAM_BRUT_AGIRLIK" xml:space="preserve">
+    <value>TOPLAM_BRUT_AGIRLIK</value>
+  </data>
+  <data name="TOPLAM_HACIM" xml:space="preserve">
+    <value>Total Volume</value>
+  </data>
+  <data name="TOPLAM_IHTIYAC_BELIRLEME_GUN_SAYI" xml:space="preserve">
+    <value>TOPLAM_IHTIYAC_BELIRLEME_GUN_SAYI</value>
+  </data>
+  <data name="TOPLAM_MIKTAR" xml:space="preserve">
+    <value>Total Quantity</value>
+  </data>
+  <data name="TOPLAM_NET_AGIRLIK" xml:space="preserve">
+    <value>Total Net Weight</value>
+  </data>
+  <data name="TOPLAM_TUTAR" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="TUTAR" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="TUTAR_DOVIZ" xml:space="preserve">
+    <value>Amount Exch.</value>
+  </data>
+  <data name="TUTAR_MALIYET" xml:space="preserve">
+    <value>TUTAR_MALIYET</value>
+  </data>
+  <data name="ULKE" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="ULKE_DOKUM_ACIKLAMA" xml:space="preserve">
+    <value>ULKE_DOKUM_ACIKLAMA</value>
+  </data>
+  <data name="ULKE_DOKUM_ACIKLAMA_TIP" xml:space="preserve">
+    <value>ULKE_DOKUM_ACIKLAMA_TIP</value>
+  </data>
+  <data name="ULKE_DOKUM_ACIKLAMA_TIP_ID" xml:space="preserve">
+    <value>ULKE_DOKUM_ACIKLAMA_TIP_ID</value>
+  </data>
+  <data name="ULKE_ID" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="UNVAN" xml:space="preserve">
+    <value>UNVAN</value>
+  </data>
+  <data name="UPDATE_KUL_ID" xml:space="preserve">
+    <value>UPDATE_KUL_ID</value>
+  </data>
+  <data name="UPDATE_TAR" xml:space="preserve">
+    <value>UPDATE_TAR</value>
+  </data>
+  <data name="URETIM_TARIH" xml:space="preserve">
+    <value>URETIM_TARIH</value>
+  </data>
+  <data name="URETIM_YERI_KIRILMA" xml:space="preserve">
+    <value>URETIM_YERI_KIRILMA</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="UST_ACIKLAMA" xml:space="preserve">
+    <value>UST_ACIKLAMA</value>
+  </data>
+  <data name="UST_ID" xml:space="preserve">
+    <value>UST_ID</value>
+  </data>
+  <data name="VADE_TARIH" xml:space="preserve">
+    <value>VADE_TARIH</value>
+  </data>
+  <data name="VALOR_GUN" xml:space="preserve">
+    <value>VALOR_GUN</value>
+  </data>
+  <data name="VALOR_GUN_1" xml:space="preserve">
+    <value>VALOR_GUN_1</value>
+  </data>
+  <data name="VALOR_GUN_2" xml:space="preserve">
+    <value>VALOR_GUN_2</value>
+  </data>
+  <data name="VALOR_TARIH" xml:space="preserve">
+    <value>VALOR_TARIH</value>
+  </data>
+  <data name="VALOR_TARIH_1" xml:space="preserve">
+    <value>VALOR_TARIH_1</value>
+  </data>
+  <data name="VALOR_TARIH_2" xml:space="preserve">
+    <value>VALOR_TARIH_2</value>
+  </data>
+  <data name="VALOR_YUZ" xml:space="preserve">
+    <value>VALOR_YUZ</value>
+  </data>
+  <data name="VALOR_YUZDE" xml:space="preserve">
+    <value>VALOR_YUZDE</value>
+  </data>
+  <data name="VALOR_YUZDE_1" xml:space="preserve">
+    <value>VALOR_YUZDE_1</value>
+  </data>
+  <data name="VALOR_YUZDE_2" xml:space="preserve">
+    <value>VALOR_YUZDE_2</value>
+  </data>
+  <data name="VAT" xml:space="preserve">
+    <value>VAT</value>
+  </data>
+  <data name="VERGI_DAIRE" xml:space="preserve">
+    <value>VERGI_DAIRE</value>
+  </data>
+  <data name="VERGI_NO" xml:space="preserve">
+    <value>VERGI_NO</value>
+  </data>
+  <data name="version" xml:space="preserve">
+    <value>version</value>
+  </data>
+  <data name="VIRMAN_E_H" xml:space="preserve">
+    <value>VIRMAN_E_H</value>
+  </data>
+  <data name="WEB" xml:space="preserve">
+    <value>Web</value>
+  </data>
+  <data name="YAZ_E_H" xml:space="preserve">
+    <value>YAZ_E_H</value>
+  </data>
+  <data name="YAZDIRILDI_E_H" xml:space="preserve">
+    <value>YAZDIRILDI_E_H</value>
+  </data>
+  <data name="YAZMASIN_E_H" xml:space="preserve">
+    <value>YAZMASIN_E_H</value>
+  </data>
+  <data name="YETKI" xml:space="preserve">
+    <value>YETKI</value>
+  </data>
+  <data name="YETKI_ALANLAR" xml:space="preserve">
+    <value>YETKI_ALANLAR</value>
+  </data>
+  <data name="YETKILI_KISI" xml:space="preserve">
+    <value>YETKILI_KISI</value>
+  </data>
+  <data name="YETKILI_KISI_UNVANI" xml:space="preserve">
+    <value>YETKILI_KISI_UNVANI</value>
+  </data>
+  <data name="YEVMIYE_NO" xml:space="preserve">
+    <value>YEVMIYE_NO</value>
+  </data>
+  <data name="YOL_SURE" xml:space="preserve">
+    <value>Path length</value>
+  </data>
+  <data name="YURTICI_YURTDISI_E_H" xml:space="preserve">
+    <value>YURTICI_YURTDISI_E_H</value>
+  </data>
+  <data name="ALTERNATIF_REFERANS_NO" xml:space="preserve">
+    <value>Your Ref.</value>
+  </data>
+  <data name="EMAIL" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="FIRMA_WEB" xml:space="preserve">
+    <value>Firm Web</value>
+  </data>
+  <data name="MUSTERI" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="PROFORMA_NO" xml:space="preserve">
+    <value>Proforma Nr.</value>
+  </data>
+  <data name="PROFORMA_TARIHI" xml:space="preserve">
+    <value>Proforma  Date</value>
+  </data>
+  <data name="REFERANS_NO" xml:space="preserve">
+    <value>Our Ref.</value>
+  </data>
+  <data name="STOK_AD" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="TELEFON_2" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="TOPLAM_AGIRLIK" xml:space="preserve">
+    <value>Total Weight</value>
+  </data>
+  <data name="YUZDE" xml:space="preserve">
+    <value>Perc.</value>
+  </data>
+  <data name="STOK_ADI1" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="PROFORMA_FATURA" xml:space="preserve">
+    <value>PROFORMA INVOICE</value>
+  </data>
+  <data name="ALTERNATIF_AD" xml:space="preserve">
+    <value>Alt. Name</value>
+  </data>
+  <data name="ALTERNATIF_KOD" xml:space="preserve">
+    <value>Alt Code</value>
+  </data>
+  <data name="TESLIM_TARIH_K" xml:space="preserve">
+    <value>Del.Date</value>
+  </data>
+  <data name="CARI_HESAP" xml:space="preserve">
+    <value>Customer Code</value>
+  </data>
+  <data name="CARI_HESAP_AD" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="DONEM" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="DOVIZ_CINS" xml:space="preserve">
+    <value>Curr.</value>
+  </data>
+  <data name="ALTERNATIF_REFERANS_NO_B" xml:space="preserve">
+    <value>YOUR REF.</value>
+  </data>
+  <data name="ARA_TOPLAM_B" xml:space="preserve">
+    <value>SUB TOTAL</value>
+  </data>
+  <data name="DOVIZ_B" xml:space="preserve">
+    <value>CURR</value>
+  </data>
+  <data name="FATURA_NO_B" xml:space="preserve">
+    <value>INVOICE NR.</value>
+  </data>
+  <data name="FATURA_TARIH_B" xml:space="preserve">
+    <value>INVOICE DATE</value>
+  </data>
+  <data name="FIRMA_EMAIL" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="FIRMA_FAX" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="FIRMA_TELEFON" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="FIYAT_B" xml:space="preserve">
+    <value>UNIT PRICE</value>
+  </data>
+  <data name="ISKONTO_TOPLAM" xml:space="preserve">
+    <value>Discount</value>
+  </data>
+  <data name="ISKONTO_TOPLAM_B" xml:space="preserve">
+    <value>DISCOUNT</value>
+  </data>
+  <data name="ISKONTO_YUZDE_ISARETlbl" xml:space="preserve">
+    <value>%</value>
+  </data>
+  <data name="MIKTAR_B" xml:space="preserve">
+    <value>QUANTITY</value>
+  </data>
+  <data name="MUSTERI_B" xml:space="preserve">
+    <value>CUSTOMER</value>
+  </data>
+  <data name="MUSTERI_NO" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="MUSTERI_NO_B" xml:space="preserve">
+    <value>CUSTOMER NR.</value>
+  </data>
+  <data name="PROFORMA_NO_B" xml:space="preserve">
+    <value>PROFORMA NR.</value>
+  </data>
+  <data name="REFERANS_NO_B" xml:space="preserve">
+    <value>OUR REF.</value>
+  </data>
+  <data name="SIRA_NO_B" xml:space="preserve">
+    <value>NR.</value>
+  </data>
+  <data name="STOK_ADI_B" xml:space="preserve">
+    <value>DESCRIPTION</value>
+  </data>
+  <data name="TOPLAMlbl" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="TOPLAM_B" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="TUTAR_B" xml:space="preserve">
+    <value>AMOUNT</value>
+  </data>
+  <data name="REFERANS_KOD" xml:space="preserve">
+    <value>Your Ref.</value>
+  </data>
+  <data name="SIPARIS_TARIHI" xml:space="preserve">
+    <value>Order Date</value>
+  </data>
+  <data name="TOPLAM" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="PROFORMA_FATURA_ALIS" xml:space="preserve">
+    <value>PROFORMA</value>
+  </data>
+  <data name="PROFORMA_FATURA_SATIS" xml:space="preserve">
+    <value>PROFORMA INVOICE</value>
+  </data>
+  <data name="DOVIZ_AD" xml:space="preserve">
+    <value>Curr.</value>
+  </data>
+  <data name="TANIM" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="TES_TARIH" xml:space="preserve">
+    <value>Del. Date</value>
+  </data>
+  <data name="SATICI_NO" xml:space="preserve">
+    <value>Num of supplier</value>
+  </data>
+  <data name="CEKI_LISTESI" xml:space="preserve">
+    <value>Packing List</value>
+  </data>
+  <data name="CariHesapTahsilatListesi" xml:space="preserve">
+    <value>Delay List</value>
+  </data>
+  <data name="FATURA_NO_K" xml:space="preserve">
+    <value>Inv.No</value>
+  </data>
+  <data name="FATURA_TARIH_K" xml:space="preserve">
+    <value>Inv.Date</value>
+  </data>
+  <data name="GENEL_TOPLAM" xml:space="preserve">
+    <value>Grand Total</value>
+  </data>
+  <data name="GUN" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="ISTENEN_BOLGELER" xml:space="preserve">
+    <value>..</value>
+  </data>
+  <data name="ISTENEN_DONEM" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="NAKIT" xml:space="preserve">
+    <value>Inv.Amount</value>
+  </data>
+  <data name="SON_SATIS_FATURA_TARIHI" xml:space="preserve">
+    <value>Date of Last Collection</value>
+  </data>
+  <data name="TAHSILAT_TARIH_K" xml:space="preserve">
+    <value>Exp.Date</value>
+  </data>
+  <data name="TOPLAM_DELAY_LIST" xml:space="preserve">
+    <value>Net Amount</value>
+  </data>
+  <data name="VADELI" xml:space="preserve">
+    <value>Unexp.Amount</value>
+  </data>
+  <data name="VADE_SORGULAMA_TIP" xml:space="preserve">
+    <value>..</value>
+  </data>
+  <data name="DOVIZ_ID_K" xml:space="preserve">
+    <value>Exc.</value>
+  </data>
+  <data name="KOLI" xml:space="preserve">
+    <value>Coli</value>
+  </data>
+  <data name="ADET_K" xml:space="preserve">
+    <value>Qty</value>
+  </data>
+  <data name="BACK_ORDER" xml:space="preserve">
+    <value>Back Order</value>
+  </data>
+  <data name="BIRIM1" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+  <data name="TOPLAM1" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="GRUP_ADI" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="GRUP_KODU" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="MUSTERI_SATICI_KOD" xml:space="preserve">
+    <value>Firm Code</value>
+  </data>
+  <data name="STOK_ALTERNATIF_AD" xml:space="preserve">
+    <value>Alt. Code</value>
+  </data>
+  <data name="MIKTAR_K" xml:space="preserve">
+    <value>Qty.</value>
+  </data>
+  <data name="CREDIT_NOTE_NUMBER_B" xml:space="preserve">
+    <value>CREDIT NOTE NUMBER</value>
+  </data>
+  <data name="Cari İşlemler" xml:space="preserve">
+    <value>Customers Menu</value>
+  </data>
+  <data name="MARKA" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+  <data name="Sistem" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="Stok / Ambar" xml:space="preserve">
+    <value>Products Menu</value>
+  </data>
+  <data name="Teklif İşlemleri" xml:space="preserve">
+    <value>Proforma Menu</value>
+  </data>
+  <data name="YIL" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="AMBAR_E_H" xml:space="preserve">
+    <value>Warehouse type</value>
+  </data>
+  <data name="AMBAR_MIKTAR_" xml:space="preserve">
+    <value>Our Warehouse</value>
+  </data>
+  <data name="AYLIK_ORTALAMA_SEVK_MIKTAR" xml:space="preserve">
+    <value>Average Monthly Sales</value>
+  </data>
+  <data name="Cari Adres(F7)" xml:space="preserve">
+    <value>Address (F7)</value>
+  </data>
+  <data name="Cari Bilgi Giriş" xml:space="preserve">
+    <value>Customers</value>
+  </data>
+  <data name="Cari Gözlem(F6)" xml:space="preserve">
+    <value>Transactions (F6)</value>
+  </data>
+  <data name="CARI_GRUP10_ID" xml:space="preserve">
+    <value>Account Group 10</value>
+  </data>
+  <data name="CARI_GRUP1_ID" xml:space="preserve">
+    <value>Account Group 1</value>
+  </data>
+  <data name="CARI_GRUP2_ID" xml:space="preserve">
+    <value>Account Group 2</value>
+  </data>
+  <data name="CARI_GRUP3_ID" xml:space="preserve">
+    <value>Account Group 3</value>
+  </data>
+  <data name="CARI_GRUP4_ID" xml:space="preserve">
+    <value>Account Group 4</value>
+  </data>
+  <data name="CARI_GRUP5_ID" xml:space="preserve">
+    <value>Account Group 5</value>
+  </data>
+  <data name="CARI_GRUP6_ID" xml:space="preserve">
+    <value>Account Group 6</value>
+  </data>
+  <data name="CARI_GRUP7_ID" xml:space="preserve">
+    <value>Account Group 7</value>
+  </data>
+  <data name="CARI_GRUP8_ID" xml:space="preserve">
+    <value>Account Group 8</value>
+  </data>
+  <data name="CARI_GRUP9_ID" xml:space="preserve">
+    <value>Account Group 9</value>
+  </data>
+  <data name="DOKUM_ACIKLAMALARI" xml:space="preserve">
+    <value>Fill Proforma Descriptions</value>
+  </data>
+  <data name="Ek Bilgi (Cntrl+F8)" xml:space="preserve">
+    <value>Product Extrainfo (Cntrl+F8)</value>
+  </data>
+  <data name="Ek Bilgi (F8)" xml:space="preserve">
+    <value>Product Extrainfo (F8)</value>
+  </data>
+  <data name="Ek Bilgi (Shift+F8)" xml:space="preserve">
+    <value>Product Extrainfo (Shift+F8)</value>
+  </data>
+  <data name="Ek Bilgiler(Cntrl+F8)" xml:space="preserve">
+    <value>Extrainfo (Cntrl+F8)</value>
+  </data>
+  <data name="Ek Bilgiler(F8)" xml:space="preserve">
+    <value>Extrainfo (F8)</value>
+  </data>
+  <data name="Ek Bilgiler(Shift+F8)" xml:space="preserve">
+    <value>Extrainfo (Shift+F8)</value>
+  </data>
+  <data name="Ek Kartlar (F12)" xml:space="preserve">
+    <value>Other (F12)</value>
+  </data>
+  <data name="Ek Kartlar(F12)" xml:space="preserve">
+    <value>Other (F12)</value>
+  </data>
+  <data name="GENEL_SATIS_FIYAT" xml:space="preserve">
+    <value>List Price</value>
+  </data>
+  <data name="GUMRUK_AMBAR_" xml:space="preserve">
+    <value>Duty Warehouse</value>
+  </data>
+  <data name="GUMRUK_YOL_AMBAR_" xml:space="preserve">
+    <value>Road Warehouse</value>
+  </data>
+  <data name="Gözlem (F6)" xml:space="preserve">
+    <value>Product Transactions (F6)</value>
+  </data>
+  <data name="KAMPANYA_SATIS_FIYAT" xml:space="preserve">
+    <value>Campaign Price</value>
+  </data>
+  <data name="Kodlar (F11)" xml:space="preserve">
+    <value>Product Group Codes (F11)</value>
+  </data>
+  <data name="Kodlar(F11)" xml:space="preserve">
+    <value>Group Codes (F11)</value>
+  </data>
+  <data name="LK_STOK_ETIKET_GRUP_ID" xml:space="preserve">
+    <value>Tag Group</value>
+  </data>
+  <data name="MARKA_ID" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+  <data name="NETBRUT" xml:space="preserve">
+    <value>Net Total</value>
+  </data>
+  <data name="PARITE_E_H" xml:space="preserve">
+    <value>Exchange Type</value>
+  </data>
+  <data name="RemoveButton" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="SaveImageButton" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SEVKIYAT_TURU_ID" xml:space="preserve">
+    <value>Forwarding Type</value>
+  </data>
+  <data name="Stok Resimleri (F7)" xml:space="preserve">
+    <value>Pictures (F7)</value>
+  </data>
+  <data name="Stoklar" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="STOK_GRUP10_ID" xml:space="preserve">
+    <value>Stock Group 10</value>
+  </data>
+  <data name="STOK_GRUP1_ID" xml:space="preserve">
+    <value>Stock Group 1</value>
+  </data>
+  <data name="STOK_GRUP2_ID" xml:space="preserve">
+    <value>Stock Group 2</value>
+  </data>
+  <data name="STOK_GRUP3_ID" xml:space="preserve">
+    <value>Stock Group 3</value>
+  </data>
+  <data name="STOK_GRUP4_ID" xml:space="preserve">
+    <value>Stock Group 4</value>
+  </data>
+  <data name="STOK_GRUP5_ID" xml:space="preserve">
+    <value>Stock Group 5</value>
+  </data>
+  <data name="STOK_GRUP6_ID" xml:space="preserve">
+    <value>Stock Group 6</value>
+  </data>
+  <data name="STOK_GRUP7_ID" xml:space="preserve">
+    <value>Stock Group 7</value>
+  </data>
+  <data name="STOK_GRUP8_ID" xml:space="preserve">
+    <value>Stock Group 8</value>
+  </data>
+  <data name="STOK_GRUP9_ID" xml:space="preserve">
+    <value>Stock Group 9</value>
+  </data>
+  <data name="STOK_RAF_ID" xml:space="preserve">
+    <value>Rack Code</value>
+  </data>
+  <data name="Teklif Alt/Üst Açıklama (F11)" xml:space="preserve">
+    <value>Proforma Descriptions (F11)</value>
+  </data>
+  <data name="Teklif Detay (F8)" xml:space="preserve">
+    <value>Proforma Detail (F8)</value>
+  </data>
+  <data name="Teklif Ek Bilgi (Cntrl+F8)" xml:space="preserve">
+    <value>Proforma Extrainfo (Cntrl+F8)</value>
+  </data>
+  <data name="Teklif Fiş Giriş" xml:space="preserve">
+    <value>Proforma List</value>
+  </data>
+  <data name="Teklif Stok Ek Bilgi (Shift+F8)" xml:space="preserve">
+    <value>Proforma Stock Extrainfo (Shift+F8)</value>
+  </data>
+  <data name="Teklifler" xml:space="preserve">
+    <value>Proforma</value>
+  </data>
+  <data name="TUV_E_H" xml:space="preserve">
+    <value>Certificate Type</value>
+  </data>
+  <data name="Tüm Bilgiler(Cntrl+F12)" xml:space="preserve">
+    <value>All Information (Cntrl+F12)</value>
+  </data>
+  <data name="ULKE_ACIKLAMA_DOLDUR" xml:space="preserve">
+    <value>Fill Descriptions</value>
+  </data>
+  <data name="YIL_ID" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="Bağlantıyı Kes" xml:space="preserve">
+    <value>Disconnect</value>
+  </data>
+  <data name="Cari Hesap Kart Giriş (Cntrl+C)" xml:space="preserve">
+    <value>Customers (Cntrl+C)</value>
+  </data>
+  <data name="Cari Hesap Takip (CRM)" xml:space="preserve">
+    <value>CRM</value>
+  </data>
+  <data name="Cari Hesap Tanıtımlar" xml:space="preserve">
+    <value>Customer Definitions</value>
+  </data>
+  <data name="Genel" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="Listeler" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="Stok Alternatif Kod/Ad Tanıtım" xml:space="preserve">
+    <value>Artical Product Codes</value>
+  </data>
+  <data name="Stok Kart Giriş (Cntrl+M)" xml:space="preserve">
+    <value>Products (Cntrl+M)</value>
+  </data>
+  <data name="Stok İşlemleri" xml:space="preserve">
+    <value>Product Definitions</value>
+  </data>
+  <data name="Teklif" xml:space="preserve">
+    <value>Proforma</value>
+  </data>
+  <data name="Teklif Fiş Hazırlama(Cntrl+T)" xml:space="preserve">
+    <value>Proforma Preparation (Cntrl+T)</value>
+  </data>
+</root>

@@ -1,0 +1,4 @@
+﻿29.10.2012
+siparisfis datır_doldur'da focus_row_changed_satır kaldırıldı, birden fazla kere giriyordu. duruma göre diğer fişlerde de yapılabilir.
+fissablonson'da FocusedRowChanged_Bos_Satir eklendi bos satıra girdiğinde yapılacak işlemler içim
+"name=b2cEntities"

@@ -1,0 +1,909 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9DEA3863-7D3E-4F5F-A90C-0D6129A5FFBB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Prodma.DataAccessB2C</RootNamespace>
+    <AssemblyName>Prodma.DataAccessB2C</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Mono.Security">
+      <HintPath>bin\Enums\postgre\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.0.11.91, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql.Provider, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Npgsql.Provider.dll</HintPath>
+    </Reference>
+    <Reference Include="policy.2.0.Npgsql">
+      <HintPath>bin\Enums\postgre\policy.2.0.Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Prodma, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <ExecutableExtension>.exe</ExecutableExtension>
+    </Reference>
+    <Reference Include="Prodma.Raporlar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <ExecutableExtension>.exe</ExecutableExtension>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="b2cModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>b2cModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="b2cModel.Views.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>b2cModel.Views.tt</DependentUpon>
+    </Compile>
+    <Compile Include="B2CPANEL\controllers\araclar\categoryCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\cityCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\module_stockalert_customerCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\countryCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\est_bankCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\est_creditcardestrelationCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\est_creditcardtypeCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\est_estcredentialCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\est_installmentalternativeCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\est_transactionCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\firm_parameterCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\ilceCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\languageCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\manufacturerCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\messaging_customermessageCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\messaging_messagedepartmentCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\module_pricedropalert_customerCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\module_pricedropalert_emailCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\newsletterCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\araclar\tax_rateCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\cms\bannerCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\cms\banner_areaCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\cms\shop_configCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\cms\shop_synonymCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\cms\simit_customareacategoryCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\cms\simit_customareaCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\cms\simit_menuCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\cms\simit_menusectionCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\cms\simit_pageCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\django\admin_tools_dashboard_preferencesCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\django\auth_groupCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\django\auth_group_permissionsCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\django\auth_permissionCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\django\auth_userCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\django\auth_user_groupsCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\django\auth_user_user_permissionsCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\django\django_admin_logCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\django\django_content_typeCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\django\django_sessionCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\odeme\customer_address.cs" />
+    <Compile Include="B2CPANEL\controllers\odeme\customer_basketCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\odeme\customer_groupCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\odeme\discountCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\odeme\discount_categoryCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\odeme\discount_customer_groupCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\odeme\discount_product_tagCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\odeme\orderCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\odeme\order_productCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\odeme\order_statusCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\odeme\payment_packageCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\odeme\shipment_alternativeCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\odeme\shipment_methodCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\odeme\shipment_packageCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\Product_Vehicle\tb_kart_stok_oemCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\Product_Vehicle\productCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\Product_Vehicle\product_imagesCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\Product_Vehicle\product_originalCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\Product_Vehicle\product_pageCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\Product_Vehicle\product_reviewCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\Product_Vehicle\product_tagCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\Product_Vehicle\product_tagsCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\Product_Vehicle\product_vehicleCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\Product_Vehicle\vehicleCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\Product_Vehicle\vehicle_currencyCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\Product_Vehicle\vehicle_fuel_typeCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\Product_Vehicle\vehicle_motor_typeCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\Product_Vehicle\vehicle_toptanciCntrl.cs" />
+    <Compile Include="B2CPANEL\controllers\Product_Vehicle\vehicle_treeCntrl.cs" />
+    <Compile Include="B2CPANEL\model\araclar\categoryVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\category_attribute_choiceVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\category_attribute_schemaVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\category_attribute_valueVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\cityVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\module_stockalert_customerVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\countryVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\ege_integration_activitylogVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\ege_integration_productcompetitorrelationVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\ege_integration_relationVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\est_bankVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\est_creditcardestrelationVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\est_creditcardtypeVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\est_estcredentialVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\est_installmentalternativeVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\est_transactionVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\firm_parameterVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\ilceVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\languageVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\manufacturerVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\messaging_customermessageVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\messaging_messagedepartmentVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\module_pricedropalert_customerVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\module_pricedropalert_emailVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\newsletterVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\tax_rateVm.cs" />
+    <Compile Include="B2CPANEL\model\araclar\tb_kart_stok_fiyatlarVm.cs" />
+    <Compile Include="B2CPANEL\model\cms\bannerVm.cs" />
+    <Compile Include="B2CPANEL\model\cms\banner_areaVm.cs" />
+    <Compile Include="B2CPANEL\model\cms\shop_configVm.cs" />
+    <Compile Include="B2CPANEL\model\cms\shop_synonymVm.cs" />
+    <Compile Include="B2CPANEL\model\cms\simit_customareacategoryVm.cs" />
+    <Compile Include="B2CPANEL\model\cms\simit_customareaVm.cs" />
+    <Compile Include="B2CPANEL\model\cms\simit_menusectionVm.cs" />
+    <Compile Include="B2CPANEL\model\cms\simit_menuVm.cs" />
+    <Compile Include="B2CPANEL\model\cms\simit_pageVm.cs" />
+    <Compile Include="B2CPANEL\model\cms\south_migrationhistoryVm.cs" />
+    <Compile Include="B2CPANEL\model\django\admin_tools_dashboard_preferencesVm.cs" />
+    <Compile Include="B2CPANEL\model\django\auth_groupVm.cs" />
+    <Compile Include="B2CPANEL\model\django\auth_group_permissionsVm.cs" />
+    <Compile Include="B2CPANEL\model\django\auth_permissionVm.cs" />
+    <Compile Include="B2CPANEL\model\django\auth_userVm.cs" />
+    <Compile Include="B2CPANEL\model\django\auth_user_groupsVm.cs" />
+    <Compile Include="B2CPANEL\model\django\auth_user_user_permissionsVm.cs" />
+    <Compile Include="B2CPANEL\model\django\django_admin_logVm.cs" />
+    <Compile Include="B2CPANEL\model\django\django_content_typeVm.cs" />
+    <Compile Include="B2CPANEL\model\django\django_sessionVm.cs" />
+    <Compile Include="B2CPANEL\model\odeme\customer_addressVm.cs" />
+    <Compile Include="B2CPANEL\model\odeme\customer_basketVm.cs" />
+    <Compile Include="B2CPANEL\model\odeme\customer_groupVm.cs" />
+    <Compile Include="B2CPANEL\model\odeme\discountVm.cs" />
+    <Compile Include="B2CPANEL\model\odeme\discount_categoryVm.cs" />
+    <Compile Include="B2CPANEL\model\odeme\discount_customer_groupVm.cs" />
+    <Compile Include="B2CPANEL\model\odeme\discount_product_tagVm.cs" />
+    <Compile Include="B2CPANEL\model\odeme\orderVm.cs" />
+    <Compile Include="B2CPANEL\model\odeme\order_productVm.cs" />
+    <Compile Include="B2CPANEL\model\odeme\order_statusVm.cs" />
+    <Compile Include="B2CPANEL\model\odeme\payment_packageVm.cs" />
+    <Compile Include="B2CPANEL\model\odeme\shipment_alternativeVm.cs" />
+    <Compile Include="B2CPANEL\model\odeme\shipment_methodVm.cs" />
+    <Compile Include="B2CPANEL\model\odeme\shipment_packageVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\tb_kart_stok_oemVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\productVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\product_category_choiceVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\product_category_schemaVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\product_category_valueVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\product_imagesVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\product_originalVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\product_pageVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\product_reviewVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\product_tagsVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\product_tagVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\product_variationVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\product_variation_optionVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\product_variation_typeVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\product_vehicleVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\vehicleVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\vehicle_currencyVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\vehicle_fuel_typeVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\vehicle_kdvVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\vehicle_motor_typeVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\vehicle_toptanciVm.cs" />
+    <Compile Include="B2CPANEL\model\Product_Vehicle\vehicle_treeVm.cs" />
+    <Compile Include="B2CPANEL\services\araclar\categoryService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\cityService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\module_stockalert_customerService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\countryService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\est_bankService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\est_creditcardestrelationService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\est_creditcardtypeService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\est_estcredentialService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\est_installmentalternativeService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\est_transactionService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\firm_parameterService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\ilceService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\languageService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\manufacturerService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\messaging_customermessageService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\messaging_messagedepartmentService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\module_pricedropalert_customerService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\module_pricedropalert_emailService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\newsletterService.cs" />
+    <Compile Include="B2CPANEL\services\araclar\tax_rateService.cs" />
+    <Compile Include="B2CPANEL\services\B2cIslemlerService.cs" />
+    <Compile Include="B2CPANEL\services\B2cSistemService.cs" />
+    <Compile Include="B2CPANEL\services\cms\bannerService.cs" />
+    <Compile Include="B2CPANEL\services\cms\banner_areaService.cs" />
+    <Compile Include="B2CPANEL\services\cms\shop_configService.cs" />
+    <Compile Include="B2CPANEL\services\cms\shop_synonymService.cs" />
+    <Compile Include="B2CPANEL\services\cms\simit_customareacategoryService.cs" />
+    <Compile Include="B2CPANEL\services\cms\simit_customareaService.cs" />
+    <Compile Include="B2CPANEL\services\cms\simit_menusectionService.cs" />
+    <Compile Include="B2CPANEL\services\cms\simit_menuService.cs" />
+    <Compile Include="B2CPANEL\services\cms\simit_pageService.cs" />
+    <Compile Include="B2CPANEL\services\django\admin_tools_dashboard_preferencesService.cs" />
+    <Compile Include="B2CPANEL\services\django\auth_groupService.cs" />
+    <Compile Include="B2CPANEL\services\django\auth_group_permissionsService.cs" />
+    <Compile Include="B2CPANEL\services\django\auth_permissionService.cs" />
+    <Compile Include="B2CPANEL\services\django\auth_userService.cs" />
+    <Compile Include="B2CPANEL\services\django\auth_user_groupsService.cs" />
+    <Compile Include="B2CPANEL\services\django\auth_user_user_permissionsService.cs" />
+    <Compile Include="B2CPANEL\services\django\django_admin_logService.cs" />
+    <Compile Include="B2CPANEL\services\django\django_content_typeService.cs" />
+    <Compile Include="B2CPANEL\services\django\django_sessionService.cs" />
+    <Compile Include="B2CPANEL\services\odeme\order_productGosterimService.cs" />
+    <Compile Include="B2CPANEL\services\odeme\customer_addressService.cs" />
+    <Compile Include="B2CPANEL\services\odeme\customer_basketService.cs" />
+    <Compile Include="B2CPANEL\services\odeme\customer_groupService.cs" />
+    <Compile Include="B2CPANEL\services\odeme\discountService.cs" />
+    <Compile Include="B2CPANEL\services\odeme\discount_categoryService.cs" />
+    <Compile Include="B2CPANEL\services\odeme\discount_customer_groupService.cs" />
+    <Compile Include="B2CPANEL\services\odeme\discount_product_tagService.cs" />
+    <Compile Include="B2CPANEL\services\odeme\orderService.cs" />
+    <Compile Include="B2CPANEL\services\odeme\order_productService.cs" />
+    <Compile Include="B2CPANEL\services\odeme\order_statusService.cs" />
+    <Compile Include="B2CPANEL\services\odeme\payment_packageService.cs" />
+    <Compile Include="B2CPANEL\services\odeme\shipment_alternativeService.cs" />
+    <Compile Include="B2CPANEL\services\odeme\shipment_methodService.cs" />
+    <Compile Include="B2CPANEL\services\odeme\shipment_packageService.cs" />
+    <Compile Include="B2CPANEL\services\Product_Vehicle\tb_kart_stok_oemService.cs" />
+    <Compile Include="B2CPANEL\services\Product_Vehicle\productService.cs" />
+    <Compile Include="B2CPANEL\services\Product_Vehicle\product_imagesService.cs" />
+    <Compile Include="B2CPANEL\services\Product_Vehicle\product_originalService.cs" />
+    <Compile Include="B2CPANEL\services\Product_Vehicle\product_pageService.cs" />
+    <Compile Include="B2CPANEL\services\Product_Vehicle\product_reviewService.cs" />
+    <Compile Include="B2CPANEL\services\Product_Vehicle\product_tagService.cs" />
+    <Compile Include="B2CPANEL\services\Product_Vehicle\product_tagsService.cs" />
+    <Compile Include="B2CPANEL\services\Product_Vehicle\product_vehicleService.cs" />
+    <Compile Include="B2CPANEL\services\Product_Vehicle\vehicleService.cs" />
+    <Compile Include="B2CPANEL\services\Product_Vehicle\vehicle_currencyService.cs" />
+    <Compile Include="B2CPANEL\services\Product_Vehicle\vehicle_fuel_typeService.cs" />
+    <Compile Include="B2CPANEL\services\Product_Vehicle\vehicle_motor_typeService.cs" />
+    <Compile Include="B2CPANEL\services\Product_Vehicle\vehicle_toptanciService.cs" />
+    <Compile Include="B2CPANEL\services\Product_Vehicle\vehicle_treeService.cs" />
+    <Compile Include="bin\B2C\SepetSecimiEn.cs" />
+    <Compile Include="bin\B2C\ToptanciEn.cs" />
+    <Compile Include="bin\Enums\Genel\ArtiEksiEn.cs" />
+    <Compile Include="bin\Enums\Genel\BirimEn.cs" />
+    <Compile Include="bin\Enums\Genel\BankaTipEn.cs" />
+    <Compile Include="bin\Enums\Genel\AlanAramaTipEn.cs" />
+    <Compile Include="bin\Enums\Genel\KagitSecimiEn.cs" />
+    <Compile Include="bin\Enums\Genel\YatayDikeyEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\FiiliSayimEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\GumrukAmbarTipEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\sistem_lookepedits\UzerineYazmaDurumTipEn.cs" />
+    <Compile Include="bin\Enums\parametreler\IslemNedeniEn.cs" />
+    <Compile Include="bin\Enums\parametreler\GridOzellikleriEn.cs" />
+    <Compile Include="bin\Enums\Genel\RolEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\IslemListeEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\StokAlternatifListeTipEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\FiltreTipEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\ExcelTasimaIslemTipEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\DetayGenelEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\sistem_lookepedits\KullaniciRolEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\sistem_lookepedits\KullaniciListeSecimTipEn.cs" />
+    <Compile Include="bin\Enums\Genel\SatisEn.cs" />
+    <Compile Include="bin\Enums\Genel\KullaniciDinamikYetkiEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\DevirDuzeltmeTipEn.cs" />
+    <Compile Include="bin\Enums\Genel\SayilarEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\KalanTutarFiyatTipEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\EvetHayirTumuEn.cs" />
+    <Compile Include="bin\Enums\parametreler\IslemSahibiEn.cs" />
+    <Compile Include="bin\Enums\Genel\ListServiceTipEn.cs" />
+    <Compile Include="bin\Enums\Genel\KirilimTipEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\sistem_lookepedits\DataTipleriEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\sistem_lookepedits\KullaniciIslemleriTipEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\BrutNetEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\AyEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\ArtanAzalanEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\FaturaIrsaliyeEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\DovizSecimEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\MiktarliTutarli5En.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\MiktarliTutarli4En.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\MiktarliTutarliFiyatliEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\YerliIthalTumuEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\OnayTipEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\MiktarliTutarli2En.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\IcmalDetayEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\DovizKurTipEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\DovizCevrimEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\LookUpEditVm.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\AktifPasifTumuEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\MiktarliTutarliEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\ProblemTipEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\SiralamaEn.cs" />
+    <Compile Include="bin\Enums\parametreler\ListSablonListeSecimiEn.cs" />
+    <Compile Include="bin\Enums\parametreler\ListSablonEn.cs" />
+    <Compile Include="bin\Enums\Genel\VarsayilanIdlerEn.cs" />
+    <Compile Include="bin\Enums\Genel\UlkeEn.cs" />
+    <Compile Include="bin\Enums\Genel\RenkEn.cs" />
+    <Compile Include="bin\Enums\Genel\KdvEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\DarGenisEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\Ortak\GirisCikisTumuEn.cs" />
+    <Compile Include="bin\Enums\Genel\AlanTipEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\KontrolEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\ArtiEksiEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\SorgulamaTipEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\UyariHataEn.cs" />
+    <Compile Include="bin\Enums\Genel\FirmaMusteriEn.cs" />
+    <Compile Include="bin\Enums\lokkupEdits\GirenCikanKalanEn.cs" />
+    <Compile Include="bin\Enums\parametreler\GridIslemEn.cs" />
+    <Compile Include="bin\Enums\parametreler\IslemlerEn.cs" />
+    <Compile Include="bin\Enums\Genel\MiktarsalParasalEn.cs" />
+    <Compile Include="bin\Enums\Genel\EvetHayirEn.cs" />
+    <Compile Include="bin\Enums\Genel\Dil.cs" />
+    <Compile Include="bin\Enums\Genel\Doviz.cs" />
+    <Compile Include="bin\Enums\Genel\DovizEn.cs" />
+    <Compile Include="bin\Enums\Genel\DurumEn.cs" />
+    <Compile Include="bin\Enums\Genel\GirisCikisEn.cs" />
+    <Compile Include="bin\Enums\Genel\IcDisEn.cs" />
+    <Compile Include="bin\Enums\Genel\YetkiEn.cs" />
+    <Compile Include="Ortak_Classlar\BaseClasslar\AService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\BaseClasslar\BaseCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\BaseClasslar\BaseValidation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\BaseClasslar\DebugWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\BaseClasslar\Dynamic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\BaseClasslar\ExtensionMethods.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\BaseClasslar\HelperBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\BaseClasslar\IViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\BaseClasslar\ServiceIstisna.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\FiltrelerCntrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\FiltrelerService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\FiltrelerVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\GenelParametreSng.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\Globals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\KontrolVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\ListDenemeService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\ListHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\ListService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\LogHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\OrtakIslemlerService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\Ortak_Liste_Modeller\AdTutarVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\Ortak_Liste_Modeller\ListViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\Ortak_Liste_Modeller\ListViewModelListe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\QueryOlustur.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\RdlcHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\SıkKullanılmayanlar\Alanlar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\SıkKullanılmayanlar\CustomCheckedComboBoxEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\SıkKullanılmayanlar\Ean13.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\SıkKullanılmayanlar\Export.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\SıkKullanılmayanlar\GridCheckMarksSelection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\SıkKullanılmayanlar\IdAdTipVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\SıkKullanılmayanlar\IdAdVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\SıkKullanılmayanlar\IdKodAdVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\SıkKullanılmayanlar\KodAdVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\SıkKullanılmayanlar\MethodAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\SıkKullanılmayanlar\RaporParametreleriVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\SıkKullanılmayanlar\SetEnterEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\SıkKullanılmayanlar\ThreadExtensionMethods.cs" />
+    <Compile Include="Ortak_Classlar\YardimciIslemler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Ortak_Classlar\YeniListService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\egeyazilim\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ozceteFiyatlar\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Sistem\Controllers\AlanlarCntrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Controllers\ExcelFiltreCntrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Controllers\FirmaCntrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Controllers\KullaniciCntrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Controllers\LogCntrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Controllers\MenulerCntrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Controllers\MesajCntrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Controllers\RolCntrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Controllers\YetkiAlanlarBilgiCntrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Controllers\YetkiAlanlarCntrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Controllers\YetkiIslemlerCntrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Controllers\YetkiIslemSahibiTanitimCntrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Controllers\YetkiIslemTanitimCntrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Controllers\YetkilerCntrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Controllers\YetkiMenulerCntrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\AlanlarTipVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\AlanlarVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\ExcelAktarmaRowVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\ExcelFiltreVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\FirmaParametreVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\FirmaVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\KullaniciFirmaTipVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\KullaniciVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\KullaniciYetkileriVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\KullaniciYetkiTipVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\LogVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\MenulerVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\MesajVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\ProgramVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\RolVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\YetkiAlanlarBilgiVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\YetkiAlanlarVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\YetkiIslemlerVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\YetkiIslemSahibiTanitimVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\YetkiIslemTanitimVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\YetkilerVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Models\YetkiMenulerVm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Services\AlanlarService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Services\ExcelFiltreService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Services\FirmaService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Services\KullaniciService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Services\LogService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Services\MenulerService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Services\MesajService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Services\RolService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Services\YetkiAlanlarBilgiService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Services\YetkiAlanlarService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Services\YetkiIslemlerService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Services\YetkiIslemSahibiTanitimService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Services\YetkiIslemTanitimService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Services\YetkilerService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sistem\Services\YetkiMenulerService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="b2cModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>b2cModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
+    <None Include="b2cModel.Views.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>b2cModel.Views.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\log4net.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\Prodma.DataAccess.dll.config" />
+    <None Include="bin\Release\Prodma.DataAccess.dll.config" />
+    <None Include="Properties\DataSources\ProdmaContext.datasource" />
+    <None Include="Service References\egeyazilim\parcasatis.wsdl" />
+    <None Include="Service References\ozceteFiyatlar\OzceteParcasatis.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resource1.enUS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resource1.trTR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Copy of Resource1.trTR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource1.enUS.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource1.enUS_231112.resx" />
+    <EmbeddedResource Include="Resources\Resource1.enUS_221112.resx" />
+    <EmbeddedResource Include="Resources\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource1.trTR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource1.trTR_261112.resx" />
+    <EmbeddedResource Include="Resources\Resource1.trTR_221112.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource1.trTR_011112.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource1.trTR_091012.resx" />
+    <EmbeddedResource Include="Resources\Resource111.trTR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\ProdmaEntities.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.CekListeleri.Models.BankaHareketVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.CekListeleri.Models.CariHesapEkstresiIcmalVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.CekListeleri.Models.CariHesapPortfoyVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.CekListeleri.Models.CekFisleriVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.CekListeleri.Models.CekGozlemVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.CekListeleri.Models.CekSenetFisVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.CekListeleri.Models.HareketFirmaGenisVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.CekListeleri.Models.HareketFirmaVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.CekListeleri.Models.HareketMusteriGenisVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.CekListeleri.Models.HareketMusteriVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.CekListeleri.Models.KdvVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.CekListeleri.Models.MizanDovizliVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.CekListeleri.Models.PortfoyVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.CekListeleri.Models.TeminattakiCeklerVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.SiparisListeleri.Models.SiparisGozlemVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.DinamikListeVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.HareketListesiVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.ListViewModel.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.listViewModelDinamik.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.ListViewModelListe.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokAsgariStokBelirlemeVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokEnvanterKalanSarfliVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokEnvanterKalanVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokEnvanterMiktarliVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokEnvanterTutarliVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokFisSatirListVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokFisSifirListVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokFisVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokHareketMiktarliVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokHareketTutarliVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokIslemGormeyenListesiVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokIslemTipiIcmalStokluVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokIslemTipiIcmalVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokIslemTipiListesiVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokKritikListesiVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokRandimanEnvanterVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.StokSayimKontrolEnvanterVm.datasource" />
+    <None Include="Properties\DataSources\Satis.Listeler.StokListeleri.Models.TipAttribute.datasource" />
+    <None Include="Resources\printer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\log4net.dll" />
+    <Content Include="bin\Debug\Logging.dll" />
+    <Content Include="bin\Debug\Logging.pdb" />
+    <Content Include="bin\Debug\Prodma.DataAccess.dll" />
+    <Content Include="bin\Debug\Prodma.DataAccess.pdb" />
+    <Content Include="bin\Release\Prodma.DataAccess.dll" />
+    <Content Include="bin\Release\Prodma.DataAccess.pdb" />
+    <Content Include="Resources\ListImages\accordionitem.png" />
+    <Content Include="Resources\ListImages\active.png" />
+    <Content Include="Resources\ListImages\agencylist.png" />
+    <Content Include="Resources\ListImages\all.png" />
+    <Content Include="Resources\ListImages\archivelist.png" />
+    <Content Include="Resources\ListImages\archiveok.png" />
+    <Content Include="Resources\ListImages\arealist.png" />
+    <Content Include="Resources\ListImages\bannerlist.png" />
+    <Content Include="Resources\ListImages\blankorder.png" />
+    <Content Include="Resources\ListImages\categorylist.png" />
+    <Content Include="Resources\ListImages\contentlist.png" />
+    <Content Include="Resources\ListImages\delete.png" />
+    <Content Include="Resources\ListImages\edit.png" />
+    <None Include="Resources\ListImages\excel.ico" />
+    <Content Include="Resources\ListImages\exit.png" />
+    <Content Include="Resources\ListImages\find.png" />
+    <Content Include="Resources\ListImages\galleryitem.png" />
+    <Content Include="Resources\ListImages\gallerylist.png" />
+    <Content Include="Resources\ListImages\informationlist.png" />
+    <Content Include="Resources\ListImages\languagelist.png" />
+    <Content Include="Resources\ListImages\legislationcategorylist.png" />
+    <Content Include="Resources\ListImages\legislationlist.png" />
+    <Content Include="Resources\ListImages\legislationofficelist.png" />
+    <Content Include="Resources\ListImages\marqueelist.png" />
+    <Content Include="Resources\ListImages\menuitem.png" />
+    <Content Include="Resources\ListImages\menulist.png" />
+    <Content Include="Resources\ListImages\menulocationlist.png" />
+    <Content Include="Resources\ListImages\new.png" />
+    <Content Include="Resources\ListImages\officelist.png" />
+    <Content Include="Resources\ListImages\ok.png" />
+    <Content Include="Resources\ListImages\orderdown.png" />
+    <Content Include="Resources\ListImages\orderok.png" />
+    <Content Include="Resources\ListImages\orderup.png" />
+    <Content Include="Resources\ListImages\panellist.png" />
+    <Content Include="Resources\ListImages\passive.png" />
+    <Content Include="Resources\ListImages\projectlist.png" />
+    <Content Include="Resources\ListImages\rolelist.png" />
+    <Content Include="Resources\ListImages\sectionlist.png" />
+    <Content Include="Resources\ListImages\surveylist.png" />
+    <Content Include="Resources\ListImages\tenderlist.png" />
+    <Content Include="Resources\ListImages\tendermateriallist.png" />
+    <Content Include="Resources\ListImages\tendermaterialtypelist.png" />
+    <Content Include="Resources\ListImages\tendermaterialunitlist.png" />
+    <Content Include="Resources\ListImages\tendersubjectlist.png" />
+    <Content Include="Resources\ListImages\titlelist.png" />
+    <Content Include="Resources\ListImages\unitlist.png" />
+    <Content Include="Resources\ListImages\userlist.png" />
+    <None Include="Resources\zoom.png" />
+    <None Include="Resources\yukleniyor.bmp" />
+    <Content Include="Resources\yukleniyor.gif" />
+    <None Include="Service References\ozceteFiyatlar\OzceteParcasatis.disco" />
+    <None Include="Service References\ozceteFiyatlar\configuration91.svcinfo" />
+    <None Include="Service References\ozceteFiyatlar\configuration.svcinfo" />
+    <None Include="Service References\ozceteFiyatlar\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\egeyazilim\parcasatis.disco" />
+    <None Include="Service References\egeyazilim\configuration91.svcinfo" />
+    <None Include="Service References\egeyazilim\configuration.svcinfo" />
+    <None Include="Service References\egeyazilim\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="TextFile1.txt" />
+    <None Include="Resources\warning.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="B2CPANEL\controllers\order\" />
+    <Folder Include="B2CPANEL\Listeler\" />
+    <Folder Include="B2CPANEL\model\order\" />
+    <Folder Include="B2CPANEL\services\order\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{00000206-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\egeyazilim\" />
+    <WCFMetadataStorage Include="Service References\ozceteFiyatlar\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

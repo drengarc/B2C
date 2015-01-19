@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="fn_siparis_olustur">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="list" type="tns:ArrayOfErp_siparis" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfErp_siparis">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="erp_siparis" nillable="true" type="tns:erp_siparis" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="erp_siparis">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="stok_kodu" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tedarikci" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="miktar" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="fn_siparis_olusturResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_siparis_olusturResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_listesi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_stok_kodu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_tedarikci" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="d_miktar" type="s:double" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_listesiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_stok_listesiResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_kampanyali_stoklar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_kampanyali_stoklarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_stok_kampanyali_stoklarResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_durumu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_stok_kodu" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_tedarikci" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_durumuResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_stok_durumuResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_bakiye_listesi">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_bakiye_listesiResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_stok_bakiye_listesiResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_cari_hareket">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_cari_hareketResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_cari_hareketResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_cari_hareket_detay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_siparis" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_cari_hareket_detayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_cari_hareket_detayResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_cari_hareket_siparis_no">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_siparis_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_cari_hareket_siparis_noResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_cari_hareket_siparis_noResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_siparis_erp_no">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="d_siparis" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_siparis_erp_noResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_siparis_erp_noResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_bakiye_iptal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_siparis_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_stok_bakiye_iptalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_stok_bakiye_iptalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_kur">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_kurResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_kurResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_web_sifre_olustur">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="d_deger" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d_sifre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fn_web_sifre_olusturResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fn_web_sifre_olusturResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="fn_siparis_olusturSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_siparis_olustur" />
+  </wsdl:message>
+  <wsdl:message name="fn_siparis_olusturSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_siparis_olusturResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_listesiSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_stok_listesi" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_listesiSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_stok_listesiResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_kampanyali_stoklarSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_stok_kampanyali_stoklar" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_kampanyali_stoklarSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_stok_kampanyali_stoklarResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_durumuSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_stok_durumu" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_durumuSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_stok_durumuResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_bakiye_listesiSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_stok_bakiye_listesi" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_bakiye_listesiSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_stok_bakiye_listesiResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_cari_hareketSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_cari_hareket" />
+  </wsdl:message>
+  <wsdl:message name="fn_cari_hareketSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_cari_hareketResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_cari_hareket_detaySoapIn">
+    <wsdl:part name="parameters" element="tns:fn_cari_hareket_detay" />
+  </wsdl:message>
+  <wsdl:message name="fn_cari_hareket_detaySoapOut">
+    <wsdl:part name="parameters" element="tns:fn_cari_hareket_detayResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_cari_hareket_siparis_noSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_cari_hareket_siparis_no" />
+  </wsdl:message>
+  <wsdl:message name="fn_cari_hareket_siparis_noSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_cari_hareket_siparis_noResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_siparis_erp_noSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_siparis_erp_no" />
+  </wsdl:message>
+  <wsdl:message name="fn_siparis_erp_noSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_siparis_erp_noResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_bakiye_iptalSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_stok_bakiye_iptal" />
+  </wsdl:message>
+  <wsdl:message name="fn_stok_bakiye_iptalSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_stok_bakiye_iptalResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_kurSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_kur" />
+  </wsdl:message>
+  <wsdl:message name="fn_kurSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_kurResponse" />
+  </wsdl:message>
+  <wsdl:message name="fn_web_sifre_olusturSoapIn">
+    <wsdl:part name="parameters" element="tns:fn_web_sifre_olustur" />
+  </wsdl:message>
+  <wsdl:message name="fn_web_sifre_olusturSoapOut">
+    <wsdl:part name="parameters" element="tns:fn_web_sifre_olusturResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OzceteParcaSatisSoap">
+    <wsdl:operation name="fn_siparis_olustur">
+      <wsdl:input message="tns:fn_siparis_olusturSoapIn" />
+      <wsdl:output message="tns:fn_siparis_olusturSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_listesi">
+      <wsdl:input message="tns:fn_stok_listesiSoapIn" />
+      <wsdl:output message="tns:fn_stok_listesiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_kampanyali_stoklar">
+      <wsdl:input message="tns:fn_stok_kampanyali_stoklarSoapIn" />
+      <wsdl:output message="tns:fn_stok_kampanyali_stoklarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_durumu">
+      <wsdl:input message="tns:fn_stok_durumuSoapIn" />
+      <wsdl:output message="tns:fn_stok_durumuSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_bakiye_listesi">
+      <wsdl:input message="tns:fn_stok_bakiye_listesiSoapIn" />
+      <wsdl:output message="tns:fn_stok_bakiye_listesiSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_cari_hareket">
+      <wsdl:input message="tns:fn_cari_hareketSoapIn" />
+      <wsdl:output message="tns:fn_cari_hareketSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_cari_hareket_detay">
+      <wsdl:input message="tns:fn_cari_hareket_detaySoapIn" />
+      <wsdl:output message="tns:fn_cari_hareket_detaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_cari_hareket_siparis_no">
+      <wsdl:input message="tns:fn_cari_hareket_siparis_noSoapIn" />
+      <wsdl:output message="tns:fn_cari_hareket_siparis_noSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_siparis_erp_no">
+      <wsdl:input message="tns:fn_siparis_erp_noSoapIn" />
+      <wsdl:output message="tns:fn_siparis_erp_noSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_bakiye_iptal">
+      <wsdl:input message="tns:fn_stok_bakiye_iptalSoapIn" />
+      <wsdl:output message="tns:fn_stok_bakiye_iptalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_kur">
+      <wsdl:input message="tns:fn_kurSoapIn" />
+      <wsdl:output message="tns:fn_kurSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fn_web_sifre_olustur">
+      <wsdl:input message="tns:fn_web_sifre_olusturSoapIn" />
+      <wsdl:output message="tns:fn_web_sifre_olusturSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OzceteParcaSatisSoap" type="tns:OzceteParcaSatisSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="fn_siparis_olustur">
+      <soap:operation soapAction="http://tempuri.org/fn_siparis_olustur" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_listesi">
+      <soap:operation soapAction="http://tempuri.org/fn_stok_listesi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_kampanyali_stoklar">
+      <soap:operation soapAction="http://tempuri.org/fn_stok_kampanyali_stoklar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_durumu">
+      <soap:operation soapAction="http://tempuri.org/fn_stok_durumu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_bakiye_listesi">
+      <soap:operation soapAction="http://tempuri.org/fn_stok_bakiye_listesi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_cari_hareket">
+      <soap:operation soapAction="http://tempuri.org/fn_cari_hareket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_cari_hareket_detay">
+      <soap:operation soapAction="http://tempuri.org/fn_cari_hareket_detay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_cari_hareket_siparis_no">
+      <soap:operation soapAction="http://tempuri.org/fn_cari_hareket_siparis_no" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_siparis_erp_no">
+      <soap:operation soapAction="http://tempuri.org/fn_siparis_erp_no" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_bakiye_iptal">
+      <soap:operation soapAction="http://tempuri.org/fn_stok_bakiye_iptal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_kur">
+      <soap:operation soapAction="http://tempuri.org/fn_kur" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_web_sifre_olustur">
+      <soap:operation soapAction="http://tempuri.org/fn_web_sifre_olustur" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OzceteParcaSatisSoap12" type="tns:OzceteParcaSatisSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="fn_siparis_olustur">
+      <soap12:operation soapAction="http://tempuri.org/fn_siparis_olustur" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_listesi">
+      <soap12:operation soapAction="http://tempuri.org/fn_stok_listesi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_kampanyali_stoklar">
+      <soap12:operation soapAction="http://tempuri.org/fn_stok_kampanyali_stoklar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_durumu">
+      <soap12:operation soapAction="http://tempuri.org/fn_stok_durumu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_bakiye_listesi">
+      <soap12:operation soapAction="http://tempuri.org/fn_stok_bakiye_listesi" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_cari_hareket">
+      <soap12:operation soapAction="http://tempuri.org/fn_cari_hareket" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_cari_hareket_detay">
+      <soap12:operation soapAction="http://tempuri.org/fn_cari_hareket_detay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_cari_hareket_siparis_no">
+      <soap12:operation soapAction="http://tempuri.org/fn_cari_hareket_siparis_no" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_siparis_erp_no">
+      <soap12:operation soapAction="http://tempuri.org/fn_siparis_erp_no" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_stok_bakiye_iptal">
+      <soap12:operation soapAction="http://tempuri.org/fn_stok_bakiye_iptal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_kur">
+      <soap12:operation soapAction="http://tempuri.org/fn_kur" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fn_web_sifre_olustur">
+      <soap12:operation soapAction="http://tempuri.org/fn_web_sifre_olustur" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OzceteParcaSatis">
+    <wsdl:port name="OzceteParcaSatisSoap" binding="tns:OzceteParcaSatisSoap">
+      <soap:address location="http://oss.ozcete.com.tr/servis/OzceteParcasatis.asmx" />
+    </wsdl:port>
+    <wsdl:port name="OzceteParcaSatisSoap12" binding="tns:OzceteParcaSatisSoap12">
+      <soap12:address location="http://oss.ozcete.com.tr/servis/OzceteParcasatis.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

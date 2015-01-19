@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF0E550C-FBB4-46D2-A173-BC722BA0922A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Prodma.B2C</RootNamespace>
+    <AssemblyName>Prodma.B2C</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v12.1.Core, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Prodma">
+      <HintPath>..\Prodma.DataAccess\bin\Debug\Prodma.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Proje\Form\Araclar\module_stockalert_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\module_stockalert_customer.designer.cs">
+      <DependentUpon>module_stockalert_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Django\auth_group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Django\auth_group.designer.cs">
+      <DependentUpon>auth_group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Django\auth_group_permissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Django\auth_group_permissions.designer.cs">
+      <DependentUpon>auth_group_permissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Django\auth_permission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Django\auth_permission.designer.cs">
+      <DependentUpon>auth_permission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Django\auth_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Django\auth_user.designer.cs">
+      <DependentUpon>auth_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Django\auth_user_groups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Django\auth_user_groups.designer.cs">
+      <DependentUpon>auth_user_groups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Django\auth_user_user_permissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Django\auth_user_user_permissions.designer.cs">
+      <DependentUpon>auth_user_user_permissions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\banner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\banner.designer.cs">
+      <DependentUpon>banner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\banner_area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\banner_area.designer.cs">
+      <DependentUpon>banner_area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\category.designer.cs">
+      <DependentUpon>category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\city.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\city.designer.cs">
+      <DependentUpon>city.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product_vehicle_tree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product_vehicle_tree.designer.cs">
+      <DependentUpon>product_vehicle_tree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\order.designer.cs">
+      <DependentUpon>order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\vehicle_toptanci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\vehicle_toptanci.designer.cs">
+      <DependentUpon>vehicle_toptanci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product.designer.cs">
+      <DependentUpon>product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\simit_customarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\simit_customarea.designer.cs">
+      <DependentUpon>simit_customarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\simit_customareacategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\simit_customareacategory.designer.cs">
+      <DependentUpon>simit_customareacategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\simit_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\simit_menu.designer.cs">
+      <DependentUpon>simit_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\simit_menusection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\simit_menusection.designer.cs">
+      <DependentUpon>simit_menusection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\simit_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\simit_page.designer.cs">
+      <DependentUpon>simit_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Django\admin_tools_dashboard_preferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Django\admin_tools_dashboard_preferences.designer.cs">
+      <DependentUpon>admin_tools_dashboard_preferences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\messaging_messagedepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\messaging_messagedepartment.designer.cs">
+      <DependentUpon>messaging_messagedepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\messaging_customermessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\messaging_customermessage.designer.cs">
+      <DependentUpon>messaging_customermessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\shop_synonym.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\shop_synonym.designer.cs">
+      <DependentUpon>shop_synonym.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\tax_rate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\tax_rate.designer.cs">
+      <DependentUpon>tax_rate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\vehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\vehicle.designer.cs">
+      <DependentUpon>vehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\vehicle_currency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\vehicle_currency.designer.cs">
+      <DependentUpon>vehicle_currency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\vehicle_tree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\vehicle_tree.designer.cs">
+      <DependentUpon>vehicle_tree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product_tag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product_tag.designer.cs">
+      <DependentUpon>product_tag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product_tags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product_tags.designer.cs">
+      <DependentUpon>product_tags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product_vehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product_vehicle.designer.cs">
+      <DependentUpon>product_vehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\shipment_alternative.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\shipment_alternative.designer.cs">
+      <DependentUpon>shipment_alternative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\shipment_method.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\shipment_method.designer.cs">
+      <DependentUpon>shipment_method.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\shipment_package.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\shipment_package.designer.cs">
+      <DependentUpon>shipment_package.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\shop_config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Cms\shop_config.designer.cs">
+      <DependentUpon>shop_config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\vehicle_fuel_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\vehicle_fuel_type.designer.cs">
+      <DependentUpon>vehicle_fuel_type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\ilce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\ilce.designer.cs">
+      <DependentUpon>ilce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\manufacturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\manufacturer.designer.cs">
+      <DependentUpon>manufacturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\module_pricedropalert_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\module_pricedropalert_customer.designer.cs">
+      <DependentUpon>module_pricedropalert_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\vehicle_motor_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\vehicle_motor_type.designer.cs">
+      <DependentUpon>vehicle_motor_type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\order_status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\order_status.designer.cs">
+      <DependentUpon>order_status.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\payment_package.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\payment_package.designer.cs">
+      <DependentUpon>payment_package.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\module_pricedropalert_email.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\module_pricedropalert_email.designer.cs">
+      <DependentUpon>module_pricedropalert_email.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\est_creditcardtype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\est_creditcardtype.designer.cs">
+      <DependentUpon>est_creditcardtype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product_images.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product_images.designer.cs">
+      <DependentUpon>product_images.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product_original.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product_original.designer.cs">
+      <DependentUpon>product_original.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product_page.designer.cs">
+      <DependentUpon>product_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\newsletter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\newsletter.designer.cs">
+      <DependentUpon>newsletter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product_review.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Product_Vehicle\product_review.designer.cs">
+      <DependentUpon>product_review.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\order_product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\order_product.designer.cs">
+      <DependentUpon>order_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\firm_parameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\firm_parameter.designer.cs">
+      <DependentUpon>firm_parameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\language.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\language.designer.cs">
+      <DependentUpon>language.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\est_transaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\est_transaction.designer.cs">
+      <DependentUpon>est_transaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\est_installmentalternative.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\est_installmentalternative.designer.cs">
+      <DependentUpon>est_installmentalternative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\est_estcredential.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\est_estcredential.designer.cs">
+      <DependentUpon>est_estcredential.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\country.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\country.designer.cs">
+      <DependentUpon>country.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\est_creditcardestrelation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\est_creditcardestrelation.designer.cs">
+      <DependentUpon>est_creditcardestrelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\est_bank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Araclar\est_bank.designer.cs">
+      <DependentUpon>est_bank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Django\django_session.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Django\django_session.designer.cs">
+      <DependentUpon>django_session.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Django\django_content_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Django\django_content_type.designer.cs">
+      <DependentUpon>django_content_type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Django\django_admin_log.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Django\django_admin_log.designer.cs">
+      <DependentUpon>django_admin_log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\discount_product_tag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\discount_product_tag.designer.cs">
+      <DependentUpon>discount_product_tag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\discount_customer_group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\discount_customer_group.designer.cs">
+      <DependentUpon>discount_customer_group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\discount_category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\discount_category.designer.cs">
+      <DependentUpon>discount_category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\discount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\discount.designer.cs">
+      <DependentUpon>discount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\customer_group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\customer_group.designer.cs">
+      <DependentUpon>customer_group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\customer_basket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\customer_basket.designer.cs">
+      <DependentUpon>customer_basket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\customer_address.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Form\Odeme\customer_address.designer.cs">
+      <DependentUpon>customer_address.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Ortak\DinamikUpdateStok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Ortak\DinamikUpdateStok.designer.cs">
+      <DependentUpon>DinamikUpdateStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Ortak\MusteriKopyalama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Ortak\MusteriKopyalama.designer.cs">
+      <DependentUpon>MusteriKopyalama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Ortak\SepetSiparisOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Ortak\SepetSiparisOlustur.Designer.cs">
+      <DependentUpon>SepetSiparisOlustur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Ortak\StokKopyalama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proje\Ortak\StokKopyalama.designer.cs">
+      <DependentUpon>StokKopyalama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Ortak\usrStokEkBilgi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Proje\Ortak\usrStokEkBilgi.designer.cs">
+      <DependentUpon>usrStokEkBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proje\Ortak\usrStokGenel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Proje\Ortak\usrStokGenel.designer.cs">
+      <DependentUpon>usrStokGenel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Proje\Form\Araclar\module_stockalert_customer.resx">
+      <DependentUpon>module_stockalert_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Django\auth_group.resx">
+      <DependentUpon>auth_group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Django\auth_group_permissions.resx">
+      <DependentUpon>auth_group_permissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Django\auth_permission.resx">
+      <DependentUpon>auth_permission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Django\auth_user.resx">
+      <DependentUpon>auth_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Django\auth_user_groups.resx">
+      <DependentUpon>auth_user_groups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Django\auth_user_user_permissions.resx">
+      <DependentUpon>auth_user_user_permissions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Cms\banner.resx">
+      <DependentUpon>banner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Cms\banner_area.resx">
+      <DependentUpon>banner_area.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\category.resx">
+      <DependentUpon>category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\city.resx">
+      <DependentUpon>city.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Product_Vehicle\product_vehicle_tree.resx">
+      <DependentUpon>product_vehicle_tree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Odeme\order.resx">
+      <DependentUpon>order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Product_Vehicle\vehicle_toptanci.resx">
+      <DependentUpon>vehicle_toptanci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Product_Vehicle\product.resx">
+      <DependentUpon>product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Cms\simit_customarea.resx">
+      <DependentUpon>simit_customarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Cms\simit_customareacategory.resx">
+      <DependentUpon>simit_customareacategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Cms\simit_menu.resx">
+      <DependentUpon>simit_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Cms\simit_menusection.resx">
+      <DependentUpon>simit_menusection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Cms\simit_page.resx">
+      <DependentUpon>simit_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Django\admin_tools_dashboard_preferences.resx">
+      <DependentUpon>admin_tools_dashboard_preferences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\messaging_messagedepartment.resx">
+      <DependentUpon>messaging_messagedepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\messaging_customermessage.resx">
+      <DependentUpon>messaging_customermessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Cms\shop_synonym.resx">
+      <DependentUpon>shop_synonym.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\tax_rate.resx">
+      <DependentUpon>tax_rate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Product_Vehicle\vehicle.resx">
+      <DependentUpon>vehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Product_Vehicle\vehicle_currency.resx">
+      <DependentUpon>vehicle_currency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Product_Vehicle\vehicle_tree.resx">
+      <DependentUpon>vehicle_tree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Product_Vehicle\product_tag.resx">
+      <DependentUpon>product_tag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Product_Vehicle\product_tags.resx">
+      <DependentUpon>product_tags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Product_Vehicle\product_vehicle.resx">
+      <DependentUpon>product_vehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Odeme\shipment_alternative.resx">
+      <DependentUpon>shipment_alternative.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Odeme\shipment_method.resx">
+      <DependentUpon>shipment_method.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Odeme\shipment_package.resx">
+      <DependentUpon>shipment_package.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Cms\shop_config.resx">
+      <DependentUpon>shop_config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Product_Vehicle\vehicle_fuel_type.resx">
+      <DependentUpon>vehicle_fuel_type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\ilce.resx">
+      <DependentUpon>ilce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\manufacturer.resx">
+      <DependentUpon>manufacturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\module_pricedropalert_customer.resx">
+      <DependentUpon>module_pricedropalert_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Product_Vehicle\vehicle_motor_type.resx">
+      <DependentUpon>vehicle_motor_type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Odeme\order_status.resx">
+      <DependentUpon>order_status.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Odeme\payment_package.resx">
+      <DependentUpon>payment_package.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\module_pricedropalert_email.resx">
+      <DependentUpon>module_pricedropalert_email.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\est_creditcardtype.resx">
+      <DependentUpon>est_creditcardtype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Product_Vehicle\product_images.resx">
+      <DependentUpon>product_images.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Product_Vehicle\product_original.resx">
+      <DependentUpon>product_original.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Product_Vehicle\product_page.resx">
+      <DependentUpon>product_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\newsletter.resx">
+      <DependentUpon>newsletter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Product_Vehicle\product_review.resx">
+      <DependentUpon>product_review.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Odeme\order_product.resx">
+      <DependentUpon>order_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\firm_parameter.resx">
+      <DependentUpon>firm_parameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\language.resx">
+      <DependentUpon>language.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\est_transaction.resx">
+      <DependentUpon>est_transaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\est_installmentalternative.resx">
+      <DependentUpon>est_installmentalternative.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\est_estcredential.resx">
+      <DependentUpon>est_estcredential.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\country.resx">
+      <DependentUpon>country.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\est_creditcardestrelation.resx">
+      <DependentUpon>est_creditcardestrelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Araclar\est_bank.resx">
+      <DependentUpon>est_bank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Django\django_session.resx">
+      <DependentUpon>django_session.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Django\django_content_type.resx">
+      <DependentUpon>django_content_type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Django\django_admin_log.resx">
+      <DependentUpon>django_admin_log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Odeme\discount_product_tag.resx">
+      <DependentUpon>discount_product_tag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Odeme\discount_customer_group.resx">
+      <DependentUpon>discount_customer_group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Odeme\discount_category.resx">
+      <DependentUpon>discount_category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Odeme\discount.resx">
+      <DependentUpon>discount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Odeme\customer_group.resx">
+      <DependentUpon>customer_group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Odeme\customer_basket.resx">
+      <DependentUpon>customer_basket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Form\Odeme\customer_address.resx">
+      <DependentUpon>customer_address.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Ortak\MusteriKopyalama.resx">
+      <DependentUpon>MusteriKopyalama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Ortak\SepetSiparisOlustur.resx">
+      <DependentUpon>SepetSiparisOlustur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Ortak\StokKopyalama.resx">
+      <DependentUpon>StokKopyalama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Ortak\usrStokEkBilgi.resx">
+      <DependentUpon>usrStokEkBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proje\Ortak\usrStokGenel.resx">
+      <DependentUpon>usrStokGenel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resource1.Designer.cs">
+      <DependentUpon>Resource1.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.Config">
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="log4net.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Prodma.DataAccessB2C\Prodma.DataAccessB2C.csproj">
+      <Project>{9DEA3863-7D3E-4F5F-A90C-0D6129A5FFBB}</Project>
+      <Name>Prodma.DataAccessB2C</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prodma.Raporlar\Prodma.Raporlar.csproj">
+      <Project>{BC53DA51-7F87-4CBD-ACC5-1B35AE96359B}</Project>
+      <Name>Prodma.Raporlar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prodma.WinForm\Prodma.WinForm.csproj">
+      <Project>{3AB40850-9A0D-4C92-975D-718DE562279E}</Project>
+      <Name>Prodma.WinForm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Proje\Listeler\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
